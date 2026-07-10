@@ -1,0 +1,13 @@
+# Secrets / local config
+opencode.json
+*.env
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/

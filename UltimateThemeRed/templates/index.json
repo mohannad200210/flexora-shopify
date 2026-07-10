@@ -103,7 +103,7 @@
       "settings": {
         "title": "\u0645\u0646\u062a\u062c\u0627\u062a\u0646\u0627 \u0627\u0644\u0645\u0645\u064a\u0632\u0629",
         "description": "<p>\u062d\u0644\u0648\u0644 \u0637\u0628\u064a\u0629 \u0645\u062a\u062e\u0635\u0635\u0629 \u0644\u062f\u0639\u0645 \u0638\u0647\u0631\u0643 \u0648\u0645\u0641\u0627\u0635\u0644\u0643</p>",
-        "collection": "",
+        "collection": "all",
         "products_to_show": 4,
         "columns_desktop": 2,
         "full_width": false,
