@@ -1,0 +1,4 @@
+fix: BUG 1+2 — Splide direction falls back to document dir; Material Symbols via Google Fonts CSS API
+
+- assets/secondary.js: Splide 'direction' option now falls back to document.documentElement.dir (was hardcoded 'ltr') so the <html dir="rtl"> propagates to every <splide-component>
+- layout/theme.liquid: replaced the hardcoded @font-face woff2 subset (v141, missing most icons) with a <link> to the Google Fonts CSS API which serves the full Material Symbols Outlined icon set
