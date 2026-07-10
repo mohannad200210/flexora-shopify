@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Info Tabs</title>
+    <style>
+
+              .tabs-container {
+                  max-width: 500px;
+                  margin: 0 auto;
+                  
+                  border-radius: 10px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+              }
+              .tabs-header {
+                  display: flex;
+                  gap: 10px;
+              }
+      .tab {
+          flex: 1;
+          padding: 8px 8px;
+          text-align: center;
+          font-weight: bold;
+          cursor: pointer;
+      background: linear-gradient(45deg, #1cbcc3,#1cbcc3, #4abf8f,#4abf8f 80%);
+          color: #ffffff;
+          max-width: 33.33%;
+          box-sizing: border-box;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+      font-size: 13px;
+      transition: background-color 0.8s ease;
+      }
+              .tab.active {
+                  background: #ffffff;
+                  color: #1b3a57;
+              }
+              .tab-content {
+                  padding: 5px 10px;
+                  display: none;
+      font-size: 13px;
+      transition: opacity 0.5s ease;
+              }
+              .tab-content.active {
+                  display: block;
+          background: #fff;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+      opacity: 1;
+              }
+    </style>
+  </head>
+  <body>
+    <div class="container page-width">
+      <div class="tabs-container">
+        <div class="tabs-header">
+          <div class="tab active" onclick="showTabContent('when-to-take')">
+            tab 1
+          </div>
+          <div class="tab" onclick="showTabContent('description')">tab 2</div>
+          <div class="tab" onclick="showTabContent('ingredients')">tab 3</div>
+        </div>
+        <div id="when-to-take" class="tab-content active">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              non urna eu nisi pretium viverra.
+            </p>
+          </div>
+        </div>
+        <div id="description" class="tab-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non
+            urna eu nisi pretium viverra.Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nullam non urna eu nisi pretium viverra.
+          </p>
+        </div>
+        <div id="ingredients" class="tab-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non
+            urna eu nisi pretium viverra.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showTabContent(tabId) {
+          const tabs = document.querySelectorAll('.tab');
+          const tabContents = document.querySelectorAll('.tab-content');
+          tabs.forEach(tab => tab.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+          document.querySelector(`[onclick="showTabContent('${tabId}')"]`).classList.add('active');
+          document.getElementById(tabId).classList.add('active');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+<div id="shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy" class="shopify-section">
+    <style>
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy img {
+            width: 100%;
+            display: block;
+        }
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_holder {
+            width: 100%;
+            min-height: 41.5vw;
+            position: relative;
+            display: flex;
+        }
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .desktop_back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .desktop_back img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .mobile_back {
+            display: none;
+        }
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_holder_wrapper {
+            max-width: max(1380px, calc(23.4vw + 552px));
+            padding: 75px 50px 85px 50px;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_item_wrapper:first-child {color: #000;font-family: "TAN - MEMORIES";font-size: 50px;font-style: normal;font-weight: 400;line-height: 60px; white-space: nowrap;background: transparent;padding: 0;margin-top: -20px;} */
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_item_wrapper {
+            padding: 25px 27px 27px 27px;
+            display: flex;
+            align-items: center;
+            min-width: 1px;
+            width: 100%;
+            border-radius: 12px;
+            background: #FFF;
+        }
+
+        /* #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .mobile_heading {display: none;} */
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .mobile_heading {
+            display: block;
+            color: #000;
+            text-align: center;
+            font-family: "TAN - MEMORIES";
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 44px;
+        }
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 16px 23.4vw;
+        }
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_item {
+            display: flex;
+            align-items: center;
+        }
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .item_image {
+            width: 42px;
+            margin-right: 22px;
+            flex: none;
+        }
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .item_heading {
+            color: #000;
+            font-family: "Apercu Pro";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 11px;
+        }
+
+        #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .item_text {
+            color: #000;
+            font-family: "Apercu Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            /* #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_item_wrapper:first-child {font-size: 36px;line-height: 45px;} */
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .item_heading {
+                font-size: 16px;
+            }
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .item_text {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_holder {
+                background: #EAA8C9;
+            }
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .mobile_heading {
+                margin-bottom: 81.3vw;
+                font-size: 24px;
+                line-height: 45px;
+                position: relative;
+                left: 11px;
+            }
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_holder_wrapper {
+                padding: 13.3vw 10px 50px;
+            }
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_item_wrapper {
+                max-width: 359px;
+                padding: 21.5px 19px;
+                margin: 0 4px 8px;
+            }
+            /* #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_item_wrapper:first-child {display: none;} */
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .item_image {
+                width: 35px;
+                margin-right: 20px;
+            }
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .item_heading {
+                margin-bottom: 10px;
+            }
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .desktop_back {
+                display: none;
+            }
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_items {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                grid-gap: 0;
+            }
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .mobile_back {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                display: block;
+            }
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .mobile_back_wrapper {
+                padding-top: 134%;
+                position: relative;
+            }
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .mobile_back_wrapper img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .mobile_heading {
+                left: 8px;
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            #shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .mobile_heading {
+                font-size: 24px;
+            }
+        }
+    </style>
+    <div hp_one_daily_serving="" class="section_holder" id="one_daily_serving_kwzy">
+        <div class="section_holder_wrapper">
+            <div class="mobile_heading">
+                Comprehensive daily serving - focus + energy.
+            </div>
+            <div class="section_items">
+                <div class="section_item_wrapper">
+                    <div class="section_item">
+                        <div class="item_image">
+                            <img src="//spacegoods.com/cdn/shop/files/Group_2_673d2d5a-ac6a-4e23-aa9b-b3b9d920538e_300x.svg?v=1719508105" alt="icon" />
+                        </div>
+                        <div class="item_content">
+                            <div class="item_heading">All-in-one daily blend</div>
+                            <div class="item_text">
+                                No more stacking supplements - save money &amp; time - rainbow dust contains 8 primary, potent ingredients all together in one super simple blend - it's coffee plus!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_item_wrapper">
+                    <div class="section_item">
+                        <div class="item_image">
+                            <img src="//spacegoods.com/cdn/shop/files/Group_4_300x.svg?v=1719508105" alt="icon" />
+                        </div>
+                        <div class="item_content">
+                            <div class="item_heading">Genuinely delicious</div>
+                            <div class="item_text">
+                                Unlike most mushroom powders, rainbow dust tastes just like a coffee, hot chocolate or milkshake - you need to try it for yourself!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_item_wrapper">
+                    <div class="section_item">
+                        <div class="item_image">
+                            <img src="//spacegoods.com/cdn/shop/files/Grousp_5_300x.svg?v=1719508105" alt="icon" />
+                        </div>
+                        <div class="item_content">
+                            <div class="item_heading">Save money</div>
+                            <div class="item_text">
+                                cut out your daily Starbucks or Costa coffee, plus stop buying other supplements - dust is as little as 90p per day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_item_wrapper">
+                    <div class="section_item">
+                        <div class="item_image">
+                            <img src="//spacegoods.com/cdn/shop/files/icon_super_potent_300x.svg?v=1719842839" alt="icon" />
+                        </div>
+                        <div class="item_content">
+                            <div class="item_heading">Super potent</div>
+                            <div class="item_text">
+                                each ingredient in dust is a dosage 2-3x stronger than our competitors - trust us, you'll feel the difference...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_item_wrapper">
+                    <div class="section_item">
+                        <div class="item_image">
+                            <img src="//spacegoods.com/cdn/shop/files/4_300x.svg?v=1719508104" alt="icon" />
+                        </div>
+                        <div class="item_content">
+                            <div class="item_heading">All natural made in England</div>
+                            <div class="item_text">
+                                100% natural &amp; safe - rainbow dust is made in our lab in england, rigorously tested to ensure the very highest quality
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_item_wrapper">
+                    <div class="section_item">
+                        <div class="item_image">
+                            <img src="//spacegoods.com/cdn/shop/files/icon_mix_300x.svg?v=1719842838" alt="icon" />
+                        </div>
+                        <div class="item_content">
+                            <div class="item_heading">Mix it with anything</div>
+                            <div class="item_text">
+                                Incredibly versatile, rainbow dust can be mixed with just about anything - water, milk, your protein shake or smoothie - hot or cold
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desktop_back">
+            <img src="//spacegoods.com/cdn/shop/files/spacegoods_section_2000x.png?v=1719840449" alt="d-background" />
+        </div>
+        <div class="mobile_back">
+            <div class="mobile_back_wrapper">
+                <img src="//spacegoods.com/cdn/shop/files/Mobile-Banner_1000x.png?v=1719514145" alt="m-background" />
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_close').on('click', function() {
+            $('#shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_holder').removeClass('active');
+        });
+        $('#shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .popular_searches_content').on('click', function() {
+            $('#shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .search_input input').val($(this).text());
+            perform_search($(this).text());
+        });
+        $(document).on('click', function() {
+            if (!$(event.target).closest('#shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_holder').length) {
+                $('#shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .section_holder').removeClass('active');
+            }
+        });
+        const processChange = debounce((event) => perform_search($('#shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .search_input input').val()));
+
+        function perform_search(search_text) {
+            if (search_text != '') {
+                $('#shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .search_input input').val(search_text);
+                $.ajax({
+                    url: '/search?section_id=search_result_content&q=' + search_text + '&type=product',
+                    type: 'GET'
+                }).then(res => {
+                    $('[ data-id="filled_search"]').show();
+                    $('[ data-id="empty_search"]').hide();
+                    $("#shopify-section-template--17138240979127__hp_one_daily_serving_LQkwzy .best_sellers_contents_wrapper[data-id='filled_search']").html($(res).children());
+                });
+                $.ajax({
+                    url: '/search/suggest.json?q=' + search_text + '&resources[type]=collection',
+                    type: 'GET'
+                }).then(res => {
+                    $.ajax(res.resources.results.collections[0].handle)
+                });
+            } else {
+                $('[ data-id="filled_search"]').hide();
+                $('[ data-id="empty_search"]').show();
+            }
+        }
+    </script>
+</div>

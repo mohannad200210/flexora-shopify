@@ -1,0 +1,116 @@
+<div class='shopify-section' id='shopify-section-template--16396034474171__11025304-9ab5-4eaf-8988-22739d85da28'>
+ <style>
+  [id='template--16396034474171__11025304-9ab5-4eaf-8988-22739d85da28'].facts {
+        background-color: #eee9df;
+    }
+
+    .factsBody {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .factsBodyItem {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 20px 30px;
+    }
+
+    .factsBodyItemIcon {
+        margin: 0 16px 0 0;
+        height: 38px;
+        width: auto;
+
+    }
+
+    .factsBodyItemTxt {
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0;
+        color: #000000BF;
+        text-align: center;
+    }
+
+    
+
+    .factsBodyItemTxt p {
+        margin: 0;
+    }
+
+    @media (max-width: 1000px) {
+        .factsBody {
+            padding: 0px 5px;
+        }
+
+        .factsBodyItem {
+            flex-direction: column;
+            padding: 15px 5px;
+        }
+
+        .factsBodyItemTxt {
+            font-size: 12px;
+            text-align: center;
+            white-space: normal;
+        }
+
+        .factsBodyItemIcon {
+            margin: 0;
+        }
+
+    
+
+    }
+ </style>
+ <section class='facts' id='template--16396034474171__11025304-9ab5-4eaf-8988-22739d85da28'>
+  <div class='factsBody'>
+   <div class='factsBodyItem'>
+    <img alt='image 42.png' class='factsBodyItemIcon' src='//duradry.com/cdn/shop/files/image_42.png?v=1682376660'/>
+    <div class='factsBodyItemTxt'>
+    </div>
+   </div>
+   <div class='factsBodyItem'>
+    <div class='factsBodyItemTxt'>
+     <p>
+      <strong>
+       500,000+
+      </strong>
+     </p>
+     <p>
+      CUSTOMERS
+     </p>
+    </div>
+   </div>
+   <div class='factsBodyItem'>
+    <div class='factsBodyItemTxt'>
+     <p>
+      <strong>
+       97%
+      </strong>
+     </p>
+     <p>
+      SUCCESS
+     </p>
+    </div>
+   </div>
+   <div class='factsBodyItem'>
+    <div class='factsBodyItemTxt'>
+     <p>
+      <strong>
+       3,000+
+      </strong>
+     </p>
+     <p>
+      5☆ REVIEWS
+     </p>
+    </div>
+   </div>
+  </div>
+ </section>
+ <script>
+ </script>
+</div>

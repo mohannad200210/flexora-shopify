@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slider</title>
+    <style>
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+.description{
+font-size: 13px;
+}
+
+        .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .user-details {
+            display: flex;
+            flex-direction: column;
+            line-height: 20px;
+        }
+
+        .user-details .name {
+            font-weight: bold;
+            color: #13152f;
+        }
+
+        .user-details .time {
+            font-size: 11px;
+            color: #666;
+        }
+
+        .description {
+            font-size: 13px;
+            color: #333;
+            text-align: left;
+            line-height: 22px;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            margin-top: auto;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            font-size: 10px;
+            color: #666;
+        }
+
+        .stats .reactions {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eaeaea;
+            padding-top: 10px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .actions div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .facebook-like {
+            width: 15px;
+            margin-bottom: 2px;
+        }
+
+        #v3-slider-container {
+            overflow: hidden;
+            position: relative;
+            padding: 20px 5px;
+max-width: 1500px;
+margin-right: auto;
+margin-left: auto;
+        }
+
+        #v3-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        @keyframes upAndDown {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(-4px);
+            }
+            50% {
+                transform: translateY(0px);
+            }
+            75% {
+                transform: translateY(4px);
+            }
+        }
+
+        @keyframes downAndUp {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(4px);
+            }
+            50% {
+                transform: translateY(0px);
+            }
+            75% {
+                transform: translateY(-4px);
+            }
+        }
+
+        .v3-slider-card:nth-child(odd) {
+            animation: upAndDown 4s infinite linear;
+        }
+
+        .v3-slider-card:nth-child(even) {
+            animation: downAndUp 4s infinite linear;
+        }
+
+        .v3-slider-card {
+            flex: 0 0 80%;
+            max-width: 280px;
+            height: 280px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border: 2px solid rgb(239, 239, 243);
+            border-radius: 10px;
+            padding: 15px;
+            box-sizing: border-box;
+            gap: 10px;
+            position: relative;
+            margin-right: 10px;
+        }
+
+        #v3-pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+display: none;
+        }
+
+        .v3-pagination-dot {
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .v3-pagination-dot.active {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="v3-slider-container">
+        <div id="v3-slider">
+            <div class="v3-slider-card">
+                <div class="user-info">
+                    <img src="https://i.dailymail.co.uk/i/pix/2013/08/29/article-2405475-1B8389EE000005DC-718_634x550.jpg" alt="User">
+                    <div class="user-details">
+                        <div class="name">lizaK</div>
+                        <div class="time">5h ago</div>
+                    </div>
+                </div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.
+                </div>
+
+                <div class="card-footer">
+                    <div class="stats">
+                        <div class="reactions">
+                            <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/thumbs_up_facebook.jpg?v=1733340667" class="facebook-like">
+                            <span>1.1K</span>
+                        </div>
+                        <span>145 comments • 43 shares</span>
+                    </div>
+                    <div class="actions">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#666" height="18" width="18" version="1.1" id="Capa_1" viewBox="0 0 471.701 471.701" xml:space="preserve">
+<g>
+	<path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"/>
+</g>
+</svg> Like
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="23" height="23" id="comment">
+  <path fill="#666" d="M25.784 21.017A10.992 10.992 0 0 0 27 16c0-6.065-4.935-11-11-11S5 9.935 5 16s4.935 11 11 11c1.742 0 3.468-.419 5.018-1.215l4.74 1.185a.996.996 0 0 0 .949-.263 1 1 0 0 0 .263-.95l-1.186-4.74zm-2.033.11.874 3.498-3.498-.875a1.006 1.006 0 0 0-.731.098A8.99 8.99 0 0 1 16 25c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9a8.997 8.997 0 0 1-1.151 4.395.995.995 0 0 0-.098.732z"/>
+</svg> Comment
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="23" height="23" id="share">
+  <path fill="#666" d="M6.54 55.08a1.91 1.91 0 0 1-.62-.1 2 2 0 0 1-1.38-2c0-.3 2.06-29.34 31.18-31.62V10.92a2 2 0 0 1 3.43-1.4l19.74 20.16a2 2 0 0 1 0 2.8L39.15 52.64a2 2 0 0 1-3.43-1.4V41c-19.44.74-27.41 13-27.49 13.15a2 2 0 0 1-1.69.93Zm33.18-39.26v7.41a2 2 0 0 1-1.93 2c-18.84.69-25.58 13.24-28 21.31 5-4.32 13.91-9.6 27.81-9.6h.09a2 2 0 0 1 2 2v7.41l15-15.26Z"/>
+</svg> Share
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v3-slider-card">
+                <div class="user-info">
+                    <img src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="User">
+                    <div class="user-details">
+                        <div class="name">Daneil M</div>
+                        <div class="time">5h ago</div>
+                    </div>
+                </div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.
+                </div>
+
+                <div class="card-footer">
+                    <div class="stats">
+                        <div class="reactions">
+                            <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/thumbs_up_facebook.jpg?v=1733340667" class="facebook-like">
+                            <span>900</span>
+                        </div>
+                        <span>10 comments • 12 shares</span>
+                    </div>
+                    <div class="actions">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#666" height="18" width="18" version="1.1" id="Capa_1" viewBox="0 0 471.701 471.701" xml:space="preserve">
+<g>
+	<path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"/>
+</g>
+</svg> Like
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="23" height="23" id="comment">
+  <path fill="#666" d="M25.784 21.017A10.992 10.992 0 0 0 27 16c0-6.065-4.935-11-11-11S5 9.935 5 16s4.935 11 11 11c1.742 0 3.468-.419 5.018-1.215l4.74 1.185a.996.996 0 0 0 .949-.263 1 1 0 0 0 .263-.95l-1.186-4.74zm-2.033.11.874 3.498-3.498-.875a1.006 1.006 0 0 0-.731.098A8.99 8.99 0 0 1 16 25c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9a8.997 8.997 0 0 1-1.151 4.395.995.995 0 0 0-.098.732z"/>
+</svg> Comment
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="23" height="23" id="share">
+  <path fill="#666" d="M6.54 55.08a1.91 1.91 0 0 1-.62-.1 2 2 0 0 1-1.38-2c0-.3 2.06-29.34 31.18-31.62V10.92a2 2 0 0 1 3.43-1.4l19.74 20.16a2 2 0 0 1 0 2.8L39.15 52.64a2 2 0 0 1-3.43-1.4V41c-19.44.74-27.41 13-27.49 13.15a2 2 0 0 1-1.69.93Zm33.18-39.26v7.41a2 2 0 0 1-1.93 2c-18.84.69-25.58 13.24-28 21.31 5-4.32 13.91-9.6 27.81-9.6h.09a2 2 0 0 1 2 2v7.41l15-15.26Z"/>
+</svg> Share
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v3-slider-card">
+                <div class="user-info">
+                    <img src="https://plus.unsplash.com/premium_photo-1688891564708-9b2247085923?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJhbmRvbSUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D" alt="User">
+                    <div class="user-details">
+                        <div class="name">joel</div>
+                        <div class="time">5h ago</div>
+                    </div>
+                </div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.
+                </div>
+
+                <div class="card-footer">
+                    <div class="stats">
+                        <div class="reactions">
+                            <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/thumbs_up_facebook.jpg?v=1733340667" class="facebook-like">
+                            <span>264</span>
+                        </div>
+                        <span>6 comments • 14 shares</span>
+                    </div>
+                    <div class="actions">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#666" height="18" width="18" version="1.1" id="Capa_1" viewBox="0 0 471.701 471.701" xml:space="preserve">
+<g>
+	<path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"/>
+</g>
+</svg> Like
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="23" height="23" id="comment">
+  <path fill="#666" d="M25.784 21.017A10.992 10.992 0 0 0 27 16c0-6.065-4.935-11-11-11S5 9.935 5 16s4.935 11 11 11c1.742 0 3.468-.419 5.018-1.215l4.74 1.185a.996.996 0 0 0 .949-.263 1 1 0 0 0 .263-.95l-1.186-4.74zm-2.033.11.874 3.498-3.498-.875a1.006 1.006 0 0 0-.731.098A8.99 8.99 0 0 1 16 25c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9a8.997 8.997 0 0 1-1.151 4.395.995.995 0 0 0-.098.732z"/>
+</svg> Comment
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="23" height="23" id="share">
+  <path fill="#666" d="M6.54 55.08a1.91 1.91 0 0 1-.62-.1 2 2 0 0 1-1.38-2c0-.3 2.06-29.34 31.18-31.62V10.92a2 2 0 0 1 3.43-1.4l19.74 20.16a2 2 0 0 1 0 2.8L39.15 52.64a2 2 0 0 1-3.43-1.4V41c-19.44.74-27.41 13-27.49 13.15a2 2 0 0 1-1.69.93Zm33.18-39.26v7.41a2 2 0 0 1-1.93 2c-18.84.69-25.58 13.24-28 21.31 5-4.32 13.91-9.6 27.81-9.6h.09a2 2 0 0 1 2 2v7.41l15-15.26Z"/>
+</svg> Share
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v3-slider-card">
+                <div class="user-info">
+                    <img src="https://thumbs.wbm.im/pw/small/6dc1cb1116b972bb2405441d4d590cd2.jpg" alt="User">
+                    <div class="user-details">
+                        <div class="name">Mehul g</div>
+                        <div class="time">5h ago</div>
+                    </div>
+                </div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.
+                </div>
+
+                <div class="card-footer">
+                    <div class="stats">
+                        <div class="reactions">
+                            <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/thumbs_up_facebook.jpg?v=1733340667" class="facebook-like">
+                            <span>1.8k</span>
+                        </div>
+                        <span>8 comments • 18 shares</span>
+                    </div>
+                    <div class="actions">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#666" height="18" width="18" version="1.1" id="Capa_1" viewBox="0 0 471.701 471.701" xml:space="preserve">
+<g>
+	<path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"/>
+</g>
+</svg> Like
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="23" height="23" id="comment">
+  <path fill="#666" d="M25.784 21.017A10.992 10.992 0 0 0 27 16c0-6.065-4.935-11-11-11S5 9.935 5 16s4.935 11 11 11c1.742 0 3.468-.419 5.018-1.215l4.74 1.185a.996.996 0 0 0 .949-.263 1 1 0 0 0 .263-.95l-1.186-4.74zm-2.033.11.874 3.498-3.498-.875a1.006 1.006 0 0 0-.731.098A8.99 8.99 0 0 1 16 25c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9a8.997 8.997 0 0 1-1.151 4.395.995.995 0 0 0-.098.732z"/>
+</svg> Comment
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="23" height="23" id="share">
+  <path fill="#666" d="M6.54 55.08a1.91 1.91 0 0 1-.62-.1 2 2 0 0 1-1.38-2c0-.3 2.06-29.34 31.18-31.62V10.92a2 2 0 0 1 3.43-1.4l19.74 20.16a2 2 0 0 1 0 2.8L39.15 52.64a2 2 0 0 1-3.43-1.4V41c-19.44.74-27.41 13-27.49 13.15a2 2 0 0 1-1.69.93Zm33.18-39.26v7.41a2 2 0 0 1-1.93 2c-18.84.69-25.58 13.24-28 21.31 5-4.32 13.91-9.6 27.81-9.6h.09a2 2 0 0 1 2 2v7.41l15-15.26Z"/>
+</svg> Share
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v3-slider-card">
+                <div class="user-info">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/35af6a41332353.57a1ce913e889.jpg" alt="User">
+                    <div class="user-details">
+                        <div class="name">dustin</div>
+                        <div class="time">5h ago</div>
+                    </div>
+                </div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.
+                </div>
+
+                <div class="card-footer">
+                    <div class="stats">
+                        <div class="reactions">
+                            <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/thumbs_up_facebook.jpg?v=1733340667" class="facebook-like">
+                            <span>2K</span>
+                        </div>
+                        <span>3 comments • 6 shares</span>
+                    </div>
+                    <div class="actions">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#666" height="18" width="18" version="1.1" id="Capa_1" viewBox="0 0 471.701 471.701" xml:space="preserve">
+<g>
+	<path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"/>
+</g>
+</svg> Like
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="23" height="23" id="comment">
+  <path fill="#666" d="M25.784 21.017A10.992 10.992 0 0 0 27 16c0-6.065-4.935-11-11-11S5 9.935 5 16s4.935 11 11 11c1.742 0 3.468-.419 5.018-1.215l4.74 1.185a.996.996 0 0 0 .949-.263 1 1 0 0 0 .263-.95l-1.186-4.74zm-2.033.11.874 3.498-3.498-.875a1.006 1.006 0 0 0-.731.098A8.99 8.99 0 0 1 16 25c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9a8.997 8.997 0 0 1-1.151 4.395.995.995 0 0 0-.098.732z"/>
+</svg> Comment
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="23" height="23" id="share">
+  <path fill="#666" d="M6.54 55.08a1.91 1.91 0 0 1-.62-.1 2 2 0 0 1-1.38-2c0-.3 2.06-29.34 31.18-31.62V10.92a2 2 0 0 1 3.43-1.4l19.74 20.16a2 2 0 0 1 0 2.8L39.15 52.64a2 2 0 0 1-3.43-1.4V41c-19.44.74-27.41 13-27.49 13.15a2 2 0 0 1-1.69.93Zm33.18-39.26v7.41a2 2 0 0 1-1.93 2c-18.84.69-25.58 13.24-28 21.31 5-4.32 13.91-9.6 27.81-9.6h.09a2 2 0 0 1 2 2v7.41l15-15.26Z"/>
+</svg> Share
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v3-slider-card">
+                <div class="user-info">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/570a1745898621.58408191aee7a.jpg" alt="User">
+                    <div class="user-details">
+                        <div class="name">jason T</div>
+                        <div class="time">5h ago</div>
+                    </div>
+                </div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.
+                </div>
+
+                <div class="card-footer">
+                    <div class="stats">
+                        <div class="reactions">
+                            <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/thumbs_up_facebook.jpg?v=1733340667" class="facebook-like">
+                            <span>124</span>
+                        </div>
+                        <span>0 comments • 7 shares</span>
+                    </div>
+                    <div class="actions">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#666" height="18" width="18" version="1.1" id="Capa_1" viewBox="0 0 471.701 471.701" xml:space="preserve">
+<g>
+	<path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"/>
+</g>
+</svg> Like
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="23" height="23" id="comment">
+  <path fill="#666" d="M25.784 21.017A10.992 10.992 0 0 0 27 16c0-6.065-4.935-11-11-11S5 9.935 5 16s4.935 11 11 11c1.742 0 3.468-.419 5.018-1.215l4.74 1.185a.996.996 0 0 0 .949-.263 1 1 0 0 0 .263-.95l-1.186-4.74zm-2.033.11.874 3.498-3.498-.875a1.006 1.006 0 0 0-.731.098A8.99 8.99 0 0 1 16 25c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9a8.997 8.997 0 0 1-1.151 4.395.995.995 0 0 0-.098.732z"/>
+</svg> Comment
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="23" height="23" id="share">
+  <path fill="#666" d="M6.54 55.08a1.91 1.91 0 0 1-.62-.1 2 2 0 0 1-1.38-2c0-.3 2.06-29.34 31.18-31.62V10.92a2 2 0 0 1 3.43-1.4l19.74 20.16a2 2 0 0 1 0 2.8L39.15 52.64a2 2 0 0 1-3.43-1.4V41c-19.44.74-27.41 13-27.49 13.15a2 2 0 0 1-1.69.93Zm33.18-39.26v7.41a2 2 0 0 1-1.93 2c-18.84.69-25.58 13.24-28 21.31 5-4.32 13.91-9.6 27.81-9.6h.09a2 2 0 0 1 2 2v7.41l15-15.26Z"/>
+</svg> Share
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v3-slider-card">
+                <div class="user-info">
+                    <img src="https://i.pinimg.com/236x/46/c5/29/46c529df39a83ddfddd79ef2928acdc8.jpg" alt="User">
+                    <div class="user-details">
+                        <div class="name">Samuel</div>
+                        <div class="time">5h ago</div>
+                    </div>
+                </div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.
+                </div>
+
+                <div class="card-footer">
+                    <div class="stats">
+                        <div class="reactions">
+                            <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/thumbs_up_facebook.jpg?v=1733340667" class="facebook-like">
+                            <span>57</span>
+                        </div>
+                        <span>2 comments • 2 shares</span>
+                    </div>
+                    <div class="actions">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#666" height="18" width="18" version="1.1" id="Capa_1" viewBox="0 0 471.701 471.701" xml:space="preserve">
+<g>
+	<path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"/>
+</g>
+</svg> Like
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="23" height="23" id="comment">
+  <path fill="#666" d="M25.784 21.017A10.992 10.992 0 0 0 27 16c0-6.065-4.935-11-11-11S5 9.935 5 16s4.935 11 11 11c1.742 0 3.468-.419 5.018-1.215l4.74 1.185a.996.996 0 0 0 .949-.263 1 1 0 0 0 .263-.95l-1.186-4.74zm-2.033.11.874 3.498-3.498-.875a1.006 1.006 0 0 0-.731.098A8.99 8.99 0 0 1 16 25c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9a8.997 8.997 0 0 1-1.151 4.395.995.995 0 0 0-.098.732z"/>
+</svg> Comment
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="23" height="23" id="share">
+  <path fill="#666" d="M6.54 55.08a1.91 1.91 0 0 1-.62-.1 2 2 0 0 1-1.38-2c0-.3 2.06-29.34 31.18-31.62V10.92a2 2 0 0 1 3.43-1.4l19.74 20.16a2 2 0 0 1 0 2.8L39.15 52.64a2 2 0 0 1-3.43-1.4V41c-19.44.74-27.41 13-27.49 13.15a2 2 0 0 1-1.69.93Zm33.18-39.26v7.41a2 2 0 0 1-1.93 2c-18.84.69-25.58 13.24-28 21.31 5-4.32 13.91-9.6 27.81-9.6h.09a2 2 0 0 1 2 2v7.41l15-15.26Z"/>
+</svg> Share
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v3-slider-card">
+                <div class="user-info">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ3CKSrBlisr6XIRZEk66RDaBwgP53383vUw&s" alt="User">
+                    <div class="user-details">
+                        <div class="name">Liz B</div>
+                        <div class="time">5h ago</div>
+                    </div>
+                </div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eu nisi pretium viverra.
+                </div>
+
+                <div class="card-footer">
+                    <div class="stats">
+                        <div class="reactions">
+                            <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/thumbs_up_facebook.jpg?v=1733340667" class="facebook-like">
+                            <span>13</span>
+                        </div>
+                        <span>0 comments • 3 shares</span>
+                    </div>
+                    <div class="actions">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#666" height="18" width="18" version="1.1" id="Capa_1" viewBox="0 0 471.701 471.701" xml:space="preserve">
+<g>
+	<path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"/>
+</g>
+</svg> Like
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="23" height="23" id="comment">
+  <path fill="#666" d="M25.784 21.017A10.992 10.992 0 0 0 27 16c0-6.065-4.935-11-11-11S5 9.935 5 16s4.935 11 11 11c1.742 0 3.468-.419 5.018-1.215l4.74 1.185a.996.996 0 0 0 .949-.263 1 1 0 0 0 .263-.95l-1.186-4.74zm-2.033.11.874 3.498-3.498-.875a1.006 1.006 0 0 0-.731.098A8.99 8.99 0 0 1 16 25c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9a8.997 8.997 0 0 1-1.151 4.395.995.995 0 0 0-.098.732z"/>
+</svg> Comment
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="23" height="23" id="share">
+  <path fill="#666" d="M6.54 55.08a1.91 1.91 0 0 1-.62-.1 2 2 0 0 1-1.38-2c0-.3 2.06-29.34 31.18-31.62V10.92a2 2 0 0 1 3.43-1.4l19.74 20.16a2 2 0 0 1 0 2.8L39.15 52.64a2 2 0 0 1-3.43-1.4V41c-19.44.74-27.41 13-27.49 13.15a2 2 0 0 1-1.69.93Zm33.18-39.26v7.41a2 2 0 0 1-1.93 2c-18.84.69-25.58 13.24-28 21.31 5-4.32 13.91-9.6 27.81-9.6h.09a2 2 0 0 1 2 2v7.41l15-15.26Z"/>
+</svg> Share
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="v3-pagination"></div>
+    </div>
+
+<script>
+        const slider = document.getElementById('v3-slider');
+        const pagination = document.getElementById('v3-pagination');
+        const cards = Array.from(slider.children);
+        const cardWidth = cards[0].offsetWidth + 10; // Includes margin
+        const totalWidth = cardWidth * cards.length - 10; // Adjust total width
+        const containerWidth = slider.parentElement.offsetWidth;
+        let currentIndex = 0;
+        let isDragging = false;
+        let startX = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationID;
+
+        const updatePagination = () => {
+            document.querySelectorAll('.v3-pagination-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        };
+
+        const goToSlide = (index) => {
+            currentIndex = index;
+            const maxOffset = Math.max(totalWidth - containerWidth, 0); // Prevent gaps
+            const offset = Math.min(currentIndex * cardWidth, maxOffset);
+            slider.style.transition = 'transform 0.5s ease';
+            slider.style.transform = `translateX(-${offset}px)`;
+            currentTranslate = -offset;
+            prevTranslate = currentTranslate;
+            updatePagination();
+        };
+
+        const createPagination = () => {
+            const totalSlides = cards.length;
+            pagination.innerHTML = '';
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('v3-pagination-dot');
+                dot.innerHTML = '&#8203;'; // Add zero-width space to prevent being treated as empty
+                if (i === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(i));
+                pagination.appendChild(dot);
+            }
+        };
+
+        const autoplay = () => {
+            currentIndex = (currentIndex + 1) % cards.length;
+            goToSlide(currentIndex);
+        };
+
+        // Drag functionality
+        slider.addEventListener('mousedown', startDrag);
+        slider.addEventListener('touchstart', startDrag);
+        slider.addEventListener('mouseup', endDrag);
+        slider.addEventListener('touchend', endDrag);
+        slider.addEventListener('mousemove', drag);
+        slider.addEventListener('touchmove', drag);
+
+        function startDrag(event) {
+            isDragging = true;
+            startX = getPositionX(event);
+            slider.style.transition = 'none';
+            cancelAnimationFrame(animationID);
+        }
+
+        function endDrag() {
+            isDragging = false;
+            const movedBy = currentTranslate - prevTranslate;
+            if (movedBy < -50 && currentIndex < cards.length - 1) {
+                currentIndex++;
+            }
+            if (movedBy > 50 && currentIndex > 0) {
+                currentIndex--;
+            }
+            goToSlide(currentIndex);
+        }
+
+        function drag(event) {
+            if (isDragging) {
+                const currentPosition = getPositionX(event);
+                currentTranslate = prevTranslate + currentPosition - startX;
+                slider.style.transform = `translateX(${currentTranslate}px)`;
+            }
+        }
+
+        function getPositionX(event) {
+            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+        }
+
+        // Create pagination and resize handling
+        createPagination();
+        window.addEventListener('resize', () => {
+            slider.style.transform = 'translateX(0)';
+            currentIndex = 0;
+            updatePagination();
+        });
+
+        // Start autoplay
+        setInterval(autoplay, 3000);
+    </script>
+</body>
+
+</html>

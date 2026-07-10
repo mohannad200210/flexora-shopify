@@ -1,0 +1,52 @@
+<div class = "page-width container center-button">
+<button class="btn btn--secondary scroll-top-the-top" onclick="scrollToTop()">Scroll to the top button</button> 
+</div>
+
+<style>
+.scroll-top-the-top{
+width: max-content;
+margin: auto;
+margin-top: 10px;
+padding: 10px;
+color: #ffffff;
+border-radius: 8px;
+background: linear-gradient(45deg, #1cbcc3,#1cbcc3, #4abf8f,#4abf8f 80%);
+border: 1px solid #2e2f3c;
+}
+.center-button{
+justify-content: center;
+display: flex;
+}
+</style>
+
+<script>
+function scrollToTop() {
+  const duration = 1000; // Adjust this value to control the scroll speed (in milliseconds)
+  const start = window.pageYOffset;
+  const end = 0;
+  const distance = end - start;
+  const startTime = performance.now();
+
+  function easeInOutQuad(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
+
+  function animateScroll() {
+    const currentTime = performance.now();
+    const timeElapsed = currentTime - startTime;
+
+    window.scroll(0, easeInOutQuad(timeElapsed, start, distance, duration));
+
+    if (timeElapsed < duration) {
+      requestAnimationFrame(animateScroll);
+    } else {
+      window.scroll(0, end);
+    }
+  }
+
+  requestAnimationFrame(animateScroll);
+}
+</script>

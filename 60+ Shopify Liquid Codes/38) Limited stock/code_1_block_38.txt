@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limited Stock Banner</title>
+    <style>
+.limited-stock-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #282828;
+    background-color: #fff;
+    line-height: 22px;
+}
+        .limited-stock-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+
+        .limited-stock-text1 {
+            font-weight: bold;
+        }
+
+        .limited-stock-highlight {
+            color: #d74f33;
+        }
+    </style>
+</head>
+<body>
+    <div class="limited-stock-container">
+
+ <div class="dot"><span style="visibility: hidden;">.</span></div>
+        
+        <div>
+            <span class="limited-stock-text1">Limited stock</span>
+            <span class="limited-stock-text2" >Last chance to get this item, <span class="limited-stock-highlight">don't miss out!</span></span>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+          .dot {
+              width: 13px;
+              height: 10px;
+              background-color: #d74f33;
+              border-radius: 50%;
+              margin-right:15px;
+              box-shadow: 0 0 10px #d74f33; /* Initial glow effect */
+              animation: pulse 1.5s infinite; /* Apply pulsing animation */
+          }
+          @keyframes pulse {
+              0% {
+                  box-shadow: 0 0 10px #d74f33;
+                  transform: scale(1);
+              }
+              50% {
+                  box-shadow: 0 0 20px #d74f33;
+                  transform: scale(1);
+              }
+              100% {
+                  box-shadow: 0 0 10px #d74f33;
+                  transform: scale(1);
+              }
+          }
+.limited-stock-text1{
+font-size: 14px;
+line-height: 10px;
+}
+.limited-stock-text2{
+font-size: 14px;
+line-height: 10px;
+}
+</style>

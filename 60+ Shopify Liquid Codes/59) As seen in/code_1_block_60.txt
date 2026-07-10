@@ -1,0 +1,686 @@
+<div as-seen-on='' id='sc-template--17138240979127__as_seen_on_c6jVpW'>
+    <div class='section_wrapper'>
+        <div class='section_title'>
+            <div class='left-divider divider'>
+            </div>
+            As Seen In
+            <div class='right-divider divider'>
+            </div>
+        </div>
+        <div class='logos-wrapper'>
+            <img alt='' class='logo-block' src='//spacegoods.com/cdn/shop/files/marie_1000x.svg?v=1726480688' />
+            <img alt='' class='logo-block' src='//spacegoods.com/cdn/shop/files/equiz_1000x.svg?v=1726480688' />
+            <img alt='' class='logo-block' src='//spacegoods.com/cdn/shop/files/gq_1000x.svg?v=1726480688' />
+            <img alt='' class='logo-block' src='//spacegoods.com/cdn/shop/files/sunday_1000x.svg?v=1726480690' />
+            <img alt='' class='logo-block' src='//spacegoods.com/cdn/shop/files/men_s_health_1000x.svg?v=1726480689' />
+        </div>
+    </div>
+</div>
+
+<style>
+    #sc-template--17138240979127__as_seen_on_c6jVpW .section_wrapper {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #sc-template--17138240979127__as_seen_on_c6jVpW {
+        padding: 18px 64px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(//spacegoods.com/cdn/shop/files/bg_2000x.svg?v=1726480808);
+    }
+
+    #sc-template--17138240979127__as_seen_on_c6jVpW .section_title {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-gap: 32px;
+        margin-bottom: 10px;
+        color: #fff;
+        font-family: 'TAN - MEMORIES';
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -.01em;
+        line-height: 1.4;
+        max-width: 100%;
+    }
+
+    #sc-template--17138240979127__as_seen_on_c6jVpW .logos-wrapper {
+        align-content: center;
+        align-items: center;
+        align-self: stretch;
+        column-gap: 24px;
+        display: flex;
+        max-width: 1200px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-between;
+        margin: 0 70px;
+        position: relative;
+        row-gap: 24px;
+    }
+
+    #sc-template--17138240979127__as_seen_on_c6jVpW .logos-wrapper img {
+        max-height: 40px;
+    }
+
+    #sc-template--17138240979127__as_seen_on_c6jVpW .section_title .divider {
+        position: relative;
+    }
+
+    #sc-template--17138240979127__as_seen_on_c6jVpW .section_title .divider:after {
+        content: '';
+        background: #fff;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: 900px) {
+        #sc-template--17138240979127__as_seen_on_c6jVpW {
+            padding: 16px 24px;
+        }
+        #sc-template--17138240979127__as_seen_on_c6jVpW .logos-wrapper img:nth-child(3) {
+            display: none;
+        }
+        #sc-template--17138240979127__as_seen_on_c6jVpW .logos-wrapper img {
+            max-height: 35px;
+            max-width: 140px;
+            margin: auto;
+        }
+        #sc-template--17138240979127__as_seen_on_c6jVpW .logos-wrapper {
+            margin: 0;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            grid-gap: 16px 64px;
+        }
+        #sc-template--17138240979127__as_seen_on_c6jVpW .section_title {
+            font-size: 18px;
+        }
+    }
+</style>
+<style>
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .section_holder {
+        padding-top: 97px;
+        padding-bottom: 97px;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .section_items .swiper-slide {
+        width: 380px;
+        height: unset;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .red_star {
+        width: 18px;
+        height: 18px;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .red_star svg.instant-icon {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        fill: #ff2277;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .redstars {
+        display: flex;
+        width: 106px;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .section_holder_wrapper {
+        max-width: 1380px;
+        padding: 0 50px;
+        margin: auto;
+        position: relative;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .section_items {
+        overflow: hidden;
+        margin: 0 min(0px, calc(50% - 50vw));
+        padding: 0 calc(50vw - 50%);
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .section_title {
+        color: #101828;
+        font-family: 'TAN - MEMORIES';
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .read_more_btn {
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        position: relative;
+        color: #222;
+        font-family: Apercu Pro;
+        font-size: 18px;
+        height: auto;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .trustpilot_wrapper {
+        color: #222;
+        font-family: Apercu Pro;
+        font-size: 18px;
+        height: auto;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .item_text {
+        color: #101828;
+        font-family: Apercu Pro;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -.02em;
+        line-height: 1.3;
+        margin: 0;
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .review_image {
+        position: relative;
+        height: 180px;
+        width: 180px;
+        margin-right: 10px;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .review_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .section_item {
+        background: #fff;
+        border: 1px solid rgba(0, 0, 1, .1);
+        border-radius: 16px;
+        padding: 15px 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .image_name {
+        display: flex;
+        align-items: center;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .review_name {
+        color: #101828;
+        display: flex;
+        flex-direction: column;
+        font-family: Apercu Pro;
+        font-size: 16px;
+        font-weight: 500;
+        justify-content: flex-start;
+        max-width: 100%;
+        position: relative;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .swiper_prev svg.instant-icon {
+        transform: rotate(0.5turn);
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .swiper_btn svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .swiper_btn {
+        align-items: center;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 1, .1);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        justify-content: center;
+        position: relative;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .swiper_tool {
+        display: flex;
+        width: 96px;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        right: 50px;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .swiper_btn.swiper-button-disabled {
+        pointer-events: none;
+        border: 1px solid #f6f6f6;
+    }
+
+    #shopify-section-template--17138240979127__hp_review_tw_wGwayL .swiper_btn.swiper-button-disabled svg.instant-icon {
+        fill: #abacad;
+    }
+
+    @media screen and (max-width: 900px) {
+        #shopify-section-template--17138240979127__hp_review_tw_wGwayL .section_holder {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+        #shopify-section-template--17138240979127__hp_review_tw_wGwayL .section_items .swiper-slide {
+            width: 300px;
+        }
+        #shopify-section-template--17138240979127__hp_review_tw_wGwayL .section_holder_wrapper {
+            padding: 0 24px;
+        }
+        #shopify-section-template--17138240979127__hp_review_tw_wGwayL .section_title {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        #shopify-section-template--17138240979127__hp_review_tw_wGwayL .trustpilot_wrapper {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        #shopify-section-template--17138240979127__hp_review_tw_wGwayL .read_more_btn {
+            font-size: 15px;
+        }
+        #shopify-section-template--17138240979127__hp_review_tw_wGwayL .item_text {
+            font-size: 13px;
+        }
+        #shopify-section-template--17138240979127__hp_review_tw_wGwayL .review_image {
+            height: 120px;
+            width: 120px;
+        }
+        #shopify-section-template--17138240979127__hp_review_tw_wGwayL .swiper_tool {
+            position: static;
+            margin: auto;
+            margin-top: 25px;
+        }
+    }
+</style>
+<style>
+    #shopify-section-template--17138240979127__homepage-how-to-use .section_holder {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #shopify-section-template--17138240979127__homepage-how-to-use .section_holder_wrapper {
+        padding: 0 80px;
+        max-width: 1360px;
+        margin: auto;
+    }
+
+    #shopify-section-template--17138240979127__homepage-how-to-use .section_title {
+        align-self: stretch;
+        color: #000001;
+        font-family: 'TAN - MEMORIES';
+        font-size: 44px;
+        font-weight: 400;
+        letter-spacing: -.02em;
+        line-height: 1;
+        max-width: 100%;
+        margin-left: 16px;
+        margin-bottom: 48px;
+        text-align: left;
+    }
+
+    #shopify-section-template--17138240979127__homepage-how-to-use .section_items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 32px;
+    }
+
+    #shopify-section-template--17138240979127__homepage-how-to-use .setion_item {
+        min-width: 1px;
+        width: 100%;
+    }
+
+    #shopify-section-template--17138240979127__homepage-how-to-use .item_image {
+        padding-top: 500px;
+        position: relative;
+        margin-bottom: 24px;
+    }
+
+    #shopify-section-template--17138240979127__homepage-how-to-use .item_title {
+        font-family: 'TAN - MEMORIES';
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    #shopify-section-template--17138240979127__homepage-how-to-use .item_text {
+        align-self: stretch;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        font-family: Apercu;
+        font-size: 22px;
+        font-weight: 400;
+        justify-content: flex-start;
+        letter-spacing: -.01em;
+        line-height: 1.5;
+        max-width: 100%;
+        position: relative;
+    }
+
+    #shopify-section-template--17138240979127__homepage-how-to-use .item_image img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 1024px) {
+        #shopify-section-template--17138240979127__homepage-how-to-use .section_items {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        #shopify-section-template--17138240979127__homepage-how-to-use .section_holder_wrapper {
+            padding: 0 24px;
+        }
+        #shopify-section-template--17138240979127__homepage-how-to-use .section_title {
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+        #shopify-section-template--17138240979127__homepage-how-to-use .item_image {
+            padding-top: 112%;
+            max-height: 400px;
+        }
+        #shopify-section-template--17138240979127__homepage-how-to-use .item_title {
+            font-size: 26px;
+            line-height: 31px;
+            letter-spacing: 0.005em;
+        }
+        #shopify-section-template--17138240979127__homepage-how-to-use .item_text {
+            font-size: 18px;
+        }
+    }
+</style>
+<style>
+    #sc-template--17138240979127__homepage_banner_9UjpQc .bar_message {
+        height: 42px;
+        color: #fff;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        display: flex;
+        font-family: 'Apercu Pro';
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
+        max-width: 100%;
+        position: relative;
+        text-align: center;
+        background-image: url(//spacegoods.com/cdn/shop/files/screenshot-at-may-23-14-46-56_2000x.webp?v=1726479125);
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .section_desc p {
+        margin: 0;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .bg_wrapper {
+        align-items: center;
+        align-self: stretch;
+        column-gap: 0;
+        display: flex;
+        flex-direction: column;
+        height: 560px;
+        justify-content: center;
+        margin: 0;
+        min-height: auto;
+        padding: 90px 80px;
+        position: relative;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .bg_images img {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .bg_content {
+        align-items: flex-start;
+        display: flex;
+        flex-basis: 0%;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        justify-content: center;
+        max-width: 100%;
+        min-height: 100px;
+        position: relative;
+        row-gap: 4px;
+        width: 1200px;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .section_title {
+        align-self: stretch;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        font-family: 'TAN - MEMORIES';
+        font-size: 48px;
+        font-weight: 400;
+        height: auto;
+        justify-content: flex-start;
+        letter-spacing: .02em;
+        line-height: 1.4;
+        margin: 10px 0;
+        max-width: 400px;
+        padding: 0;
+        position: relative;
+        text-align: left;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .section_desc {
+        align-self: stretch;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Apercu';
+        font-weight: 400;
+        height: auto;
+        justify-content: flex-start;
+        line-height: 1.5;
+        font-size: 15px;
+        max-width: 400px;
+        padding: 10px 0;
+        position: relative;
+        text-align: left;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .section_desc * {
+        margin: 0;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .review_text * {
+        margin: 0;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .review_text {
+        align-self: stretch;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Apercu';
+        font-weight: 400;
+        height: auto;
+        justify-content: flex-start;
+        line-height: 1.5;
+        position: relative;
+        margin-bottom: 16px;
+        text-align: left;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .section_button {
+        align-items: center;
+        background: #f27;
+        border-radius: 10px 10px 10px 10px;
+        column-gap: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 14px 24px;
+        position: relative;
+        text-decoration: none;
+        row-gap: 16px;
+        transition-duration: 50ms;
+        transition-property: color, background-color, fill, opacity, transform, border, box-shadow;
+        transition-timing-function: ease-in-out;
+        color: #fff;
+        display: flex;
+        font-family: 'Apercu Pro';
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: .04em;
+        line-height: 1.4;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .section_button svg {
+        color: #fff;
+        height: 20px;
+        position: relative;
+        width: 20px;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .bar_message * {
+        margin: 0;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .section_title * {
+        margin: 0;
+        font-family: 'TAN - MEMORIES';
+        font-size: 48px;
+        font-weight: 400;
+        letter-spacing: .02em;
+        line-height: 1.4;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .section_button:hover {
+        background-color: #000;
+    }
+
+    #sc-template--17138240979127__homepage_banner_9UjpQc .section_button .icon-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 901px) {
+        #sc-template--17138240979127__homepage_banner_9UjpQc .mobile_bg {
+            display: none !important;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        #sc-template--17138240979127__homepage_banner_9UjpQc .desktop_bg {
+            display: none !important;
+        }
+        #sc-template--17138240979127__homepage_banner_9UjpQc .section_title * {
+            align-self: stretch;
+            font-size: 42px;
+            text-align: center;
+            width: auto;
+        }
+        #sc-template--17138240979127__homepage_banner_9UjpQc .bg_wrapper {
+            align-self: stretch;
+            padding: 32px 24px;
+            width: auto;
+        }
+        #sc-template--17138240979127__homepage_banner_9UjpQc .bar_message {
+            font-size: 16px;
+        }
+        #sc-template--17138240979127__homepage_banner_9UjpQc .section_desc {
+            display: none;
+        }
+        #sc-template--17138240979127__homepage_banner_9UjpQc .section_title {
+            align-self: stretch;
+            font-size: 42px;
+            margin: 0 0 290px;
+            text-align: center;
+            width: auto;
+        }
+        #sc-template--17138240979127__homepage_banner_9UjpQc .review_text {
+            align-self: stretch;
+            color: #000;
+            margin: 0 0 10px;
+            padding: 0 20px;
+            text-align: center;
+            width: auto;
+        }
+        #sc-template--17138240979127__homepage_banner_9UjpQc .section_button {
+            align-self: stretch;
+        }
+    }
+</style>
+<style>
+    #sc-template--17138240979127__autoscrolling_text_9DGHnt {
+        padding: 16px 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(//spacegoods.com/cdn/shop/files/bg_2000x.svg?v=1726480808);
+    }
+
+    #sc-template--17138240979127__autoscrolling_text_9DGHnt .text-wrapper {
+        align-items: center;
+        display: flex;
+        color: #fff;
+        font-family: 'Apercu Pro';
+        font-size: 16px;
+        font-weight: 700;
+        width: fit-content;
+        position: relative;
+        animation: auto-scroll 60s linear infinite;
+    }
+
+    #sc-template--17138240979127__autoscrolling_text_9DGHnt .section_wrapper {
+        overflow: hidden;
+    }
+
+    #sc-template--17138240979127__autoscrolling_text_9DGHnt .block-text {
+        white-space: nowrap;
+        margin: 0 16px;
+    }
+
+    @keyframes auto-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        #sc-template--17138240979127__autoscrolling_text_9DGHnt {
+            padding: 16px 0;
+        }
+    }
+</style>

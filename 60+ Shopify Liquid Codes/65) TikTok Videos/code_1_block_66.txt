@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Video Viewer</title>
+    <style>
+        .slider-containerv8 {
+            position: relative;
+            width: 100%;
+            overflow-x: scroll;
+            display: flex;
+            align-items: center;
+            scroll-snap-type: x mandatory;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px 10px;
+        }
+
+        .sliderv8 {
+            display: flex;
+            gap: 10px;
+            scroll-snap-type: x mandatory;
+
+        }
+
+        .slidev8 {
+            flex: 0 0 60%;
+            max-width: 360px;
+            scroll-snap-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+        @media screen and (min-width: 769px){
+                .slidev8 {
+            flex: 0 0 50%;
+            max-width: 260px;
+            scroll-snap-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+        }
+
+        .tiktok-videov8 {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 9 / 16;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .play-buttonv8,
+        .pause-buttonv8 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10;
+
+        }
+
+        .play-buttonv8 {
+            display: flex;
+margin-left: 2px;
+        }
+
+        .pause-buttonv8 {
+            display: none;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        .pause-buttonv8.hiddenv8 {
+            opacity: 0;
+        }
+
+        .slider-containerv8::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .slider-containerv8::-webkit-scrollbar-thumb {
+            background: #aaa;
+            border-radius: 10px;
+        }
+
+        .slider-containerv8::-webkit-scrollbar-track {
+            background: #ddd;
+        }
+          .with-borderv8 {
+ padding: 4px;
+    border-radius: 10px;
+background: linear-gradient(0deg, #fe2d52, #28ffff);
+  }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll(".slidev8");
+
+            slides.forEach(slide => {
+                const playButton = slide.querySelector(".play-buttonv8");
+                const pauseButton = slide.querySelector(".pause-buttonv8");
+                const video = slide.querySelector("video");
+
+                let hidePauseButtonTimeout;
+
+                const showPauseButton = () => {
+                    pauseButton.classList.remove("hiddenv8");
+                    clearTimeout(hidePauseButtonTimeout);
+                    hidePauseButtonTimeout = setTimeout(() => {
+                        pauseButton.classList.add("hiddenv8");
+                    }, 1000);
+                };
+
+                playButton.addEventListener("click", () => {
+                    // Pause other videos
+                    document.querySelectorAll("video").forEach(v => {
+                        if (v !== video) {
+                            v.pause();
+                            v.classList.remove("playingv8");
+                        }
+                    });
+
+                    // Play selected video
+                    video.play();
+                    video.classList.add("playingv8");
+                    playButton.style.display = "none";
+                    pauseButton.style.display = "flex";
+                    showPauseButton();
+                });
+
+                pauseButton.addEventListener("click", () => {
+                    video.pause();
+                    video.classList.remove("playingv8");
+                    playButton.style.display = "flex";
+                    pauseButton.style.display = "none";
+                });
+
+                video.addEventListener("mousemove", showPauseButton);
+                video.addEventListener("click", showPauseButton);
+
+                video.addEventListener("play", () => {
+                    playButton.style.display = "none";
+                    pauseButton.style.display = "flex";
+                    showPauseButton();
+                });
+
+                video.addEventListener("pause", () => {
+                    playButton.style.display = "flex";
+                    pauseButton.style.display = "none";
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="slider-containerv8">
+        <div class="sliderv8">
+            <div class="slidev8">
+               <div class = "with-borderv8">
+                <video class = "tiktok-videov8">
+                    <source src="https://cdn.shopify.com/videos/c/o/v/49f49e5ff92f404b89bdedd6fc371077.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+                <div class="pause-buttonv8 hiddenv8">❚❚</div>
+                <div class="play-buttonv8">▷</div>
+            </div>
+            <div class="slidev8">
+                <div class = "with-borderv8">
+                <video class = "tiktok-videov8">
+                    <source src= "https://cdn.shopify.com/videos/c/o/v/d4dfdd955f2840b1b63b223ecc77cafd.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+                <div class="pause-buttonv8 hiddenv8">❚❚</div>
+                <div class="play-buttonv8">▷</div>
+            </div>
+            <div class="slidev8">
+                <div class = "with-borderv8">
+                <video class = "tiktok-videov8">
+                    
+                    <source src="https://cdn.shopify.com/videos/c/o/v/171162a47d1b44f1a042656ad7f85d02.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+                <div class="pause-buttonv8 hiddenv8">❚❚</div>
+                <div class="play-buttonv8">▷</div>
+            </div>
+            <div class="slidev8">
+                <div class = "with-borderv8">
+                <video class = "tiktok-videov8">
+                    <source src="https://cdn.shopify.com/videos/c/o/v/d8d1ca1c53114802a2d840e57fcd7e75.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+                <div class="pause-buttonv8 hiddenv8">❚❚</div>
+                <div class="play-buttonv8">▷</div>
+            </div>
+            <div class="slidev8">
+                <div class = "with-borderv8">
+                <video class = "tiktok-videov8">
+                    <source src="https://cdn.shopify.com/videos/c/o/v/354c7787f58b457a90f0f0f8751470d4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+                <div class="pause-buttonv8 hiddenv8">❚❚</div>
+                <div class="play-buttonv8">▷</div>
+            </div>
+            <div class="slidev8">
+                <div class = "with-borderv8">
+                <video class = "tiktok-videov8">
+                    <source src="https://cdn.shopify.com/videos/c/o/v/38d2b924b27e425d939ddba898550c3c.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+                <div class="pause-buttonv8 hiddenv8">❚❚</div>
+                <div class="play-buttonv8">▷</div>
+            </div>
+            <div class="slidev8">
+                <div class = "with-borderv8">
+                <video class = "tiktok-videov8">
+                    <source src="https://cdn.shopify.com/videos/c/o/v/f9070d05630d4a73aa7c4c6133e21748.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+                <div class="pause-buttonv8 hiddenv8">❚❚</div>
+                <div class="play-buttonv8">▷</div>
+            </div>
+            <div class="slidev8">
+                <div class = "with-borderv8">
+                <video class = "tiktok-videov8">
+                    <source src="https://cdn.shopify.com/videos/c/o/v/7b2f0f5c16c147769a931b8352840c80.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+                <div class="pause-buttonv8 hiddenv8">❚❚</div>
+                <div class="play-buttonv8">▷</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

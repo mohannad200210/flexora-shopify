@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slider</title>
+    <style>
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            background-color: #f05454;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .user-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+.user-name {
+    font-weight: bold;
+    color: #13152f;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 22px;
+}
+.reviewing {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+        .rating-inline {
+            font-size: 16px;
+            color: #f7d131;
+        }
+
+.verified-badge {
+    color: #42a5f5;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+        .verified-badge img {
+            width: 13px;
+            height: 13px;
+        }
+
+        .product-review {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .product-image {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border: 2px dashed #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .rating {
+            font-size: 24px;
+            color: #f7d131;
+            margin-top: 10px;
+        }
+
+        .description {
+            font-size: 13px;
+            color: #555;
+            text-align: left;
+            line-height: 22px;
+        }
+        #v2-slider-container {
+            overflow: hidden;
+            position: relative;
+padding: 20px 5px;
+max-width: 1500px;
+margin-right: auto;
+margin-left: auto;
+        }
+
+        #v2-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .v2-slider-card {
+            flex: 0 0 80%;
+            max-width: 300px;
+            height: 180px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            gap: 10px;
+            transition: transform 0.3s ease;
+justify-content: space-around;
+margin-right: 10px;
+        }
+
+        .v2-slider-card:hover{
+            transform: translateY(-5px);
+        }
+
+        #v2-pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+.v2-pagination-dot {
+    width: 18px;
+    height: 6px;
+    background-color: #0d437d29;
+    cursor: pointer;
+   }
+
+        .v2-pagination-dot.active {
+            background-color: #f05454;
+width: 22px;
+border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="v2-slider-container">
+        <div id="v2-slider">
+            <div class="v2-slider-card"> 
+                        <div class="user-info">
+                            <div class="user-avatar">JH</div>
+                            <div class="user-details">
+                                <div class="user-name">Name here <span class="rating-inline">★★★★★</span></div>
+                                <div class="verified-badge">
+                                    Verified Buyer <img src="https://cdn3.emoji.gg/emojis/9796-verified.png" alt="Verified">
+                                </div>
+                            </div>
+                        </div>
+             <div class="product-review">
+                     <img class="product-image" src="https://via.placeholder.com/50" alt="Product">
+                    <div class="reviewing">Reviewing <br> <strong>Product name goes here</strong></div>
+            </div>
+                        <div class="description">Review goes here for product name goes here</div>
+            </div>
+                        <div class="v2-slider-card"> 
+                        <div class="user-info">
+                            <div class="user-avatar">JH</div>
+                            <div class="user-details">
+                                <div class="user-name">Name here <span class="rating-inline">★★★★★</span></div>
+                                <div class="verified-badge">
+                                    Verified Buyer <img src="https://cdn3.emoji.gg/emojis/9796-verified.png" alt="Verified">
+                                </div>
+                            </div>
+                        </div>
+             <div class="product-review">
+                     <img class="product-image" src="https://via.placeholder.com/50" alt="Product">
+                    <div class="reviewing">Reviewing <br> <strong>Product name goes here</strong></div>
+            </div>
+                        <div class="description">Review goes here for product name goes here</div>
+            </div>
+                        <div class="v2-slider-card"> 
+                        <div class="user-info">
+                            <div class="user-avatar">JH</div>
+                            <div class="user-details">
+                                <div class="user-name">Name here <span class="rating-inline">★★★★★</span></div>
+                                <div class="verified-badge">
+                                    Verified Buyer <img src="https://cdn3.emoji.gg/emojis/9796-verified.png" alt="Verified">
+                                </div>
+                            </div>
+                        </div>
+             <div class="product-review">
+                     <img class="product-image" src="https://via.placeholder.com/50" alt="Product">
+                    <div class="reviewing">Reviewing <br> <strong>Product name goes here</strong></div>
+            </div>
+                        <div class="description">Review goes here for product name goes here</div>
+            </div>
+                        <div class="v2-slider-card"> 
+                        <div class="user-info">
+                            <div class="user-avatar">JH</div>
+                            <div class="user-details">
+                                <div class="user-name">Name here <span class="rating-inline">★★★★★</span></div>
+                                <div class="verified-badge">
+                                    Verified Buyer <img src="https://cdn3.emoji.gg/emojis/9796-verified.png" alt="Verified">
+                                </div>
+                            </div>
+                        </div>
+             <div class="product-review">
+                     <img class="product-image" src="https://via.placeholder.com/50" alt="Product">
+                    <div class="reviewing">Reviewing <br> <strong>Product name goes here</strong></div>
+            </div>
+                        <div class="description">Review goes here for product name goes here</div>
+            </div>
+                        <div class="v2-slider-card"> 
+                        <div class="user-info">
+                            <div class="user-avatar">JH</div>
+                            <div class="user-details">
+                                <div class="user-name">Name here <span class="rating-inline">★★★★★</span></div>
+                                <div class="verified-badge">
+                                    Verified Buyer <img src="https://cdn3.emoji.gg/emojis/9796-verified.png" alt="Verified">
+                                </div>
+                            </div>
+                        </div>
+             <div class="product-review">
+                     <img class="product-image" src="https://via.placeholder.com/50" alt="Product">
+                    <div class="reviewing">Reviewing <br> <strong>Product name goes here</strong></div>
+            </div>
+                        <div class="description">Review goes here for product name goes here</div>
+            </div>
+                        <div class="v2-slider-card"> 
+                        <div class="user-info">
+                            <div class="user-avatar">JH</div>
+                            <div class="user-details">
+                                <div class="user-name">Name here <span class="rating-inline">★★★★★</span></div>
+                                <div class="verified-badge">
+                                    Verified Buyer <img src="https://cdn3.emoji.gg/emojis/9796-verified.png" alt="Verified">
+                                </div>
+                            </div>
+                        </div>
+             <div class="product-review">
+                     <img class="product-image" src="https://via.placeholder.com/50" alt="Product">
+                    <div class="reviewing">Reviewing <br> <strong>Product name goes here</strong></div>
+            </div>
+                        <div class="description">Review goes here for product name goes here</div>
+            </div>
+                        <div class="v2-slider-card"> 
+                        <div class="user-info">
+                            <div class="user-avatar">JH</div>
+                            <div class="user-details">
+                                <div class="user-name">Name here <span class="rating-inline">★★★★★</span></div>
+                                <div class="verified-badge">
+                                    Verified Buyer <img src="https://cdn3.emoji.gg/emojis/9796-verified.png" alt="Verified">
+                                </div>
+                            </div>
+                        </div>
+             <div class="product-review">
+                     <img class="product-image" src="https://via.placeholder.com/50" alt="Product">
+                    <div class="reviewing">Reviewing <br> <strong>Product name goes here</strong></div>
+            </div>
+                        <div class="description">Review goes here for product name goes here</div>
+            </div>
+                        <div class="v2-slider-card"> 
+                        <div class="user-info">
+                            <div class="user-avatar">JH</div>
+                            <div class="user-details">
+                                <div class="user-name">Name here <span class="rating-inline">★★★★★</span></div>
+                                <div class="verified-badge">
+                                    Verified Buyer <img src="https://cdn3.emoji.gg/emojis/9796-verified.png" alt="Verified">
+                                </div>
+                            </div>
+                        </div>
+             <div class="product-review">
+                     <img class="product-image" src="https://via.placeholder.com/50" alt="Product">
+                    <div class="reviewing">Reviewing <br> <strong>Product name goes here</strong></div>
+            </div>
+                        <div class="description">Review goes here for product name goes here</div>
+            </div>
+        </div>
+        <div id="v2-pagination"></div>
+    </div>
+
+    <script>
+        class ResponsiveSlider {
+            constructor(containerId, sliderId, paginationId) {
+                this.container = document.getElementById(containerId);
+                this.slider = document.getElementById(sliderId);
+                this.pagination = document.getElementById(paginationId);
+                this.cards = Array.from(this.slider.children);
+                this.cardWidth = this.cards[0].offsetWidth + 10; // Includes margin
+                this.totalWidth = this.cardWidth * this.cards.length - 10; // Adjust total width
+                this.containerWidth = this.slider.parentElement.offsetWidth;
+                this.currentIndex = 0;
+                this.isDragging = false;
+                this.startX = 0;
+                this.currentTranslate = 0;
+                this.prevTranslate = 0;
+                this.animationID = null;
+
+                this.init();
+            }
+
+            init() {
+                this.createPagination();
+                this.addEventListeners();
+                this.startAutoplay();
+            }
+
+            updatePagination() {
+                this.pagination.querySelectorAll('.v2-pagination-dot').forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentIndex);
+                });
+            }
+
+            goToSlide(index) {
+                this.currentIndex = index;
+                const maxOffset = Math.max(this.totalWidth - this.containerWidth, 0); // Prevent gaps
+                const offset = Math.min(this.currentIndex * this.cardWidth, maxOffset);
+                this.slider.style.transition = 'transform 0.5s ease';
+                this.slider.style.transform = `translateX(-${offset}px)`;
+                this.currentTranslate = -offset;
+                this.prevTranslate = this.currentTranslate;
+                this.updatePagination();
+            }
+
+            createPagination() {
+                const totalSlides = this.cards.length;
+                this.pagination.innerHTML = '';
+                for (let i = 0; i < totalSlides; i++) {
+                    const dot = document.createElement('div');
+                    dot.classList.add('v2-pagination-dot');
+                    dot.innerHTML = '&#8203;'; // Add zero-width space to prevent being treated as empty
+                    if (i === 0) dot.classList.add('active');
+                    dot.addEventListener('click', () => this.goToSlide(i));
+                    this.pagination.appendChild(dot);
+                }
+            }
+
+            autoplay() {
+                this.currentIndex = (this.currentIndex + 1) % this.cards.length;
+                this.goToSlide(this.currentIndex);
+            }
+
+            startAutoplay() {
+                setInterval(() => this.autoplay(), 3000);
+            }
+
+            startDrag(event) {
+                this.isDragging = true;
+                this.startX = this.getPositionX(event);
+                this.slider.style.transition = 'none';
+                cancelAnimationFrame(this.animationID);
+            }
+
+            endDrag() {
+                this.isDragging = false;
+                const movedBy = this.currentTranslate - this.prevTranslate;
+                if (movedBy < -50 && this.currentIndex < this.cards.length - 1) {
+                    this.currentIndex++;
+                }
+                if (movedBy > 50 && this.currentIndex > 0) {
+                    this.currentIndex--;
+                }
+                this.goToSlide(this.currentIndex);
+            }
+
+            drag(event) {
+                if (this.isDragging) {
+                    const currentPosition = this.getPositionX(event);
+                    this.currentTranslate = this.prevTranslate + currentPosition - this.startX;
+                    this.slider.style.transform = `translateX(${this.currentTranslate}px)`;
+                }
+            }
+
+            getPositionX(event) {
+                return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+            }
+
+            addEventListeners() {
+                this.slider.addEventListener('mousedown', (e) => this.startDrag(e));
+                this.slider.addEventListener('touchstart', (e) => this.startDrag(e));
+                this.slider.addEventListener('mouseup', () => this.endDrag());
+                this.slider.addEventListener('touchend', () => this.endDrag());
+                this.slider.addEventListener('mousemove', (e) => this.drag(e));
+                this.slider.addEventListener('touchmove', (e) => this.drag(e));
+                window.addEventListener('resize', () => {
+                    this.slider.style.transform = 'translateX(0)';
+                    this.currentIndex = 0;
+                    this.updatePagination();
+                });
+            }
+        }
+
+        // Initialize slider
+        new ResponsiveSlider('v2-slider-container', 'v2-slider', 'v2-pagination');
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<div id="shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB" class="shopify-section">
+
+
+<style>
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .section_holder {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .section_holder_wrapper {
+        display: flex;
+        max-width: 1360px;
+        margin: auto;
+        padding: 0 80px;
+        min-height: 200px;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .left_part {
+        min-width: 1px;
+        width: 100%;
+        margin-right: 80px;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .right_part {
+        min-width: 1px;
+        width: 100%;
+    }
+    [data-subject] {
+        display: none;
+    }
+    [data-subject='Coffee'] {
+        display: block;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .seciton_title {
+      color: #000001;
+      font-family: 'TAN - MEMORIES';
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 22px;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .sction_subheading {
+        color: #000;
+        font-family: Apercu Pro;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: -0.2px;
+        margin-bottom: 40px;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .section_items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px 22px;
+        margin-bottom: 56px;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .item_text {
+        align-self: stretch;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        font-family: Apercu Pro;
+        font-size: 18px;
+        font-weight: 500;
+        justify-content: flex-start;
+        letter-spacing: -.01em;
+        line-height: 1.5;
+        max-width: 100%;
+        position: relative;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .item_image {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .right_part img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .section_btn {
+        align-items: center;
+        background: #f27;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 0;
+        column-gap: 12px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 16px 0 0;
+        padding: 16px 32px;
+        position: relative;
+        row-gap: 12px;
+        transition-duration: 50ms;
+        transition-timing-function: ease-in-out;
+        width: fit-content;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-family: Apercu Pro;
+        font-size: 20px;
+        font-weight: 700;
+        justify-content: center;
+        letter-spacing: -.01em;
+        line-height: 1.4;
+        position: relative;
+        text-decoration: none;
+    }
+    #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .section_btn:hover {
+        background: #000;
+        border-style: solid;
+        border-width: 0;
+    }
+    @media screen and (max-width: 900px) {
+      #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .section_holder_wrapper {
+          flex-direction: column-reverse;
+      }
+      #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .left_part {
+          margin-right: 0;
+          margin-top: 30px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .section_btn {
+          width: 100%;
+      }
+      #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .section_holder_wrapper {
+        padding: 0 48px;
+      }
+    }
+    @media screen and (max-width: 575px) {
+      #shopify-section-template--17389125894327__pdp_quality_guarantee_v3_n63jFB .section_holder_wrapper {
+        padding: 0 24px;
+      }
+    }
+</style>
+
+<div pdp_q_guarantee="" class="section_holder">
+    <div class="section_holder_wrapper">
+      <div class="left_part">
+        <div class="seciton_title">Quality guarantee -</div>
+        <div class="sction_subheading">two of our core brand values are quality &amp; trust, which is why everything we do is built on a foundation of excellence &amp; transparency. Our products are -</div>
+        <div class="section_items">
+          <div class="section_item">
+            <div class="item_image">
+              <img src="//spacegoods.com/cdn/shop/t/346/assets/icon_bud.svg?v=139630195289706213671722621925" alt="icon_bud">
+            </div>
+            <div class="item_text">
+              100% fruiting body of the mushroom
+            </div>
+          </div>
+          <div class="section_item">
+            <div class="item_image">
+              <img src="//spacegoods.com/cdn/shop/t/346/assets/icon_flag.svg?v=154114963166449663751722621934" alt="Flag">
+            </div>
+            <div class="item_text">
+              Proudly made in England
+            </div>
+          </div>
+          <div class="section_item">
+            <div class="item_image">
+              <img src="//spacegoods.com/cdn/shop/t/346/assets/icon_pointed.svg?v=139022816020327971601722621943" alt="pointed">
+            </div>
+            <div class="item_text">
+              Dual extracted
+            </div>
+          </div>
+          <div class="section_item">
+            <div class="item_image">
+              <img src="//spacegoods.com/cdn/shop/t/346/assets/icon_plasc.svg?v=77407900391982634181722621923" alt="plasc">
+            </div>
+            <div class="item_text">
+              Third party tested
+            </div>
+          </div>
+          
+        </div>
+        <a href="https://spacegoods.com/pages/science" class="section_btn">Read more here -</a>
+      </div>
+      <div class="right_part">
+        
+          <img src="//spacegoods.com/cdn/shop/files/choc_cup_2000x.webp?v=1720521348" alt="Image" data-flavor="Coffee">
+        
+          <img src="//spacegoods.com/cdn/shop/files/choc_cup_2000x.webp?v=1720521348" alt="Image" data-flavor="Chocolate" style="display: none;">
+        
+          <img src="//spacegoods.com/cdn/shop/files/rainbow-dust-vanilla-cinnamon-travel-pack-Spacegoods-59366555_2000x.webp?v=1729941007" alt="Image" data-flavor="Vanilla Cinnamon" style="display: none;">
+        
+          <img src="//spacegoods.com/cdn/shop/files/Screenshot_2024-07-22_at_21.10.06_2000x.png?v=1721813805" alt="Image" data-flavor="Strawberry" style="display: none;">
+        
+          <img src="//spacegoods.com/cdn/shop/files/choc_cup_2000x.webp?v=1720521348" alt="Image" data-flavor="Raw Chocolate (Decaf)" style="display: none;">
+        
+      </div>
+    </div>
+</div>
+<script>
+
+</script>
+
+</div>

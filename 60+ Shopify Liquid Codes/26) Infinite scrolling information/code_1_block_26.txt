@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcement Bar with Infinite Scroll</title>
+    <style>
+        .unique-announcement-bar-v1 {
+            width: 100%;
+            padding: 20px 0;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #2e2f3c;
+            border-left: none;
+            border-right: none;
+            background-color: #f9f9f9;
+justify-content: center;
+align-items: center;
+        }
+
+.helps-with-text {
+    text-align: center;
+    font-weight: 500;
+    color: #2e2f3c;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+        .unique-announcement-wrapper-v1 {
+            display: flex;
+            white-space: nowrap;
+            animation: scroll-left 15s linear infinite;
+        }
+
+        .unique-announcement-text-v1 {
+            color: #2e2f3c;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 25px;
+            letter-spacing: -0.5px;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .unique-announcement-wrapper-v1 {
+                animation: scroll-left 12s linear infinite;
+            }
+            .unique-announcement-text-v1 {
+                font-size: 20px;
+            }
+            .helps-with-text {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="unique-announcement-bar-v1">
+<span class="helps-with-text">NO MORE</span>
+        <div class="unique-announcement-wrapper-v1">
+            <div class="unique-announcement-text-v1">LESS TANGLES </div> 
+            <div class="unique-announcement-text-v1"> - </div> 
+            <div class="unique-announcement-text-v1">LESS ACNES</div>
+            <div class="unique-announcement-text-v1"> - </div> 
+            <div class="unique-announcement-text-v1">IRRITATED SKIN</div>
+            <div class="unique-announcement-text-v1"> - </div>             
+            <div class="unique-announcement-text-v1">PSORIASIS</div>
+            <div class="unique-announcement-text-v1"> - </div>            
+            <div class="unique-announcement-text-v1">HARD WATER</div>
+            <div class="unique-announcement-text-v1"> - </div>  
+            <!-- Repeated content for seamless scrolling -->
+            <div class="unique-announcement-text-v1">LESS TANGLES </div> 
+            <div class="unique-announcement-text-v1"> - </div> 
+            <div class="unique-announcement-text-v1">LESS ACNES</div>
+            <div class="unique-announcement-text-v1"> - </div> 
+            <div class="unique-announcement-text-v1">IRRITATED SKIN</div>
+            <div class="unique-announcement-text-v1"> - </div>             
+            <div class="unique-announcement-text-v1">PSORIASIS</div>
+            <div class="unique-announcement-text-v1"> - </div>            
+            <div class="unique-announcement-text-v1">HARD WATER</div>
+            <div class="unique-announcement-text-v1"> - </div>
+ <div class="unique-announcement-text-v1">LESS TANGLES </div> 
+            <div class="unique-announcement-text-v1"> - </div> 
+            <div class="unique-announcement-text-v1">LESS ACNES</div>
+            <div class="unique-announcement-text-v1"> - </div> 
+            <div class="unique-announcement-text-v1">IRRITATED SKIN</div>
+            <div class="unique-announcement-text-v1"> - </div>             
+            <div class="unique-announcement-text-v1">PSORIASIS</div>
+            <div class="unique-announcement-text-v1"> - </div>            
+            <div class="unique-announcement-text-v1">HARD WATER</div>
+ <div class="unique-announcement-text-v1">LESS TANGLES </div> 
+            <div class="unique-announcement-text-v1"> - </div> 
+            <div class="unique-announcement-text-v1">LESS ACNES</div>
+            <div class="unique-announcement-text-v1"> - </div> 
+            <div class="unique-announcement-text-v1">IRRITATED SKIN</div>
+            <div class="unique-announcement-text-v1"> - </div>             
+            <div class="unique-announcement-text-v1">PSORIASIS</div>
+            <div class="unique-announcement-text-v1"> - </div>            
+            <div class="unique-announcement-text-v1">HARD WATER</div>
+ <div class="unique-announcement-text-v1">LESS TANGLES </div> 
+            <div class="unique-announcement-text-v1"> - </div> 
+            <div class="unique-announcement-text-v1">LESS ACNES</div>
+            <div class="unique-announcement-text-v1"> - </div> 
+            <div class="unique-announcement-text-v1">IRRITATED SKIN</div>
+            <div class="unique-announcement-text-v1"> - </div>             
+            <div class="unique-announcement-text-v1">PSORIASIS</div>
+            <div class="unique-announcement-text-v1"> - </div>            
+            <div class="unique-announcement-text-v1">HARD WATER</div>
+        </div>
+    </div>
+</body>
+</html>

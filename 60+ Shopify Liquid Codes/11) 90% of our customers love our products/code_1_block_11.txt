@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Stats Chart</title>
+    <style>
+            .circular-chart {
+            position: relative;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: conic-gradient(
+                from 0deg,
+                #1cbcc3 0%,
+                #4abf8f calc(var(--percentage) / 2),
+                #66bb6a var(--percentage),
+                #ccc 0%
+            );
+        }
+        .circular-chart::after {
+            content: "";
+            position: absolute;
+            top: 11%;
+            left: 11%;
+            width: 77%;
+            height: 77%;
+            background: white;
+            border-radius: 50%;
+        }
+        .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 11px;
+            font-weight: bold;
+            z-index: 1;
+        }
+.statisfaction-container{
+width: 100%;
+border-radius: 8px;
+justify-content: center;
+
+display:flex;
+align-items: center;
+gap : 7px;
+}
+.satisfaction-text{
+font-size: 12px;
+font-weight: 600;
+}
+    </style>
+</head>
+<body>
+
+<div class = "statisfaction-container">
+    <div class="circular-chart" id="chart-1" data-target="90">
+        <div class="percentage" id="percentage-1">0%</div>
+    </div>
+<div class = "satisfaction-text"> of our customers love our products </div>
+</div>
+
+    <script>
+        function animatePercentage(chart, percentageText, targetValue) {
+            let currentPercentage = 0;
+
+            function updateChart() {
+                if (currentPercentage <= targetValue) {
+                    chart.style.setProperty('--percentage', currentPercentage + '%');
+                    percentageText.innerText = currentPercentage + '%';
+                    currentPercentage++;
+                    requestAnimationFrame(updateChart);
+                }
+            }
+            updateChart();
+        }
+
+        function handleScroll() {
+            const charts = document.querySelectorAll('.circular-chart');
+            const windowHeight = window.innerHeight;
+
+            charts.forEach((chart) => {
+                const chartPosition = chart.getBoundingClientRect().top;
+                const percentageText = chart.querySelector('.percentage');
+                const targetValue = parseInt(chart.getAttribute('data-target'));
+
+                if (chartPosition < windowHeight - 100 && !chart.classList.contains('animated')) {
+                    animatePercentage(chart, percentageText, targetValue);
+                    chart.classList.add('animated');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        document.addEventListener('DOMContentLoaded', handleScroll); // Ensure animation runs if already in view on load
+    </script>
+</body>
+</html>

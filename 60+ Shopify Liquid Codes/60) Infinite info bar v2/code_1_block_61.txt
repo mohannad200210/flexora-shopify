@@ -1,0 +1,95 @@
+<div id="shopify-section-template--17138240979127__autoscrolling_text_9DGHnt" class="shopify-section autoscroll-text">
+    <style>
+        #sc-template--17138240979127__autoscrolling_text_9DGHnt {
+            padding: 16px 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(//spacegoods.com/cdn/shop/files/bg_2000x.svg?v=1726480808);
+        }
+
+        #sc-template--17138240979127__autoscrolling_text_9DGHnt .text-wrapper {
+            align-items: center;
+            display: flex;
+            color: #fff;
+            font-family: "Apercu Pro";
+            font-size: 16px;
+            font-weight: 700;
+            width: fit-content;
+            position: relative;
+            animation: auto-scroll 60s linear infinite;
+        }
+
+        #sc-template--17138240979127__autoscrolling_text_9DGHnt .section_wrapper {
+            overflow: hidden;
+        }
+
+        #sc-template--17138240979127__autoscrolling_text_9DGHnt .block-text {
+            white-space: nowrap;
+            margin: 0 16px;
+        }
+
+        @keyframes auto-scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            #sc-template--17138240979127__autoscrolling_text_9DGHnt {
+                padding: 16px 0;
+            }
+        }
+    </style>
+    <div autoscrolling-text="" id="sc-template--17138240979127__autoscrolling_text_9DGHnt">
+        <div class="section_wrapper">
+            <div class="text-wrapper">
+                <div class="block-text">CONSISTENT CALM</div>
+                <div class="block-text">IMPROVE MOOD</div>
+                <div class="block-text">TASTES GREAT</div>
+                <div class="block-text">IMMUNE SUPPORT</div>
+                <div class="block-text">ZERO CRASH OR ANXIETY</div>
+                <div class="block-text">INCREASED FOCUS</div>
+                <div class="block-text">INCREASED FOCUS</div>
+                <div class="block-text">SUSTAINED ENERGY</div>
+                <div class="block-text">CONSISTENT CALM</div>
+                <div class="block-text">IMPROVE MOOD</div>
+                <div class="block-text">TASTES GREAT</div>
+                <div class="block-text">IMMUNE SUPPORT</div>
+                <div class="block-text">ZERO CRASH OR ANXIETY</div>
+                <div class="block-text">INCREASED FOCUS</div>
+                <div class="block-text">INCREASED FOCUS</div>
+                <div class="block-text">SUSTAINED ENERGY</div>
+                <div class="block-text">CONSISTENT CALM</div>
+                <div class="block-text">IMPROVE MOOD</div>
+                <div class="block-text">TASTES GREAT</div>
+                <div class="block-text">IMMUNE SUPPORT</div>
+                <div class="block-text">ZERO CRASH OR ANXIETY</div>
+                <div class="block-text">INCREASED FOCUS</div>
+                <div class="block-text">INCREASED FOCUS</div>
+                <div class="block-text">SUSTAINED ENERGY</div>
+                <div class="block-text">CONSISTENT CALM</div>
+                <div class="block-text">IMPROVE MOOD</div>
+                <div class="block-text">TASTES GREAT</div>
+                <div class="block-text">IMMUNE SUPPORT</div>
+                <div class="block-text">ZERO CRASH OR ANXIETY</div>
+                <div class="block-text">INCREASED FOCUS</div>
+                <div class="block-text">INCREASED FOCUS</div>
+                <div class="block-text">SUSTAINED ENERGY</div>
+                <div class="block-text">CONSISTENT CALM</div>
+                <div class="block-text">IMPROVE MOOD</div>
+                <div class="block-text">TASTES GREAT</div>
+                <div class="block-text">IMMUNE SUPPORT</div>
+                <div class="block-text">ZERO CRASH OR ANXIETY</div>
+                <div class="block-text">INCREASED FOCUS</div>
+                <div class="block-text">INCREASED FOCUS</div>
+                <div class="block-text">SUSTAINED ENERGY</div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

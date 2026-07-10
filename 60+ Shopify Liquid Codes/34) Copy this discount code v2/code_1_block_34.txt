@@ -1,0 +1,77 @@
+<div class="discount-code-wrapv1" 
+id="discountCodeWrapv1">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="18" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+<path fill="#676767" d="M1068.883,321.37c-4.468-29.514-20.158-55.495-44.167-73.182c-19.327-14.233-42.198-21.771-66.143-21.771  c-35.414,0-69.062,16.997-90.026,45.461c-36.488,49.595-25.865,119.627,23.703,156.154c19.326,14.233,42.198,21.771,66.156,21.771  l0,0c5.823,0,11.57-0.628,17.239-1.523c-7.372,72.734-149.308,18.749-187.409,2.457c-78.161-33.405-140.95-56.622-194.921-69.599  C321.666,315.7,110.976,574.73,142.269,760.744c4.877,29.104,0.321,41.185,9.19,49.709c-7.077,9.907-12.555,20.375-16.189,31.485  c-19.032,58.233,17.035,110.22,28.553,124.786l5.439,6.86h573.618l4.94-10.162c31.792-65.222,26.57-118.207-15.857-160.775  c66.743-85.775-166.957-173.573,102.477-229.785c153.224-31.958,188.867-96.628,181.266-139.12  c12.593-7.513,23.83-17.355,32.687-29.412C1066.08,380.32,1073.374,350.858,1068.883,321.37z M719.956,937.414h-532.79  c-11.006-16.049-28.899-49.402-17.495-84.215c12.657-38.702,59.602-70.288,135.728-91.33c31.062-8.575,71.582-13.132,117.17-13.132  c96.911,0,194.563,20.786,248.804,52.935C730.63,836.792,745.528,877.773,719.956,937.414z M1019.262,382.879  c-14.18,19.25-36.923,30.73-60.856,30.73c-16.165,0-31.625-5.081-44.693-14.732c-33.506-24.675-40.699-72.03-16.023-105.536  c14.167-19.25,36.936-30.717,60.882-30.717c16.165,0,31.626,5.081,44.68,14.706c16.227,11.954,26.838,29.514,29.859,49.454  C1036.144,346.723,1031.229,366.639,1019.262,382.879z"/>
+</svg>
+
+
+    Christmas special! Enjoy 20% off disocunt code <span id="textToCopyv1">Xmas24</span>
+    <button id="copyButtonv1" style="border: none; background: none; cursor: pointer;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" viewBox="0 0 24 24" version="1.1">
+            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <title>ic_fluent_copy_24_regular</title>
+            <desc>Created with Sketch.</desc>
+            <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="ic_fluent_copy_24_regular" fill="#676767" fill-rule="nonzero">
+                    <path d="M5.50280381,4.62704038 L5.5,6.75 L5.5,17.2542087 C5.5,19.0491342 6.95507456,20.5042087 8.75,20.5042087 L17.3662868,20.5044622 C17.057338,21.3782241 16.2239751,22.0042087 15.2444057,22.0042087 L8.75,22.0042087 C6.12664744,22.0042087 4,19.8775613 4,17.2542087 L4,6.75 C4,5.76928848 4.62744523,4.93512464 5.50280381,4.62704038 Z M17.75,2 C18.9926407,2 20,3.00735931 20,4.25 L20,17.25 C20,18.4926407 18.9926407,19.5 17.75,19.5 L8.75,19.5 C7.50735931,19.5 6.5,18.4926407 6.5,17.25 L6.5,4.25 C6.5,3.00735931 7.50735931,2 8.75,2 L17.75,2 Z M17.75,3.5 L8.75,3.5 C8.33578644,3.5 8,3.83578644 8,4.25 L8,17.25 C8,17.6642136 8.33578644,18 8.75,18 L17.75,18 C18.1642136,18 18.5,17.6642136 18.5,17.25 L18.5,4.25 C18.5,3.83578644 18.1642136,3.5 17.75,3.5 Z" id="🎨-Color"></path>
+                </g>
+            </g>
+        </svg>
+    </button>
+</div>
+
+<script>
+    document.getElementById("copyButtonv1").addEventListener("click", function () {
+        const textToCopy = document.getElementById("textToCopyv1").textContent;
+
+        // Use Clipboard API for modern browsers
+        navigator.clipboard.writeText(textToCopyv1).then(function () {
+            // Hide the current content and show "Copied to clipboard!"
+            const discountWrap = document.getElementById("discountCodeWrapv1");
+            discountWrap.innerHTML = '<span class="copied-messagev1" id="copiedMessagev1">Copied to clipboard!</span>';
+
+            // Fade-in effect
+            const copiedMessagev1 = document.getElementById("copiedMessage");
+            copiedMessagev1.style.opacity = 0;
+            copiedMessagev1.style.transition = "opacity 1s";
+
+            setTimeout(function () {
+                copiedMessagev1.style.opacity = 1;
+            }, 10);
+        }).catch(function (err) {
+            console.error("Failed to copy: ", err);
+        });
+    });
+</script>
+
+<style>
+    .discount-code-wrapv1 {
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        background: #f2f2f2;
+        border-radius: 8px;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3px 7px;
+        font-weight: 600;
+        color: #676767;
+        align-items: center;
+gap: 2px;
+    }
+
+    #textToCopyv1 {
+        text-decoration: underline;
+        margin-left: 4px;
+        color: #0098d9;
+    }
+
+
+    .copied-messagev1 {
+        font-size: 12px;
+        font-weight: bold;
+        color: #0098d9;
+    }
+</style>

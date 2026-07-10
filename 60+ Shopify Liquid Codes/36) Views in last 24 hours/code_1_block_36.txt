@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Product View Counter</title>
+  <style>
+    .view-container {
+      display: flex;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+.view-badge {
+    background-color: #f3e6e2;
+    color: #d74f33;
+    border-radius: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 0px 8px;
+    font-size: 11px;
+    line-height: 20px;
+}
+    .view-text {
+      font-size: 12px;
+line-height:19px;
+font-weight: normal;
+color #474747
+    }
+  </style>
+</head>
+<body>
+  <div class="view-container">
+    <div class="view-badge">Views</div>
+    <div class="view-text">During the last 24 hours, this product has been viewed <span id="view-count">925</span> times.</div>
+  </div>
+
+  <script>
+    
+    const initialViewCount = 925;
+    const variation = Math.floor(Math.random() * 41) - 20;
+    const newViewCount = initialViewCount + variation;
+
+    
+    document.getElementById("view-count").innerText = newViewCount;
+
+   
+    if (!localStorage.getItem("lastUpdated") || Date.now() - localStorage.getItem("lastUpdated") > 86400000) {
+      localStorage.setItem("viewCount", newViewCount);
+      localStorage.setItem("lastUpdated", Date.now());
+    } else {
+      document.getElementById("view-count").innerText = localStorage.getItem("viewCount");
+    }
+  </script>
+</body>
+</html>

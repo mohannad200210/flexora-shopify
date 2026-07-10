@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .notification {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 2px dashed #ddd;
+            border-radius: 10px;
+           padding: 5px 8px;
+            background-color: #ffffff;
+            width: fit-content;
+
+            font-size: 12px;
+        }
+        .profile-picture {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        .notification-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .username {
+            font-weight: bold;
+            margin-bottom: 2px;
+            display: flex;
+            align-items: center;
+        }
+        .verified-icon {
+            margin-left: 5px;
+            width: 14px;
+            height: 14px;
+        }
+        .offer-text {
+            font-size: 11px;
+            color: #333;
+        }
+.time-left {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 8px;
+    color: #d9534f;
+    font-weight: 800;
+    border: 1px solid #f5c6c6;
+    border-radius: 4px;
+    padding: 1px 3px;
+    background-color: #f8d7da;
+    line-height: 15px;
+}
+    </style>
+    <script>
+        function startCountdown(duration, display) {
+            let timer = duration, minutes, seconds;
+            const interval = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = "Time left: " + minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                    display.textContent = "Time's up!";
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            const countdownDuration = 23 * 60 + 22; // 23 minutes and 22 seconds
+            const display = document.querySelector('.time-left');
+            if (display) {
+                startCountdown(countdownDuration, display);
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="notification">
+        <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/IMG_1250_295d85e6-2508-403c-b5f8-d0deb56f89b1.jpg?v=1733350877"User Profile Picture" class="profile-picture">
+        <div class="notification-content">
+            <div class="username">
+                Mehul<img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" alt="Verified Badge" class="verified-icon">
+            </div>
+            <div class="offer-text">
+                We've mixed Black Friday and New Year’s deals just for you. Grab a big $255 off!
+            </div>
+        </div>
+        <div class="time-left">Time left: 00:23:22</div>
+    </div>
+</body>
+</html>

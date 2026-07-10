@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "cod_badge": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style='background:#ed122d;color:#fff;padding:10px 16px;border-radius:4px;font-family:Cairo,sans-serif;font-size:1.4rem;font-weight:700;margin-bottom:10px;text-align:right;direction:rtl;'>💵 الدفع عند الاستلام — آمن 100%</div><div style='display:flex;gap:12px;flex-wrap:wrap;direction:rtl;margin-bottom:8px;'><span style='font-family:Cairo,sans-serif;font-size:1.2rem;color:#333;'>🚚 شحن مجاني</span><span style='font-family:Cairo,sans-serif;font-size:1.2rem;color:#333;'>✅ ضمان 30 يوم</span><span style='font-family:Cairo,sans-serif;font-size:1.2rem;color:#333;'>🏆 جودة معتمدة</span></div>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible_tab_features": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "✅ المميزات والفوائد",
+            "icon": "star",
+            "content": "<ul><li><strong>راحة فورية:</strong> يخفف آلام الظهر السفلي والانزلاق الغضروفي والجنف في دقائق</li><li><strong>نظام ضغط مزدوج:</strong> أشرطة فولاذية معدنية تدعم العمود الفقري بشكل احترافي</li><li><strong>قابل للتعديل:</strong> مناسب لجميع المقاسات S / M / L / XL / XXL</li><li><strong>قماش تنفسي:</strong> مريح للاستخدام طوال اليوم في العمل أو الرياضة</li><li><strong>مناسب للجنسين:</strong> للرجال والسيدات</li><li><strong>خفيف ومتين:</strong> لا تشعر بوجوده تحت الملابس</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_howto": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "🛠 كيفية الاستخدام",
+            "icon": "ruler",
+            "content": "<ol><li>ارتدِ الحزام حول منطقة الخصر والظهر السفلي</li><li>اضبط الأشرطة الجانبية حتى تحصل على الضغط المناسب</li><li>شد الأشرطة الإضافية الأمامية للحصول على دعم أقوى</li><li>استخدمه 2-8 ساعات يومياً حسب الحاجة</li></ol><p><strong>نصيحة:</strong> ابدأ بضغط خفيف وزده تدريجياً حسب راحتك.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_shipping": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "🚚 الشحن والدفع",
+            "icon": "delivery",
+            "content": "<p>✅ <strong>الدفع عند الاستلام</strong> — ادفع نقداً للمندوب عند استلام طلبك<br>🚚 <strong>شحن مجاني</strong> داخل جميع محافظات الأردن<br>⏱ <strong>مدة التوصيل:</strong> 2-5 أيام عمل<br>📦 <strong>التغليف:</strong> آمن وأنيق</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_return": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "🔄 سياسة الإرجاع والضمان",
+            "icon": "return",
+            "content": "<p>نضمن لك <strong>30 يوماً</strong> لاسترداد كامل للمبلغ إذا لم تكن راضياً عن المنتج. رضاك أولويتنا! تواصل معنا وسنحل مشكلتك فوراً.</p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "مشاركة"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "cod_badge",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible_tab_features",
+        "collapsible_tab_howto",
+        "collapsible_tab_shipping",
+        "collapsible_tab_return",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "right",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "first_3d_model": false,
+        "padding_top": 28,
+        "padding_bottom": 0,
+        "color_scheme": "background-1"
+      }
+    },
+    "product_usp_section": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"background: #f8f8f8; padding: 40px 20px; direction: rtl; text-align: center; border-top: 3px solid #ed122d;\">\n  <h3 style=\"font-family: Cairo, sans-serif; font-size: 2rem; color: #1a1a1a; margin-bottom: 25px; font-weight: 700;\">لماذا حزام فليكسورا الأفضل؟</h3>\n  <div style=\"display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 900px; margin: 0 auto;\">\n    <div style=\"background:#fff; border-radius:8px; padding:20px; min-width:150px; max-width:180px; box-shadow:0 2px 10px rgba(0,0,0,0.08);\">\n      <div style=\"font-size:2.5rem; margin-bottom:8px;\">🏥</div>\n      <p style=\"font-family:Cairo,sans-serif; font-size:1.3rem; color:#333; margin:0;\">معتمد طبياً</p>\n    </div>\n    <div style=\"background:#fff; border-radius:8px; padding:20px; min-width:150px; max-width:180px; box-shadow:0 2px 10px rgba(0,0,0,0.08);\">\n      <div style=\"font-size:2.5rem; margin-bottom:8px;\">💪</div>\n      <p style=\"font-family:Cairo,sans-serif; font-size:1.3rem; color:#333; margin:0;\">دعم قوي</p>\n    </div>\n    <div style=\"background:#fff; border-radius:8px; padding:20px; min-width:150px; max-width:180px; box-shadow:0 2px 10px rgba(0,0,0,0.08);\">\n      <div style=\"font-size:2.5rem; margin-bottom:8px;\">🌬️</div>\n      <p style=\"font-family:Cairo,sans-serif; font-size:1.3rem; color:#333; margin:0;\">قماش تنفسي</p>\n    </div>\n    <div style=\"background:#fff; border-radius:8px; padding:20px; min-width:150px; max-width:180px; box-shadow:0 2px 10px rgba(0,0,0,0.08);\">\n      <div style=\"font-size:2.5rem; margin-bottom:8px;\">⚡</div>\n      <p style=\"font-family:Cairo,sans-serif; font-size:1.3rem; color:#333; margin:0;\">راحة فورية</p>\n    </div>\n    <div style=\"background:#fff; border-radius:8px; padding:20px; min-width:150px; max-width:180px; box-shadow:0 2px 10px rgba(0,0,0,0.08);\">\n      <div style=\"font-size:2.5rem; margin-bottom:8px;\">📏</div>\n      <p style=\"font-family:Cairo,sans-serif; font-size:1.3rem; color:#333; margin:0;\">5 مقاسات</p>\n    </div>\n  </div>\n</div>",
+        "color_scheme": "background-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "related_products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "قد يعجبك أيضاً",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "enable_desktop_slider": false,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": ["main", "product_usp_section", "related_products"]
+}

@@ -1,0 +1,35 @@
+<div class = "message-under-cart">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 7410 3900">
+	<title>Flag of USA — black &amp; white</title>
+	<defs>
+		<pattern patternUnits="userSpaceOnUse" width="494" height="420" id="s">
+			<path fill="#fff" d="m247 90 70.53 217.08-184.66-134.16h228.26L176.47 307.08z"/>
+		</pattern>
+	</defs>
+	<path fill="#fff" d="m0 0h7410v3900H0z"/>
+	<path stroke="#676767" stroke-width="7410" stroke-dasharray="300" d="m3705 0v3900"/>
+	<path fill="#676767" d="m0 0h2964v2100H0z"/>
+	<g fill="url(#s)">
+		<path d="m0 0h2964v2100H0z"/>
+		<path transform="translate(247,210)" d="m0 0h2470v1680H0z"/>
+	</g>
+</svg>
+Proudly made in the USA
+</div>
+
+<style>
+.message-under-cart {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+    font-weight: 600;
+    color: #676767;
+}
+</style>

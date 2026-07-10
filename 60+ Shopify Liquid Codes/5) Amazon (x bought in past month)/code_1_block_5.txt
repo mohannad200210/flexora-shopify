@@ -1,0 +1,15 @@
+<div class="freq-contatiner">
+  <div class="freq-text">7k+ people bought in the past month</div>
+</div>
+
+<style>
+  .freq-text{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  }
+  .freq-contatiner{
+  justify-content: center;
+  width: 100%;
+  }
+</style>

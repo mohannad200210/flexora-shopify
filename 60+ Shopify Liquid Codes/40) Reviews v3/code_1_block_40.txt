@@ -1,0 +1,40 @@
+<div class="reviews-container">
+  <div class="star-reviews">
+ <img
+    class="shopify-image"
+    width = "65" src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/Revive_39.png?v=1733346031"
+    alt="shopifyImage"
+  />
+  </div>
+  <span class="text-grey">
+rated <strong>4.5/5</strong> based on <strong>+650 Reviews</strong>
+</span>
+</div>
+
+<style>
+  .reviews-container {
+    display: flex;
+    align-items: center;
+
+  }
+
+
+  .text-grey {
+    font-weight: normal;
+    font-size: 10px;
+    color: #868686;
+  line-height: 0px;
+
+  }
+
+  .text-grey strong {
+    font-weight: 800;
+
+color: #2e2f3c
+  }
+  .star-reviews{
+  width: 65px;
+margin-right: 5px;
+  }
+
+</style>

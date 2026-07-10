@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Announcement Bar with Infinite Scroll</title>
+    <style>
+              .unique-announcement-bar {
+                  width: 100%;
+      background-image: linear-gradient(45deg, #1cbcc3,#1cbcc3, #4abf8f,#4abf8f 80%);
+                  padding: 3px 0;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  position: relative;
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              }
+              .unique-announcement-wrapper {
+                  display: flex;
+                  animation: unique-scroll-text 8s linear infinite;
+              }
+              .unique-announcement-text {
+      color: #fffff9;
+                  font-size: 12px;
+                  font-weight: bold;
+                  margin-right: 25px; 
+              }
+              @keyframes unique-scroll-text {
+                  0% {
+                      transform: translateX(0);
+                  }
+                  100% {
+                      transform: translateX(-100%);
+                  }
+              }
+    </style>
+  </head>
+  <body>
+    <div class="unique-announcement-bar">
+      <div class="unique-announcement-wrapper">
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+        <div class="unique-announcement-text">Announcement goes here</div>
+      </div>
+    </div>
+  </body>
+</html>

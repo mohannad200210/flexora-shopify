@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Status Box</title>
+    <style>
+        
+        .product-status-box {
+            border: 2px solid #1b3a57;
+            padding: 3px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #1b3a57;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .center-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-wrapper">
+    <div class="product-status-box">HOT PRODUCT | LOW STOCK</div>
+    </div>
+</body>
+</html>

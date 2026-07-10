@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Stats Chart</title>
+    <style>
+        .circular-chart {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            min-width: 80px;
+            min-height: 80px;
+            border-radius: 50%;
+            background: conic-gradient(
+                from 0deg,
+                #1cbcc3 0%,
+                #4abf8f calc(var(--percentage) / 2),
+                #66bb6a var(--percentage),
+                #ccc 0%
+            );
+            flex-shrink: 0;
+        }
+        .circular-chart::after {
+            content: "";
+            position: absolute;
+            top: 11%;
+            left: 11%;
+            width: 78%;
+            height: 78%;
+            background: white;
+            border-radius: 50%;
+        }
+        .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1;
+        }
+        .satisfaction-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            border-bottom: 1px solid #dddddd;
+            padding: 0px 0px 10px 0px;
+        }
+        .satisfaction-container:nth_child(1) {
+            border-bottom: 1px solid #dddddd;
+            border-top: 1px solid #dddddd;
+            padding: 10px 0px 10px 0px;
+        }
+        .satisfaction-text {
+            font-size: 15px;
+            font-weight: 500;
+            flex-grow: 1;
+            white-space: normal;
+        }
+        .stats-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+align-items: center;
+            max-width: 600px;
+            margin: auto;
+        }
+        @media (max-width: 600px) {
+            .satisfaction-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            border-bottom: 1px solid #dddddd;
+            padding: 0px 10px 10px 10px;
+            }
+                    .satisfaction-container: nth_child(1) {
+            border-bottom: 1px solid #dddddd;
+            border-top: 1px solid #dddddd;
+            padding: 0px 10px 10px 10px;
+        }
+            .circular-chart {
+                width: 65px;
+                height: 65px;
+                min-width: 60px;
+                min-height: 60px;
+            }
+            .percentage {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stats-container">
+        <h2 style = "font-weight: 600;" >Stats Heading Goes Here</h2>
+        <div class="satisfaction-container">
+            <div class="circular-chart" data-target="90">
+                <div class="percentage">0%</div>
+            </div>
+            <div class="satisfaction-text">Noticed that this product has significantly improved their life</div>
+        </div>
+
+        <div class="satisfaction-container">
+            <div class="circular-chart" data-target="70">
+                <div class="percentage">0%</div>
+            </div>
+            <div class="satisfaction-text">Noticed that this product has significantly improved their life</div>
+        </div>
+
+        <div class="satisfaction-container">
+            <div class="circular-chart" data-target="93">
+                <div class="percentage">0%</div>
+            </div>
+            <div class="satisfaction-text">Noticed that this product has significantly improved their life</div>
+        </div>
+    </div>
+
+    <script>
+        function animatePercentage(chart) {
+            let percentageText = chart.querySelector('.percentage');
+            let targetValue = parseInt(chart.getAttribute('data-target'));
+            let currentPercentage = 0;
+
+            function updateChart() {
+                if (currentPercentage <= targetValue) {
+                    chart.style.setProperty('--percentage', currentPercentage + '%');
+                    percentageText.innerText = currentPercentage + '%';
+                    currentPercentage++;
+                    requestAnimationFrame(updateChart);
+                }
+            }
+            updateChart();
+        }
+
+        function handleScroll() {
+            const charts = document.querySelectorAll('.circular-chart');
+            const windowHeight = window.innerHeight;
+
+            charts.forEach((chart) => {
+                const chartPosition = chart.getBoundingClientRect().top;
+                if (chartPosition < windowHeight - 100 && !chart.classList.contains('animated')) {
+                    animatePercentage(chart);
+                    chart.classList.add('animated');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        document.addEventListener('DOMContentLoaded', handleScroll);
+    </script>
+</body>
+</html>

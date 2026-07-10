@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Choose Us?</title>
+    <style>
+              .why-choose-title {
+                  font-size: 1.2em;
+                  font-weight: bold;
+                  margin-bottom: 10px;
+                  text-align: center;
+                  color: #1b3a57;
+              }
+              .why-choose-subtitle {
+                  font-size: 0.8em;
+                  margin-bottom: 30px;
+                  color: #666;
+                  text-align: center;
+              }
+              .why-choose-comparison-table {
+                  width: 100%;
+                  max-width: 550px;
+                  margin: 0 auto;
+                  border-collapse: collapse;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  border-radius: 10px;
+              }
+              .why-choose-comparison-table th, .why-choose-comparison-table td {
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid #ddd;
+                  font-size: 13px;
+              }
+              .why-choose-comparison-table th {
+                  background-color: #f5f5f5;
+                  font-weight: bold;
+                  color: #121212bf;
+              }
+              .why-choose-feature {
+      background: linear-gradient(45deg, #19a9b0, #42ad81 80%);
+                  color: #fff;
+                  text-align: left;
+                  font-weight: bold;
+                  font-size: 13px;
+                  width: 40%;
+              }
+              .why-choose-comparison-table th:nth-child(2), .why-choose-comparison-table td:nth-child(2) {
+                  width: 30%;
+              }
+              .why-choose-comparison-table th:nth-child(3), .why-choose-comparison-table td:nth-child(3) {
+                  width: 30%;
+              }
+              .why-choose-check {
+                  color: #28a745;
+                  font-size: 1.3em;
+              }
+              .why-choose-cross {
+                  color: #3f3f3f;
+                  font-size: 1.5em;
+              }
+              .why-choose-rounded-corners {
+                  border-radius: 10px;
+                  overflow: hidden;
+              }
+              .why-choose-comparison-table tbody tr:nth-child(odd) {
+                  background-color: #f9f9f9;
+              }
+    </style>
+  </head>
+  <body>
+    <div class="container page-width">
+      <div class="why-choose-title">Why Choose Us?</div>
+      <div class="why-choose-subtitle">
+        add a reason here to why your customer should buy your products
+      </div>
+      <table class="why-choose-comparison-table">
+        <thead>
+          <tr>
+            <th
+              class="why-choose-feature"
+              style="background: #f5f5f5!important;"
+            >
+              Feature
+            </th>
+            <th>Your brand</th>
+            <th>Others</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="why-choose-feature">Benefit 1</td>
+            <td class="why-choose-check">✔</td>
+            <td class="why-choose-cross">✘</td>
+          </tr>
+          <tr>
+            <td class="why-choose-feature">Benefit 2</td>
+            <td class="why-choose-check">✔</td>
+            <td class="why-choose-cross">✘</td>
+          </tr>
+          <tr>
+            <td class="why-choose-feature">Benefit 3</td>
+            <td class="why-choose-check">✔</td>
+            <td class="why-choose-cross">✘</td>
+          </tr>
+          <tr>
+            <td class="why-choose-feature">Benefit 4</td>
+            <td class="why-choose-check">✔</td>
+            <td class="why-choose-check">✔</td>
+          </tr>
+          <tr>
+            <td class="why-choose-feature">Benefit 5</td>
+            <td class="why-choose-check">✔</td>
+            <td class="why-choose-check">✔</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<div class="google-container">
+  <div class="google-text">"Amazing"</div>
+
+  <img
+    class="google-image"
+    src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/Revive_39.png?v=1733346031"
+    alt="googleImage"
+  />
+
+  <div class="google-rating">Rated 4.4/5 on</div>
+
+  <img
+    class="google-logo"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png"
+    alt="googleImage"
+  />
+</div>
+
+<style>
+            .google-container {
+                display: flex;
+                align-items: center;
+                background-color: #fbfbfb;
+                border: 1px solid #d4edda;
+                border-radius: 8px;
+                padding: 2px 10px;
+
+                width: 100%;
+    border: 1px dashed #898686;
+    gap: 8px;
+    justify-content: center;
+            }
+
+    .google-image{
+    width: 65px;
+    }
+    .google-logo{
+    width: 45px;
+  margin-top: 2px;
+    }
+    .google-text{
+    font-size: 13px;
+    font-weight: 600;
+    }
+    .google-rating{
+    font-size: 10px;
+    font-weight: 500;
+    color: #000;
+    }
+</style>

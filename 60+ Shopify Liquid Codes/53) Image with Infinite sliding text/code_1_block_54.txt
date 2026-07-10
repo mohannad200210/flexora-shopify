@@ -1,0 +1,360 @@
+<div id="shopify-section-template--17614983364791__0b4106fb-2713-4c64-9736-b2bf143fc8d7" class="shopify-section">
+    <style>
+        #ingre_c8d7 {
+            position: relative;
+            background: transparent linear-gradient(180deg, #E5F2F6 0%, #FEDCEC 51%, #EDD7FE 100%) 0% 0% no-repeat padding-box;
+        }
+
+        #ingre_c8d7 .section_holder {
+            position: relative;
+            margin: auto;
+            max-width: 1208px;
+            padding: 80px 40px;
+        }
+
+        #ingre_c8d7 .heading {
+            font-family: 'TAN - MEMORIES';
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 45px;
+            margin-bottom: 21px;
+            text-align: center;
+        }
+
+        #ingre_c8d7 .descs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 42px;
+        }
+
+        #ingre_c8d7 .description a,
+        #ingre_c8d7 .description p,
+        #ingre_c8d7 .description {
+            font: normal normal normal 18px/22px Apercu Pro;
+            letter-spacing: 0px;
+            color: #000000;
+        }
+
+        #ingre_c8d7 .s_desc {
+            font: normal normal normal 18px/22px Apercu Pro;
+            letter-spacing: 0px;
+            margin: 0 28px;
+            padding: 3px 0 3px 33px;
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: left;
+            background-image: url(//spacegoods.com/cdn/shop/t/346/assets/check-violet.svg?v=121176336516853493291722621936);
+        }
+
+        #ingre_c8d7 .description {
+            text-align: center;
+            max-width: 1024px;
+            margin: 0 auto 21px;
+        }
+
+        #ingre_c8d7 .ingre_holder {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        #ingre_c8d7 .s_ingre {
+            min-width: 1px;
+            display: flex;
+            background: white;
+            border-radius: 8px;
+            align-items: center;
+        }
+
+        #ingre_c8d7 .ingre_h {
+            font: normal normal bold 21px/16px Apercu Pro;
+            letter-spacing: 0px;
+            color: #1E1E1E;
+            margin-bottom: 5px;
+        }
+
+        #ingre_c8d7 .ingre_w {
+            font: italic normal normal 17px/16px Apercu Pro;
+            letter-spacing: 0px;
+            color: #1E1E1E;
+            margin-bottom: 11px;
+        }
+
+        #ingre_c8d7 .ingre_desc {
+            font: normal normal normal 17px/18px Apercu Pro;
+            letter-spacing: 0px;
+            color: #1E1E1E;
+        }
+
+        #ingre_c8d7 .txt_part {
+            padding: 29px 25px;
+            width: calc(100% - 162px);
+        }
+
+        #ingre_c8d7 .img_part {
+            width: 162px;
+        }
+
+        #ingre_c8d7 .ingre_btn {
+            width: 100%;
+            max-width: 363px;
+            height: 70px;
+            margin: auto;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+            user-select: none;
+            background: linear-gradient(102deg, rgba(114, 76, 233, 1) 0%, rgba(255, 34, 119, 1) 100%);
+        }
+
+        #ingre_c8d7 .ingre_btn>div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background: white;
+            border-radius: 5px;
+            height: 60px;
+            padding: 0 15px;
+        }
+
+        #ingre_c8d7 img.nutrition_arrow {
+            margin-left: auto;
+            filter: brightness(0);
+        }
+
+        #ingre_c8d7 .ingre_btn span {
+            font: normal normal normal 21px/26px Apercu Pro;
+            letter-spacing: 0px;
+            color: #000000;
+        }
+
+        #ingre_c8d7 img.nu_icon {
+            width: 28px;
+            margin-right: 8px;
+        }
+
+        #ingre_c8d7 .ingre_table_overlay {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: black;
+            opacity: 0.5;
+            z-index: 2;
+            display: none;
+        }
+
+        #ingre_c8d7 .ingredient_modal {
+            position: fixed;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            width: calc(100% - 25px);
+            max-width: 300px;
+            z-index: 2;
+            display: none;
+        }
+
+        #ingre_c8d7 .ingredient_modal:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -42px;
+            width: 32px;
+            height: 32px;
+            filter: invert(1);
+            background-size: 100%;
+            pointer-events: none;
+            background-image: url(//spacegoods.com/cdn/shop/t/346/assets/black_close.svg?v=21011354507018251241722621935);
+        }
+
+        #ingre_c8d7 .ingredient_modal img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 900px) {
+            #ingre_c8d7 .section_holder {
+                padding: 45px 15px;
+            }
+            #ingre_c8d7 .heading {
+                font: normal normal 400 24px/32px 'TAN - MEMORIES';
+                margin-bottom: 14px;
+            }
+            #ingre_c8d7 .descs {
+                flex-wrap: wrap;
+                margin-bottom: 16px;
+            }
+            #ingre_c8d7 .description a,
+            #ingre_c8d7 .description p,
+            #ingre_c8d7 .description {
+                font: normal normal 500 13px/15px Apercu Pro;
+            }
+            #ingre_c8d7 .description {
+                margin-bottom: 16px;
+            }
+            #ingre_c8d7 .s_desc {
+                font: normal normal 500 13px/15px Apercu Pro;
+                background-size: 13px;
+                padding: 0 0 0 17px;
+                margin: 0 15px 12px 0;
+            }
+            #ingre_c8d7 .s_desc:last-of-type {
+                margin-right: 0;
+            }
+            #ingre_c8d7 .ingre_holder {
+                display: flex;
+                overflow: auto;
+                gap: unset;
+                margin-right: -15px;
+            }
+            #ingre_c8d7 .s_ingre {
+                min-width: 283px;
+                margin-right: 11px;
+            }
+            #ingre_c8d7 .txt_part {
+                padding: 21px 0px 21px 15px;
+                width: calc(100% - 109px);
+            }
+            #ingre_c8d7 .ingre_h {
+                font: normal normal bold 16px/16px Apercu Pro;
+            }
+            #ingre_c8d7 .ingre_w {
+                font: normal normal normal 14px/16px Apercu Pro;
+            }
+            #ingre_c8d7 .ingre_desc {
+                font: normal normal normal 13px/16px Apercu Pro;
+            }
+            #ingre_c8d7 .img_part {
+                width: 109px;
+            }
+            #ingre_c8d7 .ingre_btn {
+                height: 50px;
+                padding: 4px;
+            }
+            #ingre_c8d7 .ingre_btn>div {
+                height: 42px;
+                padding: 0 14px;
+            }
+            #ingre_c8d7 .ingre_btn span {
+                font: normal normal normal 16px/19px Apercu Pro;
+            }
+            #ingre_c8d7 img.nu_icon {
+                width: 17px;
+                margin-right: 4px;
+            }
+        }
+    </style>
+    <div id="ingre_c8d7">
+        <div class="section_holder">
+            <div class="heading">it's what's inside that counts -</div>
+            <div class="descs">
+                <div class="s_desc">quality ingredients - made in england</div>
+                <div class="s_desc">vegan &amp; keto friendly</div>
+                <div class="s_desc">big dosages: 2-3x stronger</div>
+            </div>
+            <div class="ingre_holder">
+                <div class="s_ingre">
+                    <div class="txt_part">
+                        <div class="ingre_h">Maitake mushroom</div>
+                        <div class="ingre_w">1000 mg</div>
+                        <div class="ingre_desc">The 'longevity mushroom' known to be a powerful antioxidant and immune support</div>
+                    </div>
+                    <div class="img_part"><img src="//spacegoods.com/cdn/shop/files/maitake_web_crop_500x.jpg?v=1697120766" alt="ingredient" class="ingre_img"></div>
+                </div>
+                <div class="s_ingre">
+                    <div class="txt_part">
+                        <div class="ingre_h">Reishi mushroom</div>
+                        <div class="ingre_w">1000 mg</div>
+                        <div class="ingre_desc">The 'calm mushroom' - known to reduce stress &amp; is also a powerful immune support</div>
+                    </div>
+                    <div class="img_part"><img src="//spacegoods.com/cdn/shop/files/reishi_web_square_f314a979-1302-43fd-b62d-4ddb20b03b22_500x.jpg?v=1692173679" alt="ingredient" class="ingre_img"></div>
+                </div>
+                <div class="s_ingre">
+                    <div class="txt_part">
+                        <div class="ingre_h">Tremella mushroom</div>
+                        <div class="ingre_w">1000 mg</div>
+                        <div class="ingre_desc">The 'beauty mushroom' - known to support healthy skin, hair &amp; nails</div>
+                    </div>
+                    <div class="img_part"><img src="//spacegoods.com/cdn/shop/files/tremella_web_crop_500x.jpg?v=1697120950" alt="ingredient" class="ingre_img"></div>
+                </div>
+                <div class="s_ingre">
+                    <div class="txt_part">
+                        <div class="ingre_h">Magnesium</div>
+                        <div class="ingre_w">169 mg</div>
+                        <div class="ingre_desc">Essential mineral used to maintain normal blood pressure &amp; reduce inflammation</div>
+                    </div>
+                    <div class="img_part"><img src="//spacegoods.com/cdn/shop/files/magnesium_web_square_aba7fb31-4bbe-4308-ad06-3ee8a68e7c1e_500x.jpg?v=1692173842" alt="ingredient" class="ingre_img"></div>
+                </div>
+                <div class="s_ingre">
+                    <div class="txt_part">
+                        <div class="ingre_h">Ashwagandha</div>
+                        <div class="ingre_w">500 mg</div>
+                        <div class="ingre_desc">An ancient medicinal herb, scientifically proven to reduce stress &amp; anxiety levels</div>
+                    </div>
+                    <div class="img_part"><img src="//spacegoods.com/cdn/shop/files/02-ingredient_1_500x.png?v=1662967567" alt="ingredient" class="ingre_img"></div>
+                </div>
+                <div class="s_ingre">
+                    <div class="txt_part">
+                        <div class="ingre_h">Jujube</div>
+                        <div class="ingre_w">150 mg</div>
+                        <div class="ingre_desc">Fruit ingredient that's been used in traditional medicine for centuries - super high in antioxidants</div>
+                    </div>
+                    <div class="img_part"><img src="//spacegoods.com/cdn/shop/files/jujube_web_square_copy_5ea29eac-716d-4eb3-b277-c35c952cf7b3_500x.jpg?v=1692173725" alt="ingredient" class="ingre_img"></div>
+                </div>
+                <div class="s_ingre">
+                    <div class="txt_part">
+                        <div class="ingre_h">L-Glycine</div>
+                        <div class="ingre_w">3000 mg</div>
+                        <div class="ingre_desc">Amino acid that has a calming effect on the brain &amp; can improve sleep quality</div>
+                    </div>
+                    <div class="img_part"><img src="//spacegoods.com/cdn/shop/files/L-glycine_web_square_bab2c823-fcf9-421e-bed9-39a1a1a6c838_500x.jpg?v=1692173761" alt="ingredient" class="ingre_img"></div>
+                </div>
+                <div class="s_ingre">
+                    <div class="txt_part">
+                        <div class="ingre_h">Passion flower</div>
+                        <div class="ingre_w">150 mg</div>
+                        <div class="ingre_desc">Plant extract commonly used to reduce anxiety and increase feelings of calm</div>
+                    </div>
+                    <div class="img_part"><img src="//spacegoods.com/cdn/shop/files/blu_flower_884722fa-8c4f-4ae6-8eaa-c8541aed2131_500x.jpg?v=1692173799" alt="ingredient" class="ingre_img"></div>
+                </div>
+                <div class="s_ingre">
+                    <div class="txt_part">
+                        <div class="ingre_h">Chamomile</div>
+                        <div class="ingre_w">100 mg</div>
+                        <div class="ingre_desc">Traditional plant ingredient widely used to help the body relax</div>
+                    </div>
+                    <div class="img_part"><img src="//spacegoods.com/cdn/shop/files/cham_web_square_new_b3eaaa0f-a00c-43f2-b7fb-f577d06f7f35_500x.jpg?v=1692173894" alt="ingredient" class="ingre_img"></div>
+                </div>
+                <div class="s_ingre">
+                    <div class="txt_part">
+                        <div class="ingre_h">L-Tryptophan</div>
+                        <div class="ingre_w">220 mg</div>
+                        <div class="ingre_desc">Amino acid known to improve mood &amp; support sleep</div>
+                    </div>
+                    <div class="img_part"><img src="//spacegoods.com/cdn/shop/files/L-tryptophan_web_square_944b8883-1b15-4a58-b1e7-2e54c94e4143_500x.jpg?v=1692173874" alt="ingredient" class="ingre_img"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#ingre_c8d7 .ingre_btn').click(function() {
+            show_ingre_popup();
+        });
+        $('#ingre_c8d7 .ingre_table_overlay').click(function() {
+            hide_ingre_popup();
+        });
+
+        function show_ingre_popup() {
+            $('#ingre_c8d7 .ingre_table_overlay').fadeIn(400);
+            $('#ingre_c8d7 .ingredient_modal').fadeIn(300);
+        }
+
+        function hide_ingre_popup() {
+            $('#ingre_c8d7 .ingre_table_overlay').fadeOut(400);
+            $('#ingre_c8d7 .ingredient_modal').fadeOut(300);
+        }
+    </script>
+</div>

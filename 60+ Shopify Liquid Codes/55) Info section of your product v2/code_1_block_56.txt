@@ -1,0 +1,276 @@
+<div id="shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG" class="shopify-section">
+
+
+<style>
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .section_holder {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .section_holder_wrapper {
+        display: flex;
+        max-width: 1360px;
+        margin: auto;
+        padding: 0 64px;
+        min-height: 200px;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .section_item {
+        align-items: center;
+        background: #fff;
+        border: 1px solid #d1d5db;
+        border-radius: 16px;
+        column-gap: 16px;
+        margin: 0 0 8px;
+        padding: 24px;
+        row-gap: 16px;
+        width: 100%;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .left_part {
+        min-width: 1px;
+        width: 100%;
+        margin-right: 10.6%;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .right_part {
+        min-width: 1px;
+        width: 89.4%;
+    }
+    [data-subject] {
+        display: none;
+    }
+    [data-subject='Coffee'] {
+        display: block;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .seciton_title {
+      color: #000001;
+      font-family: 'TAN - MEMORIES';
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.8px;
+      margin-bottom: 22px;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .item_text {
+        align-self: stretch;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        font-family: Apercu Pro;
+        font-size: 20px;
+        font-weight: 500;
+        justify-content: flex-start;
+        line-height: 1.5;
+        max-width: 100%;
+        position: relative;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .item_image {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .right_part img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .section_btn {
+        align-items: center;
+        background: #f27;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 0;
+        column-gap: 12px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 16px 0 0;
+        padding: 20px 60px;
+        position: relative;
+        row-gap: 12px;
+        transition-duration: 50ms;
+        transition-timing-function: ease-in-out;
+        width: fit-content;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-family: Apercu Pro;
+        font-size: 20px;
+        font-weight: 700;
+        justify-content: center;
+        letter-spacing: -.01em;
+        line-height: 1.4;
+        position: relative;
+        text-decoration: none;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .section_btn:hover {
+        background: #000;
+        border-style: solid;
+        border-width: 0;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .item-main {
+        display: flex;
+        align-items: center;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .item-main span {
+      flex: none;
+      font-size: 20px;
+      margin-right: 8px;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .left_part img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .item-main {
+        display: flex;
+        align-items: center;
+    }
+    @media screen and (max-width: 900px) {
+      #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .section_holder_wrapper {
+        padding: 0 32px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .left_part {
+        height: 520px;
+      }
+      #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .section_holder_wrapper {
+          flex-direction: column;
+      }
+      #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .right_part {
+          margin-right: 0;
+          width: 100%;
+      } 
+    }
+    @media screen and (max-width: 575px) {
+      #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .seciton_title {
+        font-size: 32px;
+        margin-top: 30px;
+      }
+      #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .left_part {
+        height: 440px;
+      }
+      #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .section_holder_wrapper {
+        padding: 0 16px;
+      }
+      #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .item-main span {
+        font-size: 16px;
+      }
+      #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .item-main .item_text {
+        font-size: 16px;
+      }
+      #shopify-section-template--17389125894327__pdp_why_use_rainbow_ncrftG .section_btn {
+        font-size: 17px;
+      }
+    }
+</style>
+
+<div pdp_why_use_rainbow="" class="section_holder">
+    <div class="section_holder_wrapper">
+      <div class="left_part">
+        
+          
+            <img src="//spacegoods.com/cdn/shop/files/PDP_new_2000x.webp?v=1720521440" alt="Image" data-flavor="Coffee">
+          
+        
+          
+            <img src="//spacegoods.com/cdn/shop/files/PDP_new_2000x.webp?v=1720521440" alt="Image" data-flavor="Chocolate" style="display: none;">
+          
+        
+          
+            <img src="//spacegoods.com/cdn/shop/files/PDP_new_2000x.webp?v=1720521440" alt="Image" data-flavor="Vanilla Cinnamon" style="display: none;">
+          
+        
+          
+            <img src="//spacegoods.com/cdn/shop/files/strawberry_edit_2_2000x.jpg?v=1721762329" alt="Image" data-flavor="Strawberry" style="display: none;">
+          
+        
+          
+            <img src="//spacegoods.com/cdn/shop/files/mix_2_2e82c99b-f91c-437a-a68e-12ddc274715d_2000x.webp?v=1723624267" alt="Image" data-flavor="Raw Chocolate (Decaf)" style="display: none;">
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+      <div class="right_part">
+        <div class="seciton_title">Why thousands start their day with Rainbow Dust -</div>
+        <div class="section_items">
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              <div class="section_item">
+                <div class="item-main">
+                  <span>✅</span>
+                  <div class="item_text">You want to get in 'the zone' for increased productivity</div>
+                </div>
+                
+              </div>
+            
+          
+            
+              <div class="section_item">
+                <div class="item-main">
+                  <span>✅</span>
+                  <div class="item_text">you want an instant burst of enery &amp; removal of brain fog</div>
+                </div>
+                
+              </div>
+            
+          
+            
+              <div class="section_item">
+                <div class="item-main">
+                  <span>✅</span>
+                  <div class="item_text">you love coffee but don't like the jitters or anxiety that follow</div>
+                </div>
+                
+              </div>
+            
+          
+            
+              <div class="section_item">
+                <div class="item-main">
+                  <span>✅</span>
+                  <div class="item_text">you like to feel stimulated but don't enjoy the usual crash</div>
+                </div>
+                
+              </div>
+            
+          
+            
+              <div class="section_item">
+                <div class="item-main">
+                  <span>✅</span>
+                  <div class="item_text">you want to get into 'work mode' or 'flow state' but also be able to sleep later</div>
+                </div>
+                
+                  <a href="https://spacegoods.com/products/rainbow-dust-premium-starter-kit-chocolate" class="section_btn">GET STARTED &gt;</a>
+                
+              </div>
+            
+          
+        </div>
+      </div>
+    </div>
+</div>
+<script>
+
+</script>
+
+</div>

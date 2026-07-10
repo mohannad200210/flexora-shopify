@@ -1,0 +1,184 @@
+<div class='announcement-section-1'>
+ <div class='container'>
+  <div class='announcement-wrapper'>
+   <span class='clock-down_text'>New Year Sale Ends In</span>
+   <div class='holiday-clock' id='js-clock'>
+    <div class='box-3'>
+     <div class='clock-number-2' id='js-clock-hours'>00</div>
+     <div class='clock-label-2'>Hrs</div>
+    </div>
+    <div class='text-block-countdown'>:</div>
+    <div class='box-3'>
+     <div class='clock-number-2' id='js-clock-minutes'>00</div>
+     <div class='clock-label-2'>Min</div>
+    </div>
+    <div class='text-block-countdown'>:</div>
+    <div class='box-3'>
+     <div class='clock-number-2' id='js-clock-seconds'>00</div>
+     <div class='clock-label-2'>Sec</div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<style>
+.announcement-section-1 {
+    background: linear-gradient(45deg, #BDE6FF, #6A93AC, #174059);
+    background-size: 400% 400%;
+    animation: primaryGradient 5s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.announcement-wrapper {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.7px;
+    letter-spacing: -0.01em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.holiday-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2a2552;
+    border-radius: 3px;
+}
+
+.box-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 2.5rem;
+    height: 3rem;
+    margin: 0 2px;
+    padding: 3px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.clock-number-2 {
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.clock-label-2 {
+    font-size: 1rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.text-block-countdown {
+    color: #fff;
+    padding: 0 0.15rem;
+    font-weight: 800;
+}
+
+.atcButton button {
+    background: #039d00 !important;
+    color: #fff;
+    padding: 5px 20px !important;
+    border-radius: 5px;
+    font-size: 13px;
+    min-height: 40px;
+}
+
+@keyframes primaryGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@media (max-width: 740px) {
+    .announcement-wrapper {
+        font-size: 16px;
+        padding: 0px 0;
+        gap: 7px;
+    }
+.clock-number-2 {
+    font-size: 15px!important;
+    font-weight: 900;
+    line-height: 1;
+}
+.clock-label-2 {
+    font-size: 7px!important;
+    line-height: 1;
+    text-transform: uppercase;
+}
+    .holiday-clock {
+        flex-wrap: wrap;
+    }
+
+    .box-3 {
+        width: 1.5rem;
+        height: 1.75rem;
+    }
+
+    .clock-number-2 {
+        font-size: 0.8rem;
+    }
+
+    .clock-label-2 {
+        font-size: 0.45rem;
+    }
+}
+
+@media (max-width: 379px) {
+    .announcement-wrapper {
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    .box-3 {
+        width: 2.5rem;
+        height: 3rem;
+    }
+
+    .text-block-countdown {
+        padding: 0 0.1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .atcButton button {
+        padding-inline: 20px;
+    }
+}
+</style>
+
+<script>
+// Countdown Timer Script
+(function() {
+    const endTime = new Date("January 25, 2025 00:00:00").getTime();
+
+    function updateTimer() {
+        const now = new Date().getTime();
+        const timeLeft = endTime - now;
+
+        if (timeLeft < 0) {
+            document.getElementById('js-clock').innerHTML = '<span>Sale Ended</span>';
+            return;
+        }
+
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById('js-clock-hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('js-clock-minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('js-clock-seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    setInterval(updateTimer, 1000);
+    updateTimer(); // Initial call to avoid delay
+})();
+</script>

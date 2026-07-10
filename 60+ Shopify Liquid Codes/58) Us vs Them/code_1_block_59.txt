@@ -1,0 +1,345 @@
+<div id="shopify-section-template--17389125894327__pdp_coffe_alternative_bpQxKn" class="shopify-section">
+
+    <style>
+        #alternative_QxKn {
+            position: relative;
+        }
+
+        #alternative_QxKn .section_holder {
+            position: relative;
+            margin: auto;
+            max-width: 680px;
+            padding: 80px 40px;
+        }
+
+        #alternative_QxKn .subheading {
+            width: fit-content;
+            height: 35px;
+            padding: 0 12.2px;
+            background: #FF2277;
+            font: normal normal 500 18px/22px Apercu Pro;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-transform: lowercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin: 0 auto 6px;
+        }
+
+        #alternative_QxKn .heading {
+            font-family: 'TAN - MEMORIES';
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        #alternative_QxKn .desc {
+            text-align: center;
+            font: normal normal normal 21px/21px Apercu Pro;
+            letter-spacing: 0px;
+            color: #000000;
+            margin-bottom: 60px;
+        }
+
+        #alternative_QxKn .img_vs_holder {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        #alternative_QxKn .img_vs {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 65px;
+            height: 65px;
+            background: #000000;
+            color: white;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Apercu Pro;
+            font-size: 25px;
+            z-index: 1;
+        }
+
+        #alternative_QxKn .vs_img {
+            width: calc(50% - 8px);
+            display: flex;
+            position: relative;
+        }
+
+        #alternative_QxKn .vs_img:last-of-type {
+            border: 2px solid #F1F9FC;
+            border-radius: 12px;
+        }
+
+        #alternative_QxKn .s_vs_desc {
+            display: flex;
+            border-radius: 100px;
+            overflow: hidden;
+            height: 65px;
+            margin-bottom: 13px;
+        }
+
+        #alternative_QxKn .s_vs_desc>div {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        #alternative_QxKn .us_desc {
+            background: transparent linear-gradient(106deg, #724CE9 0%, #FF2277 100%) 0% 0% no-repeat padding-box;
+            justify-content: flex-end;
+            padding-right: 56px;
+            padding-left: 10px;
+            font: normal normal normal 21px/21px Apercu Pro;
+            text-align: right;
+        }
+
+        #alternative_QxKn .them_desc {
+            background: #F5F5F5;
+            font: normal normal normal 19px/21px Apercu Pro;
+        }
+
+        #alternative_QxKn .us_desc>div {
+            position: relative;
+            color: white;
+        }
+
+        #alternative_QxKn .them_desc>div {
+            position: relative;
+            color: black;
+            padding-left: 58px;
+            padding-right: 24px;
+        }
+
+        #alternative_QxKn .them_desc>div:after,
+        #alternative_QxKn .us_desc>div:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            border-radius: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 24px;
+        }
+
+        #alternative_QxKn .us_desc>div:after {
+            right: -32px;
+            background-image: url(//spacegoods.com/cdn/shop/t/346/assets/white_check.svg?v=168019155159854585241722621936);
+        }
+
+        #alternative_QxKn .them_desc>div:after {
+            left: 24px;
+            background-image: url(//spacegoods.com/cdn/shop/t/346/assets/black_close.svg?v=21011354507018251241722621935);
+        }
+
+        #alternative_QxKn .try_btn {
+            width: 100%;
+            max-width: 487px;
+            height: 60px;
+            border-radius: 8px;
+            display: flex;
+            font: normal normal 500 21px/26px Apercu Pro;
+            letter-spacing: 1.05px;
+            color: #FFFFFF;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin: auto;
+            background: #000000;
+        }
+
+        #alternative_QxKn .try_btn:hover {
+            background: #282828;
+        }
+
+        #alternative_QxKn .desc_below_btn {
+            font: normal normal normal 16px/19px Apercu Pro;
+            letter-spacing: 0px;
+            color: #000000;
+            margin-top: 13px;
+            text-align: center;
+        }
+
+        #alternative_QxKn .descs_below_table {
+            background: transparent linear-gradient(119deg, #724CE9 0%, #FF2277 100%) 0% 0% no-repeat padding-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font: normal normal 500 21px/21px Apercu Pro;
+            text-align: center;
+            margin-bottom: 21px;
+        }
+
+        #alternative_QxKn .vs_desc_holder {
+            margin-bottom: 33px;
+        }
+
+        #alternative_QxKn img.satis_badge {
+            position: absolute;
+            width: 146px;
+            height: 139px;
+            transform: translate(-50%, -39px);
+        }
+
+        @media screen and (max-width: 900px) {
+            #alternative_QxKn .section_holder {
+                padding: 45px 15px;
+            }
+            #alternative_QxKn .subheading {
+                height: 24px;
+                font: normal normal 500 12px/14px Apercu Pro;
+                padding: 0 14px;
+                margin-bottom: 8px;
+            }
+            #alternative_QxKn .heading {
+                font: normal normal 400 24px/26px 'TAN - MEMORIES';
+                padding: 0 60px;
+                margin-bottom: 8px;
+            }
+            #alternative_QxKn .desc {
+                font: normal normal normal 16px/21px Apercu Pro;
+                margin-bottom: 21px;
+            }
+            #alternative_QxKn .img_vs_holder {
+                padding: 0 25px;
+                margin-bottom: 15px;
+            }
+            #alternative_QxKn .img_vs {
+                width: 46px;
+                height: 46px;
+                font-size: 13px;
+            }
+            #alternative_QxKn .vs_img img {
+                width: 150px;
+                height: 150px;
+            }
+            #alternative_QxKn .vs_img {
+                width: calc(50% - 6px);
+            }
+            #alternative_QxKn .us_desc,
+            #alternative_QxKn .them_desc {
+                font: normal normal normal 14px/16px Apercu Pro;
+            }
+            #alternative_QxKn .them_desc>div:after,
+            #alternative_QxKn .us_desc>div:after {
+                width: 18px;
+                height: 18px;
+                background-size: 18px;
+            }
+            #alternative_QxKn .us_desc>div:after {
+                right: -28px;
+            }
+            #alternative_QxKn .us_desc {
+                padding-right: 43px;
+            }
+            #alternative_QxKn .them_desc>div:after {
+                left: 15px;
+            }
+            #alternative_QxKn .them_desc>div {
+                padding-left: 45px;
+                padding-right: 18px;
+            }
+            #alternative_QxKn .s_vs_desc {
+                height: 45px;
+                margin-bottom: 4px;
+            }
+            #alternative_QxKn .descs_below_table {
+                font-size: 17px;
+                padding: 0 15px;
+                background: transparent linear-gradient(180deg, #724CE9 0%, #FF2277 100%) 0% 0% no-repeat padding-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 14px;
+            }
+            #alternative_QxKn .try_btn {
+                font: normal normal 500 18px/22px Apercu Pro;
+                letter-spacing: 0.9px;
+                height: 52px;
+            }
+            #alternative_QxKn .desc_below_btn {
+                font: normal normal normal 13px/15px Apercu Pro;
+            }
+            #alternative_QxKn .vs_desc_holder {
+                margin-bottom: 21px;
+                padding: 0 7px;
+            }
+            #alternative_QxKn img.satis_badge {
+                width: 90px;
+                height: 86px;
+                transform: translate(-30px, -15px);
+            }
+        }
+    </style>
+    <div pdp_coffe_alternative="" id="alternative_QxKn">
+        <div class="section_holder" data-flavor="Coffee">
+            <div class="subheading">us vs. them</div>
+            <div class="heading">Coffee upgrade like no other</div>
+            <div class="desc">Rainbow Dust - coffee</div>
+            <div class="compare_box">
+                <div class="img_vs_holder">
+                    <div class="vs_img"><img src="//spacegoods.com/cdn/shop/files/coffee_square_1000x.jpg?v=1721763123" alt="us"><img src="//spacegoods.com/cdn/shop/t/346/assets/satisfaction.svg?v=148103522804112738131722621927" alt="satisfaction" class="satis_badge"></div>
+                    <div
+                        class="img_vs">VS.</div>
+                <div class="vs_img"><img src="//spacegoods.com/cdn/shop/files/coffee_PDP_1000x.webp?v=1720523880" alt="them"></div>
+            </div>
+            <div class="vs_desc_holder">
+                <div class="s_vs_desc">
+                    <div class="us_desc">
+                        <div>zero crash or jitters</div>
+                    </div>
+                    <div class="them_desc">
+                        <div>can give major crashes or jitters</div>
+                    </div>
+                </div>
+                <div class="s_vs_desc">
+                    <div class="us_desc">
+                        <div>delicious coffee taste</div>
+                    </div>
+                    <div class="them_desc">
+                        <div>bland coffee taste</div>
+                    </div>
+                </div>
+                <div class="s_vs_desc">
+                    <div class="us_desc">
+                        <div>improved immunity support</div>
+                    </div>
+                    <div class="them_desc">
+                        <div>zero immunity support</div>
+                    </div>
+                </div>
+                <div class="s_vs_desc">
+                    <div class="us_desc">
+                        <div>all-in-one super blend</div>
+                    </div>
+                    <div class="them_desc">
+                        <div>just coffee, nothing else</div>
+                    </div>
+                </div>
+            </div>
+            <div class="descs_below_table">Rainbow Dust v1.0 can be mixed with just about anything to enjoy it however you like...</div>
+            <a class="try_btn" href="https://spacegoods.com/pages/science" >TRY RAINBOW DUST RISK-FREE</a>
+            <div class="desc_below_btn">We offer a risk free money back guarantee with each order</div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#alternative_QxKn .try_btn').click(function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    });
+</script>
+</div>

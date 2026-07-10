@@ -1,0 +1,251 @@
+<div id="shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn" class="shopify-section">
+
+
+<style>
+    #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .section_holder_wrapper {
+        padding: 0 80px;
+        max-width: 1360px;
+        margin: auto;
+    }
+    #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .section_title {
+        align-self: stretch;
+        color: #000001;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1;
+        max-width: 100%;
+        margin-left: 16px;
+        margin-bottom: 48px;
+        text-align: left;
+    }
+    #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .section_items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 32px;
+    }
+    #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .section_item {
+        min-width: 1px;
+        width: 100%;
+        display: none;
+    }
+    #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .item_image {
+        padding-top: 500px;
+        position: relative;
+        margin-bottom: 24px;
+    }
+    #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .item_text {
+        align-self: stretch;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        font-weight: 400;
+        justify-content: flex-start;
+        line-height: 1.5;
+        max-width: 100%;
+        position: relative;
+    }
+    #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .item_image img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+border-radius: 8px;
+    }
+    @media screen and (max-width: 1024px) {
+        #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .section_items {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .section_holder_wrapper {
+            padding: 0 24px;
+        }
+        #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .section_title {
+            margin-left: 0;
+            margin-bottom: 30px; 
+        }
+        #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .item_image {
+            padding-top: 111.8%;
+            max-height: 400px;
+        }
+        #shopify-section-template--17389125894327__pdp_how_to_use_QnMRQn .item_text {
+            font-size: 15px;
+        }
+    }
+</style>
+
+<div pdp_howtouse="" id="pdp_how_to_use_MRQn" class="section_holder">
+    <div class="section_holder_wrapper">
+<h2 style= "font-weight: 600; text-align: center; color: #2d2d2d"> How to use! </h2>
+        <div class="section_items">
+            
+                <div class="section_item" data-flavor="Coffee" style="display: block;">
+                    <div class="item_image">
+                        <img src=https://cdn.shopify.com/s/files/1/0798/4267/2987/files/Energy2.webp?v=1736739401" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">1) how to use point example 1</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Coffee" style="display: block;">
+                    <div class="item_image">
+                        <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/Energy3.webp?v=1736739403" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">2) how to use point example 2</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Coffee" style="display: block;">
+                    <div class="item_image">
+                        <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/Energy7.webp?v=1736739413" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">3) how to use point example 3</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Coffee" style="display: block;">
+                    <div class="item_image">
+                        <img src="https://cdn.shopify.com/s/files/1/0798/4267/2987/files/Energy5.webp?v=1736739406" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">4) how to use point example 4</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Chocolate" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/2024-09-29_23-33-40_B_R8_S4_CHOC_1x1_d6c6c5d8-e0b7-4203-bb59-a2063ca9b251_1000x.jpg?v=1728025685" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">1) scoop 8g of Rainbow Dust</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Chocolate" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/mix_2_1000x.webp?v=1720520021" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">2) mix with water or milk - hot or cold</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Chocolate" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/frother_3_1000x.webp?v=1720520021" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">3) use your frother to blend to perfection</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Chocolate" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/SCC00936_1x1_77b9b3d3-2afe-4964-b522-e4aa8d233d06_1000x.jpg?v=1728025943" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">4) drink &amp; enjoy focus - energy - calm</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Vanilla Cinnamon" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/2024-09-29_23-33-40_B_R8_S4_CIN_1x1_1b50a2f7-28e4-4630-b92d-500a1794a20c_1000x.jpg?v=1728025746" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">1) scoop 8g of Rainbow Dust</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Vanilla Cinnamon" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/2024-09-29_23-41-00_B_R8_S4_H_1x1_f551f486-0062-46ef-8cf0-96e498376a8a_1000x.jpg?v=1728026249" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">2) mix with water or milk - hot or cold</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Vanilla Cinnamon" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/SCC00615_1x1_552b872c-8020-4cd7-81d3-17c3f7d04b5d_1000x.jpg?v=1728026331" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">3) use your frother to blend to perfection</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Vanilla Cinnamon" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/SCC00855_1x1_b9963ffd-9dc1-40d5-85c7-9680e7546a67_1000x.jpg?v=1728025978" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">4) drink &amp; enjoy focus - energy - calm</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Strawberry" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/2024-09-29_23-34-29_B_R8_S4_STRAW_1x1_afa5b9c3-5e2c-4d49-9128-d835dd668561_1000x.jpg?v=1728025786" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">1) scoop 8g of Rainbow Dust</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Strawberry" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/2024-09-29_23-40-27_B_R8_S4_H_1x1_fd662ce0-7b5d-4bc4-ab80-a1b5b0223f61_1000x.jpg?v=1728026391" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">2) mix with water or milk - cold like a milkshake!</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Strawberry" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/SCC00590_1x1_693f2342-210b-469b-adb5-8a83ce860c61_1000x.jpg?v=1728026452" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">3) use your frother to blend to perfection</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Strawberry" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/SCC00881_1x1_95d55eac-482a-4826-b77b-bdfe6a33a377_1000x.jpg?v=1728026013" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">4) drink &amp; enjoy focus - energy - calm</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Raw Chocolate (Decaf)" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/2024-09-29_23-33-40_B_R8_S4_CHOC_1x1_d6c6c5d8-e0b7-4203-bb59-a2063ca9b251_1000x.jpg?v=1728025685" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">1) scoop 8g of Rainbow Dust</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Raw Chocolate (Decaf)" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/mix_2_2e82c99b-f91c-437a-a68e-12ddc274715d_1000x.webp?v=1723624267" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">2) mix with water or milk - hot or cold</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Raw Chocolate (Decaf)" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/frother_3_3e370a78-3b68-4974-a163-d46c4e89d657_1000x.webp?v=1723624287" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">3) use your frother to blend to perfection</div>
+                </div>
+            
+                <div class="section_item" data-flavor="Raw Chocolate (Decaf)" style="display: none;">
+                    <div class="item_image">
+                        <img src="//spacegoods.com/cdn/shop/files/SCC00936_1x1_77b9b3d3-2afe-4964-b522-e4aa8d233d06_1000x.jpg?v=1728025943" alt="Image">
+                    </div>
+                    
+                    <div class="item_text">4) drink &amp; enjoy focus - energy - calm</div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+
+
+</div>

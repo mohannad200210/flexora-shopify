@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reviews Bar with Infinite Scroll</title>
+    <style>
+      .reviews-bar,
+      .reviews-barv2 {
+        width: 100%;
+        padding: 3px 0;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+margin-top: 10px;
+max-width: 1500px;
+margin-right: auto;
+margin-left: auto;
+      }
+      .reviews-wrapper,
+      .reviews-wrapperv2 {
+        display: flex;
+      }
+      .reviews-wrapper {
+        animation: scroll-text 20s linear infinite;
+      }
+      .reviews-wrapperv2 {
+        animation: scroll-text-reverse 20s linear infinite;
+      }
+.reviews-text, .reviews-textv2 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 15px;
+    border: 2px solid #f2f2f2;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+max-width: 300px;  
+line-height: 15px;
+}
+
+        .profile-pictures {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+      @keyframes scroll-text {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      @keyframes scroll-text-reverse {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reviews-barv2">
+      <div class="reviews-wrapperv2">
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-textv2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+      </div>
+    </div>
+<div class="reviews-bar">
+      <div class="reviews-wrapper">
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+ <div class="reviews-text"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwXtAOL0wCTsYOlr33hJX33swJ5ItWUmeRA&s"User Profile Picture" class="profile-pictures">
+<span>review goes here<br>
+new line</span></div>
+
+      </div>
+    </div>
+  </body>
+</html>
