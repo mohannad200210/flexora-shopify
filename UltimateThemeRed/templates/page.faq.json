@@ -23,7 +23,7 @@
         "template--19742927749415__9c121ec4-42cd-4c8e-82a2-935e073db7d7-16889993318614e07a-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "سؤال شائع",
             "icon": "check_box",
             "filled_icon": false,
             "row_content": "",
@@ -33,7 +33,7 @@
         "template--19742927749415__9c121ec4-42cd-4c8e-82a2-935e073db7d7-16889993318614e07a-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "سؤال شائع",
             "icon": "check_box",
             "filled_icon": false,
             "row_content": "",
@@ -43,7 +43,7 @@
         "template--19742927749415__9c121ec4-42cd-4c8e-82a2-935e073db7d7-16889993318614e07a-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "سؤال شائع",
             "icon": "check_box",
             "filled_icon": false,
             "row_content": "",
@@ -53,7 +53,7 @@
         "template--19742927749415__9c121ec4-42cd-4c8e-82a2-935e073db7d7-16889993318614e07a-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "سؤال شائع",
             "icon": "check_box",
             "filled_icon": false,
             "row_content": "",
@@ -68,7 +68,7 @@
         "template--19742927749415__9c121ec4-42cd-4c8e-82a2-935e073db7d7-16889993318614e07a-3"
       ],
       "settings": {
-        "caption": "Frequently asked questions",
+        "caption": "الأسئلة الشائعة",
         "heading_size": "h0",
         "heading_alignment": "center",
         "layout": "none",

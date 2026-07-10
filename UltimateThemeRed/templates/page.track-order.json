@@ -21,8 +21,8 @@
       "type": "track-order",
       "settings": {
         "heading_size": "h1",
-        "text": "<p>Welcome to our tracking page! Here you can easily track the status of your order by simply entering the tracking number we provided in your confirmation email. Stay up-to-date with the latest information on your delivery and ensure a hassle-free experience. Thank you for choosing our services! If you have any questions don't hesitate to contact us.</p>",
-        "button_label": "TRACK",
+        "text": "<p>مرحباً بك في صفحة تتبع الطلبات! هنا يمكنك بسهولة تتبع حالة طلبك بإدخال رقم التتبع الذي أرسلناه لك في بريد التأكيد. ابق على اطلاع بآخر المعلومات حول شحنتك لضمان تجربة سلسة. شكراً لاختيارك خدماتنا! إذا كانت لديك أي أسئلة، لا تتردد في التواصل معنا.</p>",
+        "button_label": "تتبع",
         "button_full_width": true,
         "color_scheme": "background-1",
         "padding_top": 36,
@@ -41,14 +41,14 @@
         "template--18472096104777__fd57cce8-d801-473c-9554-025221fb7723-1679865021003cfb75-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>اجمع بين النص والصورة للتركيز على منتجك المختار أو مجموعتك أو منشور مدونتك. أضف تفاصيل حول التوفر أو الأسلوب أو حتى قدّم مراجعة.</p>",
             "text_style": "body"
           }
         },
         "template--18472096104777__fd57cce8-d801-473c-9554-025221fb7723-1679865021003cfb75-2": {
           "type": "button",
           "settings": {
-            "button_label": "Contact us",
+            "button_label": "تواصل معنا",
             "button_link": ""
           }
         }

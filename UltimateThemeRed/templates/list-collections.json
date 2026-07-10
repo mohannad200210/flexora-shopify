@@ -12,7 +12,7 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "title": "Collections",
+        "title": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639\u0627\u062a",
         "sort": "alphabetical",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -31,7 +31,7 @@
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Join our email list for exclusive offers and the latest news. </p>"
+            "text": "<p>\u0627\u0634\u062a\u0631\u0643 \u0641\u064a \u0642\u0627\u0626\u0645\u062a\u0646\u0627 \u0627\u0644\u0628\u0631\u064a\u062f\u064a\u0629 \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0639\u0631\u0648\u0636 \u062d\u0635\u0631\u064a\u0629 \u0648\u0622\u062e\u0631 \u0627\u0644\u0623\u062e\u0628\u0627\u0631. </p>"
           }
         },
         "email-form": {
@@ -46,7 +46,7 @@
       ],
       "settings": {
         "button_type": "solid",
-        "button_label": "Sign up",
+        "button_label": "\u0627\u0634\u062a\u0631\u0643",
         "button_style_secondary": false,
         "color_scheme": "background-2",
         "full_width": true,

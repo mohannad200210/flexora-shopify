@@ -23,7 +23,7 @@
         "template--18407212810569__60910267-55e8-4e0d-a9f9-79b26b3533dc-16795881913b1fb5f3-0": {
           "type": "heading",
           "settings": {
-            "title": "Talk about your brand",
+            "title": "تحدث عن علامتك التجارية",
             "title_highlight_color": "#6d388b",
             "heading_size": "h1"
           }
@@ -31,7 +31,7 @@
         "template--18407212810569__60910267-55e8-4e0d-a9f9-79b26b3533dc-16795881913b1fb5f3-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At [Your company], your satisfaction is our top priority. We encourage you to reach out with any questions, concerns, or feedback, as our dedicated team is always eager to assist you. Whether you need help with product inquiries or simply want to share your experience with us, we're just a message away. </p>"
+            "text": "<p>في [اسم شركتك]، رضاك هو أولويتنا القصوى. نشجعك على التواصل معنا لأي أسئلة أو استفسارات أو ملاحظات، لأن فريقنا المتفاني دائماً على استعداد لمساعدتك. سواء كنت بحاجة إلى مساعدة بخصوص المنتج أو ترغب فقط في مشاركة تجربتك معنا، فنحن على بُعد رسالة واحدة. </p>"
           }
         }
       },
@@ -66,13 +66,13 @@
             "input_1_enabled": true,
             "input_1_type": "name",
             "input_1_required": false,
-            "input_1_error_message": "This field is required",
-            "input_1_custom_name": "Custom input name",
+            "input_1_error_message": "هذا الحقل مطلوب",
+            "input_1_custom_name": "اسم الحقل المخصص",
             "input_2_enabled": true,
             "input_2_type": "email",
             "input_2_required": false,
-            "input_2_error_message": "This field is required",
-            "input_2_custom_name": "Custom input name"
+            "input_2_error_message": "هذا الحقل مطلوب",
+            "input_2_custom_name": "اسم الحقل المخصص"
           }
         },
         "field_row_HX8WGh": {
@@ -81,13 +81,13 @@
             "input_1_enabled": true,
             "input_1_type": "phone",
             "input_1_required": false,
-            "input_1_error_message": "This field is required",
-            "input_1_custom_name": "Custom input name",
+            "input_1_error_message": "هذا الحقل مطلوب",
+            "input_1_custom_name": "اسم الحقل المخصص",
             "input_2_enabled": false,
             "input_2_type": "custom",
             "input_2_required": false,
-            "input_2_error_message": "This field is required",
-            "input_2_custom_name": "Custom input name"
+            "input_2_error_message": "هذا الحقل مطلوب",
+            "input_2_custom_name": "اسم الحقل المخصص"
           }
         },
         "textarea_trVaGc": {
@@ -95,8 +95,8 @@
           "settings": {
             "input_type": "comment",
             "input_required": false,
-            "input_error_message": "This field is required",
-            "input_custom_name": "Custom name"
+            "input_error_message": "هذا الحقل مطلوب",
+            "input_custom_name": "اسم مخصص"
           }
         }
       },
@@ -108,7 +108,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "title": "Get in touch",
+        "title": "تواصل معنا",
         "title_highlight_color": "#6D388B",
         "heading_size": "h1",
         "button_full_width": true,

@@ -43,7 +43,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "You may also like",
+        "title": "قد يعجبك أيضاً",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -76,7 +76,7 @@
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Join our email list for exclusive offers and the latest news. </p>"
+            "text": "<p>اشترك في قائمتنا البريدية للحصول على عروض حصرية وآخر الأخبار. </p>"
           }
         },
         "email-form": {
