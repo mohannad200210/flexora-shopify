@@ -405,6 +405,15 @@
         "padding_top": 56,
         "padding_bottom": 56
       }
+    },
+    "flexora_sizing": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "\n<div class=\"flexora-sizing\" dir=\"rtl\" style=\"background:linear-gradient(180deg,#fff,#f0fdfa);padding:48px 16px;font-family:Cairo,sans-serif;border-top:2px solid #0d948822;border-bottom:2px solid #0d948822;\">\n  <div style=\"max-width:840px;margin:0 auto;\">\n    <div style=\"text-align:center;margin-bottom:8px;\">\n      <span style=\"display:inline-block;background:#0F766E;color:#fff;padding:4px 14px;border-radius:14px;font-size:1.25rem;font-weight:700;\">اختر مقاسك بسهولة</span>\n    </div>\n    <h2 style=\"text-align:center;font-size:2.6rem;font-weight:900;color:#1a1a1a;margin:8px 0 6px;\">جدول المقاسات</h2>\n    <p style=\"text-align:center;font-size:1.4rem;color:#666;margin:0 0 24px;\">قِس محيط خصرك عند السرة، ثم اختر المقاس الأقرب</p>\n\n    <table style=\"width:100%;border-collapse:separate;border-spacing:0 8px;margin:0 auto;font-size:1.4rem;\">\n      <thead>\n        <tr>\n          <th style=\"background:#0F766E;color:#fff;padding:14px 12px;text-align:right;border-radius:10px 0 0 10px;font-weight:800;width:30%;font-size:1.4rem;\">المقاس</th>\n          <th style=\"background:#0F766E;color:#fff;padding:14px 12px;text-align:right;font-weight:800;width:40%;font-size:1.4rem;\">محيط الخصر</th>\n          <th style=\"background:#0F766E;color:#fff;padding:14px 12px;text-align:center;border-radius:0 10px 10px 0;font-weight:800;width:30%;font-size:1.4rem;\">الوزن التقريبي</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td style=\"background:#fff;border:1px solid #e5e7eb;padding:14px 12px;text-align:right;border-right:4px solid #0F766E;font-weight:800;color:#0F766E;\">S</td>\n          <td style=\"background:#fff;border:1px solid #e5e7eb;padding:14px 12px;text-align:right;\">٧١ – ٨١ سم</td>\n          <td style=\"background:#fff;border:1px solid #e5e7eb;padding:14px 12px;text-align:center;color:#666;\">٤٥ – ٦٥ كغ</td>\n        </tr>\n        <tr>\n          <td style=\"background:#f0fdfa;border:1px solid #0d948822;padding:14px 12px;text-align:right;border-right:4px solid #0F766E;font-weight:800;color:#0F766E;\">M</td>\n          <td style=\"background:#f0fdfa;border:1px solid #0d948822;padding:14px 12px;text-align:right;font-weight:600;\">٨١ – ٩١ سم</td>\n          <td style=\"background:#f0fdfa;border:1px solid #0d948822;padding:14px 12px;text-align:center;color:#0F766E;font-weight:600;\">٦٥ – ٨٠ كغ (الأكثر طلباً)</td>\n        </tr>\n        <tr>\n          <td style=\"background:#fff;border:1px solid #e5e7eb;padding:14px 12px;text-align:right;border-right:4px solid #0F766E;font-weight:800;color:#0F766E;\">L</td>\n          <td style=\"background:#fff;border:1px solid #e5e7eb;padding:14px 12px;text-align:right;\">٩١ – ١٠٢ سم</td>\n          <td style=\"background:#fff;border:1px solid #e5e7eb;padding:14px 12px;text-align:center;color:#666;\">٨٠ – ٩٥ كغ</td>\n        </tr>\n        <tr>\n          <td style=\"background:#f0fdfa;border:1px solid #0d948822;padding:14px 12px;text-align:right;border-right:4px solid #0F766E;font-weight:800;color:#0F766E;\">XL</td>\n          <td style=\"background:#f0fdfa;border:1px solid #0d948822;padding:14px 12px;text-align:right;\">١٠٢ – ١١٢ سم</td>\n          <td style=\"background:#f0fdfa;border:1px solid #0d948822;padding:14px 12px;text-align:center;color:#666;\">٩٥ – ١١٠ كغ</td>\n        </tr>\n        <tr>\n          <td style=\"background:#fff;border:1px solid #e5e7eb;padding:14px 12px;text-align:right;border-right:4px solid #0F766E;font-weight:800;color:#0F766E;\">XXL</td>\n          <td style=\"background:#fff;border:1px solid #e5e7eb;padding:14px 12px;text-align:right;\">١١٢ – ١٣٢ سم</td>\n          <td style=\"background:#fff;border:1px solid #e5e7eb;padding:14px 12px;text-align:center;color:#666;\">١١٠+ كغ</td>\n        </tr>\n      </tbody>\n    </table>\n\n    <div style=\"margin-top:24px;padding:16px;background:#ecfdf5;border:1px dashed #0d9488;border-radius:8px;text-align:center;\">\n      <p style=\"margin:0;font-size:1.35rem;color:#155724;line-height:1.7;\">\n        💡 <strong>نصيحة:</strong> إذا كان مقاسك بين قياسين، اختر المقاس الأكبر للحصول على دعم مريح بدون ضغط زائد.\n      </p>\n    </div>\n  </div>\n</div>\n",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -415,6 +424,7 @@
     "flexora_story_sizing",
     "flexora_story_stat",
     "flexora_comparison",
+    "flexora_sizing",
     "product_usp_section",
     "flexora_bundle",
     "before_after",
