@@ -338,12 +338,62 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "flexora_story_posture": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "\n<div class=\"flexora-story\" dir=\"rtl\" style=\"background:#fff;padding:60px 16px;font-family:Cairo,sans-serif;\">\n  <div style=\"max-width:1100px;margin:0 auto;display:flex;gap:48px;align-items:center;flex-wrap:wrap;flex-direction:row;\">\n    <div style=\"flex:1 1 480px;min-width:280px;order:1;\">\n      <img src=\"https://flexora-10124.myshopify.com/cdn/shop/files/2-back-brace-lifestyle.jpg?v=1783714483\" alt=\"دعم وضعية الظهر\" loading=\"lazy\" style=\"display:block;width:100%;max-width:520px;height:auto;border-radius:16px;box-shadow:0 12px 36px rgba(0,0,0,0.12);\" />\n    </div>\n    <div style=\"flex:1 1 420px;min-width:280px;order:2;\">\n      <div style=\"display:inline-block;background:#0F766E;color:#fff;padding:4px 12px;border-radius:14px;font-size:1.2rem;font-weight:700;margin-bottom:12px;\">دعم وضعية الظهر</div>\n      <h2 style=\"font-size:3.2rem;font-weight:900;color:#1a1a1a;margin:0 0 16px;line-height:1.2;\">دعم قطني مزدوج يستهدف أسفل الظهر</h2>\n      <p style=\"font-size:1.55rem;color:#444;line-height:1.85;margin:0 0 18px;\">نظام ضغط مزدوج مصمم طبياً يستهدف الفقرات القطنية تحديداً، يخفف الضغط على الأعصاب ويزيد من تدفق الدم. تشعرك بفرق من أول أسبوع استخدام — ألم أقل، حركة أسهل، نوم أعمق.</p>\n      <div style=\"margin-top:14px;\"><a href=\"#flexora-bundle\" style=\"display:inline-block;background:#0F766E;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:700;font-size:1.35rem;\">اطلب الحزام الآن</a></div>\n    </div>\n  </div>\n</div>\n",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "flexora_story_straps": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "\n<div class=\"flexora-story\" dir=\"rtl\" style=\"background:#f0fdfa;padding:60px 16px;font-family:Cairo,sans-serif;\">\n  <div style=\"max-width:1100px;margin:0 auto;display:flex;gap:48px;align-items:center;flex-wrap:wrap;flex-direction:row-reverse;\">\n    <div style=\"flex:1 1 480px;min-width:280px;order:2;\">\n      <img src=\"https://flexora-10124.myshopify.com/cdn/shop/files/5-pain-relief.jpg?v=1783714462\" alt=\"ضغط متكامل\" loading=\"lazy\" style=\"display:block;width:100%;max-width:520px;height:auto;border-radius:16px;box-shadow:0 12px 36px rgba(0,0,0,0.12);\" />\n    </div>\n    <div style=\"flex:1 1 420px;min-width:280px;order:1;\">\n      <div style=\"display:inline-block;background:#0F766E;color:#fff;padding:4px 12px;border-radius:14px;font-size:1.2rem;font-weight:700;margin-bottom:12px;\">ضغط متكامل</div>\n      <h2 style=\"font-size:3.2rem;font-weight:900;color:#1a1a1a;margin:0 0 16px;line-height:1.2;\">أشرطة فولاذية صلبة لتدعيم فوري</h2>\n      <p style=\"font-size:1.55rem;color:#444;line-height:1.85;margin:0 0 18px;\">شرائط معدنية داخلية تتكيف مع انحناءة ظهرك الطبيعية وتمنع الانحناء الخاطئ أثناء الجلوس أو الرفع. قوة الدعم موزعة بالتساوي على كامل المنطقة القطنية، بدون ضغط على العمود الفقري أو العضلات المحيطة.</p>\n      <div style=\"margin-top:14px;\"><a href=\"#flexora-bundle\" style=\"display:inline-block;background:#0F766E;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:700;font-size:1.35rem;\">شاهد كيف يعمل</a></div>\n    </div>\n  </div>\n</div>\n",
+        "color_scheme": "background-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "flexora_story_comfort": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "\n<div class=\"flexora-story\" dir=\"rtl\" style=\"background:#fff;padding:60px 16px;font-family:Cairo,sans-serif;\">\n  <div style=\"max-width:1100px;margin:0 auto;display:flex;gap:48px;align-items:center;flex-wrap:wrap;flex-direction:row;\">\n    <div style=\"flex:1 1 480px;min-width:280px;order:1;\">\n      <img src=\"https://flexora-10124.myshopify.com/cdn/shop/files/7-active-lifestyle.jpg?v=1783714463\" alt=\"راحة طوال اليوم\" loading=\"lazy\" style=\"display:block;width:100%;max-width:520px;height:auto;border-radius:16px;box-shadow:0 12px 36px rgba(0,0,0,0.12);\" />\n    </div>\n    <div style=\"flex:1 1 420px;min-width:280px;order:2;\">\n      <div style=\"display:inline-block;background:#0F766E;color:#fff;padding:4px 12px;border-radius:14px;font-size:1.2rem;font-weight:700;margin-bottom:12px;\">راحة طوال اليوم</div>\n      <h2 style=\"font-size:3.2rem;font-weight:900;color:#1a1a1a;margin:0 0 16px;line-height:1.2;\">قماش تنفسي لا يحبس الحرارة</h2>\n      <p style=\"font-size:1.55rem;color:#444;line-height:1.85;margin:0 0 18px;\">مزيج من النايلون المتين والمطاط المرن يسمح للهواء بالدوران بحرية، فلا تتعرق ولا تحس بحرارة مزعجة. خفيف بما يكفي لارتدائه ٤-٨ ساعات يومياً في العمل أو الرياضة أو حتى في النوم.</p>\n      \n    </div>\n  </div>\n</div>\n",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "flexora_story_sizing": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "\n<div class=\"flexora-story\" dir=\"rtl\" style=\"background:#f0fdfa;padding:60px 16px;font-family:Cairo,sans-serif;\">\n  <div style=\"max-width:1100px;margin:0 auto;display:flex;gap:48px;align-items:center;flex-wrap:wrap;flex-direction:row-reverse;\">\n    <div style=\"flex:1 1 480px;min-width:280px;order:2;\">\n      <img src=\"https://flexora-10124.myshopify.com/cdn/shop/files/8-size-guide.jpg?v=1783714462\" alt=\"مقاسات لجميع الأحجام\" loading=\"lazy\" style=\"display:block;width:100%;max-width:520px;height:auto;border-radius:16px;box-shadow:0 12px 36px rgba(0,0,0,0.12);\" />\n    </div>\n    <div style=\"flex:1 1 420px;min-width:280px;order:1;\">\n      <div style=\"display:inline-block;background:#0F766E;color:#fff;padding:4px 12px;border-radius:14px;font-size:1.2rem;font-weight:700;margin-bottom:12px;\">مقاسات لجميع الأحجام</div>\n      <h2 style=\"font-size:3.2rem;font-weight:900;color:#1a1a1a;margin:0 0 16px;line-height:1.2;\">من S إلى XXL — يناسب كل الجسم</h2>\n      <p style=\"font-size:1.55rem;color:#444;line-height:1.85;margin:0 0 18px;\">متوفر بخمسة مقاسات تغطي خصور من ٧١ سم إلى ١٣٢ سم. أحزمة قابلة للتعديل بالكامل، تناسب الجسم سواء نحيف أو ممتلئ، رجال أو نساء. لا حاجة لقياس دقيق — فقط اختر مقاسك المعتاد.</p>\n      \n    </div>\n  </div>\n</div>\n",
+        "color_scheme": "background-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "flexora_story_stat": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "\n<div class=\"flexora-story-stat\" dir=\"rtl\" style=\"background:linear-gradient(135deg,#0F766E,#0B5B54);padding:60px 16px;font-family:Cairo,sans-serif;color:#fff;text-align:center;\">\n  <div style=\"max-width:920px;margin:0 auto;\">\n    <div style=\"display:inline-block;background:rgba(255,255,255,0.15);padding:6px 16px;border-radius:18px;font-size:1.3rem;font-weight:700;margin-bottom:18px;\">عملاء حقيقيون · نتائج حقيقية</div>\n    <h2 style=\"font-size:5rem;font-weight:900;margin:0 0 12px;line-height:1.1;\">+٧٤٢</h2>\n    <p style=\"font-size:1.8rem;margin:0 0 24px;opacity:0.95;\">شخص اختاروا حزام فليكسورا خلال آخر ٦ أشهر</p>\n    <p style=\"font-size:1.35rem;margin:0 0 24px;opacity:0.85;line-height:1.7;\">مع تقييم متوسط ٤.٩ من ٥ من عملاء موثقين. انضم لتجربة آلاف الأردنيين الذين غيّروا حياتهم اليومية بحزام واحد.</p>\n    <img src=\"https://flexora-10124.myshopify.com/cdn/shop/files/Gemini_Generated_Image_wtdd1ywtdd1ywtdd.png?v=1783714485\" alt=\"عملاء يستخدمون حزام فليكسورا\" loading=\"lazy\" style=\"max-width:520px;width:100%;height:auto;border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,0.3);\" />\n  </div>\n</div>\n",
+        "color_scheme": "inverse",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "flexora_features",
     "flexora_floating_quote",
+    "flexora_story_posture",
+    "flexora_story_straps",
+    "flexora_story_comfort",
+    "flexora_story_sizing",
+    "flexora_story_stat",
     "product_usp_section",
     "flexora_bundle",
     "before_after",

@@ -1,0 +1,13 @@
+feat: Item 6 — add 5 alternating full-width feature story sections
+
+templates/product.json (5 new custom-liquid sections between flexora_floating_quote and product_usp_section):
+- flexora_story_posture (image right, text left): دعم وضعية الظهر — headline "دعم قطني مزدوج يستهدف أسفل الظهر" + 2-back-brace-lifestyle.jpg + CTA button
+- flexora_story_straps (image left, text right, teal bg): ضغط متكامل — "أشرطة فولاذية صلبة لتدعيم فوري" + 5-pain-relief.jpg
+- flexora_story_comfort (image right, text left): راحة طوال اليوم — "قماش تنفسي لا يحبس الحرارة" + 7-active-lifestyle.jpg
+- flexora_story_sizing (image left, text right, teal bg): مقاسات لجميع الأحجام — "من S إلى XXL — يناسب كل الجسم" + 8-size-guide.jpg
+- flexora_story_stat (full-width teal gradient, centered): the "742 customers" reframed as a hero stat block with big "+742" number + supporting lifestyle image (Gemini_Generated_Image_wtdd1ywtdd1ywtdd.png)
+- Each section uses flexbox with row-reverse alternating to create the alternating left/right image+text layout
+- Image aspect ratio: ~520px max width, 16:9-ish, with rounded corners and drop shadow
+- All original Arabic copy specific to Flexora's back-support belt
+- Used existing Shopify CDN image URLs (which are stable as long as images aren't re-uploaded)
+- No new section files built
