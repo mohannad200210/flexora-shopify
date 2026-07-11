@@ -136,14 +136,28 @@
             "mobile_show_price_in_button": false,
             "mobile_transparent_bg": false
           }
+        },
+        "flexora_floating_quote_block": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "\n<div class=\"flexora-floating-quote\" dir=\"rtl\" style=\"position:sticky;top:8px;z-index:5;background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid #f5a623;border-right:4px solid #f5a623;border-radius:10px;padding:10px 14px;margin:0 0 10px;display:flex;align-items:center;gap:12px;font-family:Cairo,sans-serif;box-shadow:0 4px 14px rgba(245,166,35,0.18);font-size:1.25rem;line-height:1.4;\">\n  <div style=\"flex-shrink:0;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#f5a623,#c47a00);display:flex;align-items:center;justify-content:center;color:#fff;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size:20px;font-variation-settings:'FILL' 1;\">format_quote</span>\n  </div>\n  <div style=\"flex:1;min-width:0;\">\n    <p style=\"margin:0;font-size:1.3rem;color:#1a1a1a;font-weight:600;line-height:1.4;\">«صرت أوقف وأمشي بدون ألم»</p>\n    <div style=\"display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:2px;font-size:1.1rem;color:#666;\">\n      <strong style=\"color:#1a1a1a;\">عبدالله م.</strong>\n      <span style=\"display:inline-flex;align-items:center;gap:3px;background:#1dc187;color:#fff;padding:1px 6px;border-radius:8px;font-size:1rem;font-weight:700;\">✓ موثق</span>\n      <span style=\"color:#999;font-size:1rem;\">(مثال)</span>\n    </div>\n  </div>\n  <div style=\"flex-shrink:0;color:#f5a623;font-size:1.3rem;letter-spacing:1px;\">★★★★★</div>\n</div>\n"
+          }
+        },
+        "flexora_features_block": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "\n<div class=\"flexora-features-block\" dir=\"rtl\" style=\"background:linear-gradient(180deg,#f0fdfa,#fff);border:1px solid #0d948833;border-radius:10px;padding:14px 12px;margin:8px 0 14px;font-family:Cairo,sans-serif;\">\n  <div style=\"display:grid;grid-template-columns:repeat(3,1fr);gap:10px 6px;\">\n\n    <div style=\"text-align:center;padding:6px 2px;\">\n      <span class=\"material-symbols-outlined\" style=\"font-size:24px;color:#0F766E;font-variation-settings:'FILL' 1;line-height:1;\">accessibility_new</span>\n      <div style=\"font-size:1.1rem;font-weight:700;color:#1a1a1a;margin-top:4px;line-height:1.2;\">دعم قطني مزدوج</div>\n      <div style=\"font-size:1rem;color:#555;line-height:1.3;margin-top:2px;\">نظام ضغط مزدوج يستهدف أسفل الظهر تحديداً لراحة فورية</div>\n    </div>\n  \n    <div style=\"text-align:center;padding:6px 2px;\">\n      <span class=\"material-symbols-outlined\" style=\"font-size:24px;color:#0F766E;font-variation-settings:'FILL' 1;line-height:1;\">straighten</span>\n      <div style=\"font-size:1.1rem;font-weight:700;color:#1a1a1a;margin-top:4px;line-height:1.2;\">أشرطة فولاذية</div>\n      <div style=\"font-size:1rem;color:#555;line-height:1.3;margin-top:2px;\">أشرطة معدنية صلبة توفر دعم استثنائي للعمود الفقري</div>\n    </div>\n  \n    <div style=\"text-align:center;padding:6px 2px;\">\n      <span class=\"material-symbols-outlined\" style=\"font-size:24px;color:#0F766E;font-variation-settings:'FILL' 1;line-height:1;\">air</span>\n      <div style=\"font-size:1.1rem;font-weight:700;color:#1a1a1a;margin-top:4px;line-height:1.2;\">قماش تنفسي</div>\n      <div style=\"font-size:1rem;color:#555;line-height:1.3;margin-top:2px;\">مريح طوال اليوم، يسمح بدخول الهواء ويمنع التعرق</div>\n    </div>\n  \n    <div style=\"text-align:center;padding:6px 2px;\">\n      <span class=\"material-symbols-outlined\" style=\"font-size:24px;color:#0F766E;font-variation-settings:'FILL' 1;line-height:1;\">tune</span>\n      <div style=\"font-size:1.1rem;font-weight:700;color:#1a1a1a;margin-top:4px;line-height:1.2;\">مقاسات قابلة للتعديل</div>\n      <div style=\"font-size:1rem;color:#555;line-height:1.3;margin-top:2px;\">من S إلى XXL — يناسب خصور من ٧١ سم إلى ١٣٢ سم</div>\n    </div>\n  \n    <div style=\"text-align:center;padding:6px 2px;\">\n      <span class=\"material-symbols-outlined\" style=\"font-size:24px;color:#0F766E;font-variation-settings:'FILL' 1;line-height:1;\">self_improvement</span>\n      <div style=\"font-size:1.1rem;font-weight:700;color:#1a1a1a;margin-top:4px;line-height:1.2;\">خفيف ومريح</div>\n      <div style=\"font-size:1rem;color:#555;line-height:1.3;margin-top:2px;\">وزن خفيف لا يثقل الكتفين، يمكن ارتداؤه تحت الملابس</div>\n    </div>\n  \n    <div style=\"text-align:center;padding:6px 2px;\">\n      <span class=\"material-symbols-outlined\" style=\"font-size:24px;color:#0F766E;font-variation-settings:'FILL' 1;line-height:1;\">cleaning_services</span>\n      <div style=\"font-size:1.1rem;font-weight:700;color:#1a1a1a;margin-top:4px;line-height:1.2;\">سهل التنظيف</div>\n      <div style=\"font-size:1rem;color:#555;line-height:1.3;margin-top:2px;\">قماش قابل للغسل يدوياً، يحافظ على جودته مع الاستخدام اليومي</div>\n    </div>\n  \n  </div>\n</div>\n<style>\n@media (max-width: 600px) {\n  .flexora-features-block > div { grid-template-columns: repeat(2, 1fr) !important; }\n}\n</style>\n"
+          }
         }
       },
       "block_order": [
         "title",
+        "flexora_floating_quote_block",
         "cod_badge",
         "price",
-        "flexora_trust_lines",
+        "flexora_features_block",
         "social_proof",
+        "flexora_trust_lines",
         "variant_picker",
         "hot_stock_urgency",
         "quantity_selector",
@@ -227,118 +241,6 @@
         "padding_bottom": 0
       }
     },
-    "flexora_features": {
-      "type": "icon-bar",
-      "blocks": {
-        "column_1": {
-          "type": "column",
-          "settings": {
-            "icon": "accessibility_new",
-            "filled_icon": true,
-            "title": "دعم قطني مزدوج",
-            "text": "<p>نظام ضغط مزدوج يستهدف أسفل الظهر تحديداً لراحة فورية</p>"
-          }
-        },
-        "column_2": {
-          "type": "column",
-          "settings": {
-            "icon": "straighten",
-            "filled_icon": true,
-            "title": "أشرطة فولاذية",
-            "text": "<p>أشرطة معدنية صلبة توفر دعم استثنائي للعمود الفقري</p>"
-          }
-        },
-        "column_3": {
-          "type": "column",
-          "settings": {
-            "icon": "air",
-            "filled_icon": true,
-            "title": "قماش تنفسي",
-            "text": "<p>مريح طوال اليوم، يسمح بدخول الهواء ويمنع التعرق</p>"
-          }
-        },
-        "column_4": {
-          "type": "column",
-          "settings": {
-            "icon": "tune",
-            "filled_icon": true,
-            "title": "مقاسات قابلة للتعديل",
-            "text": "<p>من S إلى XXL — يناسب خصور من ٧١ سم إلى ١٣٢ سم</p>"
-          }
-        },
-        "column_5": {
-          "type": "column",
-          "settings": {
-            "icon": "self_improvement",
-            "filled_icon": true,
-            "title": "خفيف ومريح",
-            "text": "<p>وزن خفيف لا يثقل الكتفين، يمكن ارتداؤه تحت الملابس</p>"
-          }
-        },
-        "column_6": {
-          "type": "column",
-          "settings": {
-            "icon": "cleaning_services",
-            "filled_icon": true,
-            "title": "سهل التنظيف",
-            "text": "<p>قماش قابل للغسل يدوياً، يحافظ على جودته مع الاستخدام اليومي</p>"
-          }
-        }
-      },
-      "settings": {
-        "visibility": "always-display",
-        "title": "",
-        "title_highlight_color": "#0F766E",
-        "heading_size": "h2",
-        "text": "",
-        "color_scheme": "background-1",
-        "icon_layout": "horizontal",
-        "icon_size": "medium",
-        "icon_color": "accent-1",
-        "cards_color_scheme": "bg-overlay",
-        "type": "slide",
-        "autoplay": false,
-        "autoplay_speed": 5,
-        "arrows_color_scheme": "inverse",
-        "transparent_arrows": true,
-        "dots_color_scheme": "inverse",
-        "desktop_full_page": true,
-        "columns_desktop": 3,
-        "slider_desktop": false,
-        "per_move_desktop": 1,
-        "desktop_spacing": 24,
-        "desktop_side_padding": 0,
-        "desktop_padding_calc": true,
-        "desktop_adaptive_height": false,
-        "desktop_dots_position": "hidden",
-        "desktop_arrows_position": "hidden",
-        "columns_mobile": "2",
-        "slider_mobile": false,
-        "enable_mobile_preview": false,
-        "mobile_adaptive_height": false,
-        "mobile_dots_position": "hidden",
-        "mobile_arrows_position": "hidden",
-        "padding_top": 32,
-        "padding_bottom": 32
-      },
-      "block_order": [
-        "column_1",
-        "column_2",
-        "column_3",
-        "column_4",
-        "column_5",
-        "column_6"
-      ]
-    },
-    "flexora_floating_quote": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "\n<div class=\"flexora-floating-quote\" dir=\"rtl\" style=\"background:linear-gradient(135deg,#fffbeb,#fef3c7);border-right:4px solid #f5a623;border-radius:10px;padding:18px 22px;margin:24px auto;max-width:920px;display:flex;align-items:center;gap:18px;font-family:Cairo,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,0.06);\">\n  <div style=\"flex-shrink:0;width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#f5a623,#c47a00);display:flex;align-items:center;justify-content:center;color:#fff;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size:32px;font-variation-settings:'FILL' 1;\">format_quote</span>\n  </div>\n  <div style=\"flex:1;line-height:1.7;\">\n    <p style=\"margin:0 0 6px 0;font-size:1.55rem;color:#1a1a1a;font-weight:600;\">\n      «صرت أوقف وأمشي بدون ألم بعد أسبوعين من الاستخدام، حتى بنام عليها»\n    </p>\n    <div style=\"display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:1.25rem;color:#555;\">\n      <strong style=\"color:#1a1a1a;\">عبدالله م.</strong>\n      <span style=\"display:inline-flex;align-items:center;gap:4px;background:#1dc187;color:#fff;padding:2px 10px;border-radius:10px;font-size:1.1rem;font-weight:700;\">\n        <span class=\"material-symbols-outlined\" style=\"font-size:14px;font-variation-settings:'FILL' 1;\">verified</span>\n        عميل موثق\n      </span>\n      <span style=\"color:#999;font-size:1.1rem;\">(مثال — يحتاج إلى تقييم حقيقي)</span>\n    </div>\n  </div>\n  <div style=\"flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:2px;\">\n    <div style=\"color:#f5a623;font-size:1.6rem;letter-spacing:2px;\">★★★★★</div>\n    <span style=\"color:#999;font-size:1.1rem;\">5/5</span>\n  </div>\n</div>\n",
-        "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "flexora_story_posture": {
       "type": "custom-liquid",
       "settings": {
@@ -387,8 +289,6 @@
   },
   "order": [
     "main",
-    "flexora_features",
-    "flexora_floating_quote",
     "flexora_story_posture",
     "flexora_story_straps",
     "flexora_story_comfort",
