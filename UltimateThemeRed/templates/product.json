@@ -285,6 +285,126 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "flexora_comparison": {
+      "type": "comparison-table",
+      "blocks": {
+        "row_1": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>دعم قطني مزدوج</strong> (ضغط على فقرتين)",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "row_2": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>أشرطة فولاذية</strong> صلبة قابلة للتعديل",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "row_3": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>قماش تنفسي</strong> مقاوم للعرق",
+            "us": true,
+            "others": true,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "row_4": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>خامة طبية معتمدة</strong> (Premium medical-grade)",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "row_5": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>ضمان استرجاع 30 يوم</strong> بدون أي أسئلة",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "row_6": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>شحن مجاني</strong> + دفع عند الاستلام في كل المحافظات",
+            "us": true,
+            "others": true,
+            "others_2": false,
+            "others_3": false
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4",
+        "row_5",
+        "row_6"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "<strong>Flexora</strong> <em>vs</em> الأحزمة العادية",
+        "title_highlight_color": "#0F766E",
+        "heading_size": "h1",
+        "text": "<p>نفس الهدف — حماية ظهرك من الألم. لكن الطريقة مختلفة تماماً. اعرف الفرق قبل ما تختار.</p>",
+        "button_label": "اطلب Flexora الآن",
+        "link": "/products/hizam-alzahr-altbi-flexora",
+        "button_style_secondary": false,
+        "atc_button_label": "أضيفي للسلة",
+        "atc_product": null,
+        "atc_skip_cart": false,
+        "desktop_alignment": "center",
+        "mobile_alignment": "center",
+        "color_scheme": "background-1",
+        "layout": "table_first",
+        "style": "classic",
+        "number_of_competitors": 1,
+        "competitors": 1,
+        "competitors_label": "competitor",
+        "us_label": "Flexora",
+        "us_label_size": 20,
+        "us_logo": null,
+        "us_logo_width": 100,
+        "us_mobile_logo_width": 80,
+        "others_label": "أحزمة الظهر العادية",
+        "others_label_size": 18,
+        "others_logo": null,
+        "others_logo_width": 100,
+        "others_mobile_logo_width": 80,
+        "checkmark_style": "solid",
+        "checkmark_color": "#0F766E",
+        "checkmark_bg_color": "#0F766E",
+        "x_style": "regular",
+        "x_color": "#9ca3af",
+        "x_bg_color": "#f3f4f6",
+        "opposite_icon_colors": "original",
+        "highlighted_color_scheme": "accent-1",
+        "highlighted_separator_opacity": 8,
+        "highlighted_overlay_opacity": 4,
+        "other_cells_color_scheme": "background-2",
+        "regular_separator_opacity": 8,
+        "regular_overlay_opacity": 0,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
     }
   },
   "order": [
@@ -294,6 +414,7 @@
     "flexora_story_comfort",
     "flexora_story_sizing",
     "flexora_story_stat",
+    "flexora_comparison",
     "product_usp_section",
     "flexora_bundle",
     "before_after",
