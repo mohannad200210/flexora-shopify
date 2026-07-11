@@ -52,9 +52,9 @@
         "custom_colors_background": "#ffffff",
         "custom_gradient_background": "",
         "custom_colors_text": "#2e2a39",
-        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_background": "#0F766E",
         "custom_colors_solid_button_text": "#ffffff",
-        "custom_colors_outline_button": "#dd1d1d"
+        "custom_colors_outline_button": "#0F766E"
       }
     },
     "contact_form_U9ptC4": {
@@ -123,7 +123,7 @@
         "errors_icon": "error",
         "errors_icon_filled": false,
         "errors_text_color": "#FF0000",
-        "errors_bg_color": "#fff5f5",
+        "errors_bg_color": "#ecfdf5",
         "errors_border_radius": 8,
         "errors_border_width": 1,
         "errors_border_color": "#FF0000",
@@ -132,7 +132,7 @@
         "custom_colors_background": "#FFFFFF",
         "custom_gradient_background": "",
         "custom_colors_text": "#2E2A39",
-        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_background": "#0F766E",
         "custom_colors_solid_button_text": "#ffffff"
       }
     }
