@@ -1,0 +1,12 @@
+feat: Item 4 — add 4-line stacked trust/urgency group directly under price
+
+templates/product.json (sections.main.blocks.flexora_trust_lines — custom_liquid block):
+- Inserted right after the 'price' block in sections.main.block_order
+- 4 short stacked lines (no big badges, as user requested), each with a Material Symbols icon + Arabic text:
+  1. ⏰ العرض لفترة محدودة — ينتهي اليوم (red icon, urgency)
+  2. 🚚 توصيل مجاني لجميع محافظات الأردن (teal icon)
+  3. ✅ ضمان استرجاع كامل المبلغ خلال 30 يوم (green icon)
+  4. 👁️ افحص المنتج قبل الدفع — مع المندوب (teal icon, COD trust)
+- Container: teal-tinted background, teal dashed border, ~14px line-height, 13px font-weight
+- Uses existing teal token #0d9488 (matches the bundle section + icon grid accent)
+- No section file built

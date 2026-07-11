@@ -98,12 +98,19 @@
           "settings": {
             "custom_liquid": "\n<div class=\"flexora-30day-guarantee\" dir=\"rtl\" style=\"display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#f0fff4,#e8fbea);border:1px solid #28a74533;border-radius:8px;padding:14px 16px;margin:14px 0;font-family:Cairo,sans-serif;box-shadow:0 2px 6px rgba(40,167,69,0.08);\">\n  <div style=\"width:42px;height:42px;border-radius:50%;background:#28a745;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 12px rgba(40,167,69,0.5);animation:flexora-pulse 1.5s infinite;\">\n    <span class=\"material-symbols-outlined\" style=\"color:#fff;font-size:26px;font-variation-settings:'FILL' 1;\">verified</span>\n  </div>\n  <div style=\"flex:1;\">\n    <div style=\"font-size:1.5rem;font-weight:800;color:#155724;line-height:1.3;\">ضمان استرداد المبلغ 30 يوم</div>\n    <div style=\"font-size:1.25rem;color:#1e7e34;line-height:1.4;margin-top:2px;\">بدون أي أسئلة — إذا لم يعجبك المنتج نسترد لك كامل المبلغ</div>\n  </div>\n</div>\n<style>\n@keyframes flexora-pulse {\n  0%, 100% { box-shadow: 0 0 12px rgba(40,167,69,0.5); transform: scale(1); }\n  50% { box-shadow: 0 0 20px rgba(40,167,69,0.8); transform: scale(1.05); }\n}\n</style>"
           }
+        },
+        "flexora_trust_lines": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "\n<div class=\"flexora-trust-lines\" dir=\"rtl\" style=\"margin:14px 0 8px;padding:14px 16px;background:linear-gradient(135deg,#f0fdfa,#fff);border:1px dashed #0d9488;border-radius:8px;font-family:Cairo,sans-serif;\">\n  <div style=\"display:flex;align-items:center;gap:8px;color:#155724;font-size:1.3rem;font-weight:600;line-height:1.6;padding:4px 0;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size:20px;color:#dc2626;font-variation-settings:'FILL' 1;\">schedule</span>\n    <span>⏰ العرض لفترة محدودة — ينتهي اليوم</span>\n  </div>\n  <div style=\"display:flex;align-items:center;gap:8px;color:#1a1a1a;font-size:1.3rem;font-weight:600;line-height:1.6;padding:4px 0;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size:20px;color:#0d9488;\">local_shipping</span>\n    <span>🚚 توصيل مجاني لجميع محافظات الأردن</span>\n  </div>\n  <div style=\"display:flex;align-items:center;gap:8px;color:#1a1a1a;font-size:1.3rem;font-weight:600;line-height:1.6;padding:4px 0;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size:20px;color:#16a34a;font-variation-settings:'FILL' 1;\">verified_user</span>\n    <span>✅ ضمان استرجاع كامل المبلغ خلال 30 يوم</span>\n  </div>\n  <div style=\"display:flex;align-items:center;gap:8px;color:#1a1a1a;font-size:1.3rem;font-weight:600;line-height:1.6;padding:4px 0;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size:20px;color:#0d9488;\">visibility</span>\n    <span>👁️ افحص المنتج قبل الدفع — مع المندوب</span>\n  </div>\n</div>\n"
+          }
         }
       },
       "block_order": [
         "title",
         "cod_badge",
         "price",
+        "flexora_trust_lines",
         "social_proof",
         "variant_picker",
         "hot_stock_urgency",
