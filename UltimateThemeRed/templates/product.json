@@ -104,6 +104,38 @@
           "settings": {
             "custom_liquid": "\n<div class=\"flexora-trust-lines\" dir=\"rtl\" style=\"margin:14px 0 8px;padding:14px 16px;background:linear-gradient(135deg,#f0fdfa,#fff);border:1px dashed #0d9488;border-radius:8px;font-family:Cairo,sans-serif;\">\n  <div style=\"display:flex;align-items:center;gap:8px;color:#155724;font-size:1.3rem;font-weight:600;line-height:1.6;padding:4px 0;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size:20px;color:#dc2626;font-variation-settings:'FILL' 1;\">schedule</span>\n    <span>⏰ العرض لفترة محدودة — ينتهي اليوم</span>\n  </div>\n  <div style=\"display:flex;align-items:center;gap:8px;color:#1a1a1a;font-size:1.3rem;font-weight:600;line-height:1.6;padding:4px 0;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size:20px;color:#0d9488;\">local_shipping</span>\n    <span>🚚 توصيل مجاني لجميع محافظات الأردن</span>\n  </div>\n  <div style=\"display:flex;align-items:center;gap:8px;color:#1a1a1a;font-size:1.3rem;font-weight:600;line-height:1.6;padding:4px 0;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size:20px;color:#16a34a;font-variation-settings:'FILL' 1;\">verified_user</span>\n    <span>✅ ضمان استرجاع كامل المبلغ خلال 30 يوم</span>\n  </div>\n  <div style=\"display:flex;align-items:center;gap:8px;color:#1a1a1a;font-size:1.3rem;font-weight:600;line-height:1.6;padding:4px 0;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size:20px;color:#0d9488;\">visibility</span>\n    <span>👁️ افحص المنتج قبل الدفع — مع المندوب</span>\n  </div>\n</div>\n"
           }
+        },
+        "sticky_atc_bar": {
+          "type": "sticky_atc",
+          "settings": {
+            "function": "add_to_cart",
+            "display_when": "after_scroll",
+            "button_label": "أضيفي للسلة",
+            "enable_custom_btn_color": true,
+            "custom_btn_color": "#0F766E",
+            "color_scheme": "background-1",
+            "star_color": "#ffcc00",
+            "stars_label": "(742 تقييم)",
+            "picker_type": "separate",
+            "desktop_show_image": true,
+            "desktop_show_title": true,
+            "desktop_rating_stars": true,
+            "desktop_show_price": true,
+            "desktop_show_sale_badge": true,
+            "desktop_variant_picker": true,
+            "desktop_full_button_width": false,
+            "desktop_show_price_in_button": false,
+            "desktop_transparent_bg": false,
+            "mobile_show_image": true,
+            "mobile_show_title": true,
+            "mobile_rating_stars": true,
+            "mobile_show_price": true,
+            "mobile_show_sale_badge": true,
+            "mobile_variant_picker": true,
+            "mobile_full_button_width": false,
+            "mobile_show_price_in_button": false,
+            "mobile_transparent_bg": false
+          }
         }
       },
       "block_order": [
@@ -122,7 +154,8 @@
         "collapsible_tab_howto",
         "collapsible_tab_shipping",
         "collapsible_tab_return",
-        "share"
+        "share",
+        "sticky_atc_bar"
       ],
       "settings": {
         "enable_sticky_info": true,
