@@ -1,0 +1,18 @@
+fix: floating quote column containment, sticky_atc z-index + column separator
+
+three layout fixes applied to templates/product.json via the flexora_floating_quote_block's custom_liquid HTML + <style> block:
+
+=== Item 1: floating quote no longer overflows the info column ===
+- Was: position: sticky with max-width:920px and margin:24px auto — the 920px max-width was larger than the typical info column width (~400-500px on desktop), causing it to visually overflow into the image/gallery column.
+- Fix: removed position: sticky (the user already flagged in the previous prompt that floating/sticky wasn't practical here); changed to position: relative (normal flow, scrolls with the page); added width:100%, max-width:100%, box-sizing:border-box, overflow-wrap:break-word to guarantee it stays inside its info-column parent container.
+
+=== Item 2: sticky_atc_bar z-index and bottom spacing ===
+- Diagnosis: the chat-bubble-like widget the user sees is likely one of the two THEME-NATIVE floating buttons: scroll-to-top-btn (sections/scroll-to-top-btn.liquid) or global-music-player (sections/global-music-player.liquid). NO third-party Shopify chat app was detected — no WhatsApp/Tidio/Intercom/Crisp/LiveChat scripts in the rendered HTML, no app embeds in the theme schema. Both theme buttons are bottom-right and bottom-left positioned with offset: 2rem from the edges.
+- Fix via CSS overrides: pushed the sticky_atc_bar UP to bottom:20px (was default bottom), set its z-index to 98; moved scroll-to-top-btn to bottom:80px z-index 99; moved music-player to bottom:140px z-index 99. This stacks them vertically and prevents overlap.
+- Confirmed `display_when: after_scroll` IS implemented in the theme: the sticky_atc web component receives data-after-scroll="true" attribute (main-product.liquid:425), and the theme's secondary.js handles the scroll-triggered show/hide behavior — so the sticky bar does NOT show alongside the inline buy buttons; it only appears after the inline buttons scroll out of view.
+
+=== Item 3: visual separator between gallery and info columns ===
+- Diagnosis: the existing main-product grid uses `grid--1-col grid--2-col-tablet` with `--grid-desktop-horizontal-spacing` controlled by settings (default 40px). No visible boundary between columns.
+- Fix via CSS overrides in the same <style> block (desktop >= 990px): added a 1px solid teal-tinted vertical line on the left edge of the info column (.product__info-wrapper { border-left: 1px solid rgba(13,148,136,0.18) }), increased the left padding inside the info column to 28px (visual breathing room), and added 12px right padding to the media column to balance the gap.
+
+Note: all three CSS overrides are scoped to the same <style> tag inside flexora_floating_quote_block's custom_liquid, so they're isolated and don't pollute global stylesheets.
