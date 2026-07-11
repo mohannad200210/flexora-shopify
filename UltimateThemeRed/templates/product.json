@@ -189,8 +189,8 @@
     },
     "flexora_features": {
       "type": "icon-bar",
-      "blocks": [
-        {
+      "blocks": {
+        "column_1": {
           "type": "column",
           "settings": {
             "icon": "accessibility_new",
@@ -199,7 +199,7 @@
             "text": "<p>نظام ضغط مزدوج يستهدف أسفل الظهر تحديداً لراحة فورية</p>"
           }
         },
-        {
+        "column_2": {
           "type": "column",
           "settings": {
             "icon": "straighten",
@@ -208,7 +208,7 @@
             "text": "<p>أشرطة معدنية صلبة توفر دعم استثنائي للعمود الفقري</p>"
           }
         },
-        {
+        "column_3": {
           "type": "column",
           "settings": {
             "icon": "air",
@@ -217,7 +217,7 @@
             "text": "<p>مريح طوال اليوم، يسمح بدخول الهواء ويمنع التعرق</p>"
           }
         },
-        {
+        "column_4": {
           "type": "column",
           "settings": {
             "icon": "tune",
@@ -226,7 +226,7 @@
             "text": "<p>من S إلى XXL — يناسب خصور من ٧١ سم إلى ١٣٢ سم</p>"
           }
         },
-        {
+        "column_5": {
           "type": "column",
           "settings": {
             "icon": "self_improvement",
@@ -235,7 +235,7 @@
             "text": "<p>وزن خفيف لا يثقل الكتفين، يمكن ارتداؤه تحت الملابس</p>"
           }
         },
-        {
+        "column_6": {
           "type": "column",
           "settings": {
             "icon": "cleaning_services",
@@ -244,7 +244,7 @@
             "text": "<p>قماش قابل للغسل يدوياً، يحافظ على جودته مع الاستخدام اليومي</p>"
           }
         }
-      ],
+      },
       "settings": {
         "visibility": "always-display",
         "title": "",
@@ -280,7 +280,15 @@
         "mobile_arrows_position": "hidden",
         "padding_top": 32,
         "padding_bottom": 32
-      }
+      },
+      "block_order": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4",
+        "column_5",
+        "column_6"
+      ]
     }
   },
   "order": [
