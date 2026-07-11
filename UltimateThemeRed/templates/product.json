@@ -186,10 +186,106 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "flexora_features": {
+      "type": "icon-bar",
+      "blocks": [
+        {
+          "type": "column",
+          "settings": {
+            "icon": "accessibility_new",
+            "filled_icon": true,
+            "title": "دعم قطني مزدوج",
+            "text": "<p>نظام ضغط مزدوج يستهدف أسفل الظهر تحديداً لراحة فورية</p>"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "straighten",
+            "filled_icon": true,
+            "title": "أشرطة فولاذية",
+            "text": "<p>أشرطة معدنية صلبة توفر دعم استثنائي للعمود الفقري</p>"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "air",
+            "filled_icon": true,
+            "title": "قماش تنفسي",
+            "text": "<p>مريح طوال اليوم، يسمح بدخول الهواء ويمنع التعرق</p>"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "tune",
+            "filled_icon": true,
+            "title": "مقاسات قابلة للتعديل",
+            "text": "<p>من S إلى XXL — يناسب خصور من ٧١ سم إلى ١٣٢ سم</p>"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "self_improvement",
+            "filled_icon": true,
+            "title": "خفيف ومريح",
+            "text": "<p>وزن خفيف لا يثقل الكتفين، يمكن ارتداؤه تحت الملابس</p>"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "cleaning_services",
+            "filled_icon": true,
+            "title": "سهل التنظيف",
+            "text": "<p>قماش قابل للغسل يدوياً، يحافظ على جودته مع الاستخدام اليومي</p>"
+          }
+        }
+      ],
+      "settings": {
+        "visibility": "always-display",
+        "title": "",
+        "title_highlight_color": "#0F766E",
+        "heading_size": "h2",
+        "text": "",
+        "color_scheme": "background-1",
+        "icon_layout": "horizontal",
+        "icon_size": "medium",
+        "icon_color": "accent-1",
+        "cards_color_scheme": "bg-overlay",
+        "type": "slide",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "arrows_color_scheme": "inverse",
+        "transparent_arrows": true,
+        "dots_color_scheme": "inverse",
+        "desktop_full_page": true,
+        "columns_desktop": 3,
+        "slider_desktop": false,
+        "per_move_desktop": 1,
+        "desktop_spacing": 24,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "hidden",
+        "columns_mobile": "2",
+        "slider_mobile": false,
+        "enable_mobile_preview": false,
+        "mobile_adaptive_height": false,
+        "mobile_dots_position": "hidden",
+        "mobile_arrows_position": "hidden",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
     "main",
+    "flexora_features",
     "product_usp_section",
     "flexora_bundle",
     "before_after",
